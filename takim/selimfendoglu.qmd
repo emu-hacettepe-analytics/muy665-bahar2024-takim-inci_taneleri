@@ -1,13 +1,22 @@
 ---
+<<<<<<< Updated upstream
 title: "Selim Ugras FENDOGLU"
+=======
+title: "SelimUgrasFENDOGLU"
+>>>>>>> Stashed changes
 ---
 
 ![](/assets/images/vesikalik.jpeg){fig-align="center"}
 
 # Eğitim
 
+<<<<<<< Updated upstream
 -   Lisans, Gaziantep Üniversitesi, Türkiye, 20xx - 20xx.
 -   Yüksek Lisans, Fırat Üniversitesi, Türkiye, 20xx - devam ediyor.
+=======
+-   Lisans, Gaziantep Üniversitesi, Türkiye, 1993 - 2002
+-   Yüksek Lisans, Fırat Üniversitesi, Türkiye, 2003 - 2010
+>>>>>>> Stashed changes
 
 # İş Deneyimi
 
