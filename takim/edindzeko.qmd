@@ -1,13 +1,13 @@
 ---
-title: "Edin_Džeko"
+title: "Selim Ugras FENDOGLU"
 ---
 
 ![](/assets/images/vesikalik.jpeg){fig-align="center"}
 
 # Eğitim
 
--   Lisans, ................................., .................................... Üniversitesi, Türkiye, 20xx - 20xx.
--   Yüksek Lisans, Endüstri Mühendisliği, Hacettepe Üniversitesi, Türkiye, 20xx - devam ediyor.
+-   Lisans, Gaziantep Üniversitesi, Türkiye, 20xx - 20xx.
+-   Yüksek Lisans, Fırat Üniversitesi, Türkiye, 20xx - devam ediyor.
 
 # İş Deneyimi
 
