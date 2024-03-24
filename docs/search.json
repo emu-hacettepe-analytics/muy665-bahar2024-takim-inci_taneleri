@@ -554,7 +554,7 @@
   {
     "objectID": "takim/selimfendoglu.html",
     "href": "takim/selimfendoglu.html",
-    "title": "Eğitim",
+    "title": "ED\u001fitim",
     "section": "",
     "text": "title: ” Selim Ugras FENDOGLU ”"
   },
@@ -568,9 +568,9 @@
   {
     "objectID": "takim/selimfendoglu.html#stajlar",
     "href": "takim/selimfendoglu.html#stajlar",
-    "title": "Eğitim",
+    "title": "ED\u001fitim",
     "section": "Stajlar",
-    "text": "Stajlar\n\nFirma aaa, pozisyon xx, yıl xxx\nFirma bbb, pozisyon yyy, yıl yyy"
+    "text": "Stajlar\n\nFirma aaa, pozisyon xx, yD1l xxx\nFirma bbb, pozisyon yyy, yD1l yyy"
   },
   {
     "objectID": "takim/MuhammedEmreSENDUR.html#işler",
@@ -648,5 +648,12 @@
     "title": "Project X",
     "section": "3.4 Results",
     "text": "3.4 Results\nxxxxxx"
+  },
+  {
+    "objectID": "takim/selimfendoglu.html#d0eler",
+    "href": "takim/selimfendoglu.html#d0eler",
+    "title": "ED\u001fitim",
+    "section": "D0E\u001fler",
+    "text": "D0E\u001fler\n\nD0sdemir, pozisyon xx, yD1l xxx\nBotaE\u001f, pozisyon yyy, yD1l yyy"
   }
 ]
