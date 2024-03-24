@@ -13,7 +13,7 @@ Lütfen faaliyetlerimizi görmek için için bizi takipte kalın.
 
 ## Takım Üyeleri
 
-1.  [Selim Ugras Fendoğlu](/takim/edindzeko.qmd)
+1.  [Selim Ugras Fendoğlu](/takim/selimfendoglu.qmd)
 
 2.  [Dušan Tadić](/takim/dusantadic.qmd)
 
