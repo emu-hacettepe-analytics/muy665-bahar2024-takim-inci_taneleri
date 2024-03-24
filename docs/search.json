@@ -222,7 +222,7 @@
     "href": "index.html#takım-üyeleri",
     "title": "Takım: XXX",
     "section": "Takım Üyeleri",
-    "text": "Takım Üyeleri\n\nEdin_Džeko\nDušan Tadić\nFrederico Rodrigues de Paula Santos\nSebastian Szymański"
+    "text": "Takım Üyeleri\n\nSelim Ugras Fendoğlu\nDušan Tadić\nFrederico Rodrigues de Paula Santos\nSebastian Szymański"
   },
   {
     "objectID": "portfolyo.html",
@@ -550,5 +550,103 @@
       "Takım Üyeleri",
       "Dusan Tadic"
     ]
+  },
+  {
+    "objectID": "takim/selimfendoglu.html",
+    "href": "takim/selimfendoglu.html",
+    "title": "Eğitim",
+    "section": "",
+    "text": "title: ” Selim Ugras FENDOGLU ”"
+  },
+  {
+    "objectID": "takim/selimfendoglu.html#işler",
+    "href": "takim/selimfendoglu.html#işler",
+    "title": "Eğitim",
+    "section": "İşler",
+    "text": "İşler\n\nİsdemir, pozisyon xx, yıl xxx\nBotaş, pozisyon yyy, yıl yyy"
+  },
+  {
+    "objectID": "takim/selimfendoglu.html#stajlar",
+    "href": "takim/selimfendoglu.html#stajlar",
+    "title": "Eğitim",
+    "section": "Stajlar",
+    "text": "Stajlar\n\nFirma aaa, pozisyon xx, yıl xxx\nFirma bbb, pozisyon yyy, yıl yyy"
+  },
+  {
+    "objectID": "takim/MuhammedEmreSENDUR.html#işler",
+    "href": "takim/MuhammedEmreSENDUR.html#işler",
+    "title": "Muhammed Emre ŞENDUR",
+    "section": "İşler",
+    "text": "İşler\n\nBİTES Savunma Havacılık ve Uzay Tekn. Yazılım Elekt. Tic. AŞ, Sistem Mühendisi, 11/2023-Devam ediyor.\nBİTES Savunma Havacılık ve Uzay Tekn. Yazılım Elekt. Tic. AŞ, Yazılım Test Mühendisi, 05/2022-11/2023"
+  },
+  {
+    "objectID": "takim/MuhammedEmreSENDUR.html#stajlar",
+    "href": "takim/MuhammedEmreSENDUR.html#stajlar",
+    "title": "Muhammed Emre ŞENDUR",
+    "section": "Stajlar",
+    "text": "Stajlar\n\nTRT Genel Müdürlüğü-Yayın Denetimi ve Koordinasyon Merkezi, Stajyer, 08/2018-09/2018"
+  },
+  {
+    "objectID": "docs/project.html",
+    "href": "docs/project.html",
+    "title": "Project X",
+    "section": "",
+    "text": "Welcome to my project page.\nKeep an eye on this space to stay updated with my project activities.\n(The titles below are provided as examples; please feel free to adjust them as necessary.)"
+  },
+  {
+    "objectID": "docs/project.html#data-source",
+    "href": "docs/project.html#data-source",
+    "title": "Project X",
+    "section": "2.1 Data Source",
+    "text": "2.1 Data Source\nxxxxxx"
+  },
+  {
+    "objectID": "docs/project.html#general-information-about-data",
+    "href": "docs/project.html#general-information-about-data",
+    "title": "Project X",
+    "section": "2.2 General Information About Data",
+    "text": "2.2 General Information About Data\nxxxxxx"
+  },
+  {
+    "objectID": "docs/project.html#reason-of-choice",
+    "href": "docs/project.html#reason-of-choice",
+    "title": "Project X",
+    "section": "2.3 Reason of Choice",
+    "text": "2.3 Reason of Choice\nxxxxxx"
+  },
+  {
+    "objectID": "docs/project.html#preprocessing",
+    "href": "docs/project.html#preprocessing",
+    "title": "Project X",
+    "section": "2.4 Preprocessing",
+    "text": "2.4 Preprocessing\nxxxxxx"
+  },
+  {
+    "objectID": "docs/project.html#exploratory-data-analysis",
+    "href": "docs/project.html#exploratory-data-analysis",
+    "title": "Project X",
+    "section": "3.1 Exploratory Data Analysis",
+    "text": "3.1 Exploratory Data Analysis\nxxxxxx"
+  },
+  {
+    "objectID": "docs/project.html#trend-analysis",
+    "href": "docs/project.html#trend-analysis",
+    "title": "Project X",
+    "section": "3.2 Trend Analysis",
+    "text": "3.2 Trend Analysis\nxxxxxx"
+  },
+  {
+    "objectID": "docs/project.html#model-fitting",
+    "href": "docs/project.html#model-fitting",
+    "title": "Project X",
+    "section": "3.3 Model Fitting",
+    "text": "3.3 Model Fitting\nxxxxxx"
+  },
+  {
+    "objectID": "docs/project.html#results",
+    "href": "docs/project.html#results",
+    "title": "Project X",
+    "section": "3.4 Results",
+    "text": "3.4 Results\nxxxxxx"
   }
 ]
