@@ -1,9 +1,7 @@
 ---
-<<<<<<< Updated upstream
-title: "Selim Ugras FENDOGLU"
-=======
-title: "SelimUgrasFENDOGLU"
->>>>>>> Stashed changes
+
+title: " Selim Ugras FENDOGLU "
+
 ---
 
 ![](/assets/images/vesikalik.jpeg){fig-align="center"}
