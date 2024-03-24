@@ -2,7 +2,6 @@
 title: "Sebastian Szymański"
 ---
 
-
 ![](/assets/images/vesikalik.jpeg){fig-align="center"}
 
 # Eğitim
