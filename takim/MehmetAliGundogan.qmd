@@ -1,0 +1,36 @@
+---
+title: "Mehmet Ali Gündoğan"
+---
+
+![](/assets/images/vesikalik.jpeg){fig-align="center"}
+
+# Eğitim
+
+-   Lisans, Elektrik Elektronik Mühendisliği, TED Üniversitesi, Türkiye, 2018- 2022.
+-   Yüksek Lisans, Endüstri Mühendisliği, Hacettepe Üniversitesi, Türkiye, 2023 - devam ediyor.
+
+# İş Deneyimi
+
+## İşler
+
+1.  Firma Ekinoks Software, pozisyon Sistem Test Müh, yıl 2023 - Devam Ediyor.
+
+## Stajlar
+
+1.  Firma aaa, pozisyon xx, yıl xxx
+
+2.  Firma bbb, pozisyon yyy, yıl yyy
+
+# Projeler
+
+1.  TÜBİTAK 1001..........................
+
+# Yayınlar
+
+1.  \-
+
+# Yetkinlikler
+
+R, Quarto, Git, Python
+
+# Hobiler
