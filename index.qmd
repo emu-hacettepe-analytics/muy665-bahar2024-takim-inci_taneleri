@@ -1,6 +1,6 @@
 ---
 title: "Takım: İnci Taneleri"
-sidebar: false 
+sidebar: false
 ---
 
 MUY660-İş Analitiği dersi takım sayfamıza hoş geldiniz.
@@ -15,7 +15,7 @@ Lütfen faaliyetlerimizi görmek için için bizi takipte kalın.
 
 2.  [Muhammed Emre Şendur](/takim/MuhammedEmreSENDUR.qmd)
 
-3.  [Frederico Rodrigues de Paula Santos](/takim/fred.qmd)
+3.  [Mehmet Ali Gündoğan](/takim/MehmetAliGundogan.qmd)
 
 4.  [Sebastian Szymański](/takim/szymanski.qmd)
 

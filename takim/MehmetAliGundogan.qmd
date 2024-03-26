@@ -2,7 +2,7 @@
 title: "Mehmet Ali Gündoğan"
 ---
 
-![](/assets/images/vesikalik.jpeg){fig-align="center"}
+![](/assets/images/mehmet_ali_gundogan.jpg){fig-align="center"}
 
 # Eğitim
 
@@ -13,24 +13,24 @@ title: "Mehmet Ali Gündoğan"
 
 ## İşler
 
-1.  Firma Ekinoks Software, pozisyon Sistem Test Müh, yıl 2023 - Devam Ediyor.
+1.  Ekinoks Software, pozisyon Sistem Test Tasarım Mühendisi, 2023 - Devam Ediyor.
 
 ## Stajlar
 
-1.  Firma aaa, pozisyon xx, yıl xxx
+1.  Karel Elektronik, Elektrik Elektronik Mühendisliği Stajı, Temmuz 2021- Ağustos 2021
 
-2.  Firma bbb, pozisyon yyy, yıl yyy
+2.  Meteksan Savunma, Elektrik Elektronik Mühendisliği Stajı, Haziran 2020 - Temmuz 2020
 
 # Projeler
 
-1.  TÜBİTAK 1001..........................
+1.  HavaSOJ Elektronik Harp Uçağı, Elektronik Taaruz Sistemleri.
 
 # Yayınlar
 
-1.  \-
-
 # Yetkinlikler
 
-R, Quarto, Git, Python
+R, Quarto, Git, Python, MATLAB, Python, C#, .Net, WPF, WinForms, LtSpice, Pads PCB Design, Java
 
 # Hobiler
+
+3D printer ile baskı almak, Otomotiv Sektörü, Oyun Oynamak, Yabancı Sitcom izlemek.

@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "XX Takımı Analitik Labı"
+  title: "İnci Taneleri Takımı Analitik Labı"
   navbar:
     search: true
     left:
@@ -36,9 +36,9 @@ website:
       search: true
       contents:
         - takim.qmd
-        - takim/dusantadic.qmd
-        - takim/edindzeko.qmd
-        - takim/fred.qmd  
+        - takim/selimfendoglu.qmd
+        - takim/MuhammedEmreSENDUR.qmd
+        - takim/MehmetAliGundogan.qmd  
         - takim/szymanski.qmd  
         
         

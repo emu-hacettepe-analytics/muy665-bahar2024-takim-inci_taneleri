@@ -6,10 +6,10 @@ Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfaları
 
 # Takım Üyeleri
 
-1.  [Edin_Džeko](/takim/edindzeko.qmd)
+1.  [Selim Uğraş Fendoğlu](/takim/selimfendoglu.qmd)
 
-2.  [Dušan Tadić](/takim/dusantadic.qmd)
+2.  [Muhammed Emre Sendur ](/takim/MuhammedEmreSendur.qmd)
 
-3.  [Frederico Rodrigues de Paula Santos](/takim/fred.qmd)
+3.  [Mehmet Ali Gündoğan](/takim/MehmetAliGundogan.qmd)
 
 4.  [Sebastian Szymański](/takim/szymanski.qmd)

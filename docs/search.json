@@ -2,7 +2,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Takım: XXX",
+    "title": "Takım: İnci Taneleri",
     "section": "",
     "text": "MUY660-İş Analitiği dersi takım sayfamıza hoş geldiniz.\nBu analitik çalışmalarımızı paylaşıyoruz.\nLütfen faaliyetlerimizi görmek için için bizi takipte kalın."
   },
@@ -192,37 +192,37 @@
   {
     "objectID": "index.html#proje-adı",
     "href": "index.html#proje-adı",
-    "title": "Takım: XXX",
+    "title": "Takım: İnci Taneleri",
     "section": "Proje Adı",
     "text": "Proje Adı\nMUY660-İş Analitiği iyileştirme çalışmaları (örnek)"
   },
   {
     "objectID": "index.html#proje-konusu",
     "href": "index.html#proje-konusu",
-    "title": "Takım: XXX",
+    "title": "Takım: İnci Taneleri",
     "section": "Proje Konusu",
     "text": "Proje Konusu\nÖrnek: Bu projede MUY660-İş Analitiği ders içeriğinin analitik yaklaşımlarla iyileştirilmesini hedefledik. Bu doğrultuda tüm üniversitelerdeki benzer derslerin verisini toplayarak bir veri seti oluşturduk Analiz için …….. yöntemleri kullanarak, ……. çalışmaları yaptık Sonuç olarak, MUY660-İş Analitiği dersinin dünyadaki tüm derslerden daha iyi olduğunu ve bu dersi aldığımız için çok mutlu olduğumuzu tespit ettik."
   },
   {
     "objectID": "index.html#veri-seti-hakkında-özet-bilgi",
     "href": "index.html#veri-seti-hakkında-özet-bilgi",
-    "title": "Takım: XXX",
+    "title": "Takım: İnci Taneleri",
     "section": "Veri Seti Hakkında Özet Bilgi",
     "text": "Veri Seti Hakkında Özet Bilgi"
   },
   {
     "objectID": "index.html#sonuçlar",
     "href": "index.html#sonuçlar",
-    "title": "Takım: XXX",
+    "title": "Takım: İnci Taneleri",
     "section": "Sonuçlar",
     "text": "Sonuçlar\nBurada key takeways verilmelidir. En az 3 en fazla 5 madde ile çarpıcı sonuçlar sunulmalıdır."
   },
   {
     "objectID": "index.html#takım-üyeleri",
     "href": "index.html#takım-üyeleri",
-    "title": "Takım: XXX",
+    "title": "Takım: İnci Taneleri",
     "section": "Takım Üyeleri",
-    "text": "Takım Üyeleri\n\nSelim Ugras Fendoğlu\nDušan Tadić\nFrederico Rodrigues de Paula Santos\nSebastian Szymański"
+    "text": "Takım Üyeleri\n\nSelim Ugras Fendoğlu\nMuhammed Emre Şendur\nMehmet Ali Gündoğan\nSebastian Szymański"
   },
   {
     "objectID": "portfolyo.html",
@@ -240,7 +240,7 @@
     "href": "takim.html",
     "title": "Takım Üyeleri",
     "section": "",
-    "text": "Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfalarına gitmek için sol menüyü veya aşağıdaki linkleri kullanabilirsiniz.\n\nTakım Üyeleri\n\nEdin_Džeko\nDušan Tadić\nFrederico Rodrigues de Paula Santos\nSebastian Szymański\n\n\n\n\n\n Back to top",
+    "text": "Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfalarına gitmek için sol menüyü veya aşağıdaki linkleri kullanabilirsiniz.\n\nTakım Üyeleri\n\nSelim Uğraş Fendoğlu\nMuhammed Emre Sendur\nMehmet Ali Gündoğan\nSebastian Szymański\n\n\n\n\n\n Back to top",
     "crumbs": [
       "Takım Üyeleri"
     ]
@@ -554,37 +554,57 @@
   {
     "objectID": "takim/selimfendoglu.html",
     "href": "takim/selimfendoglu.html",
-    "title": "ED\u001fitim",
+    "title": "Eğitim",
     "section": "",
-    "text": "title: ” Selim Ugras FENDOGLU ”"
+    "text": "title: ” Selim Ugras FENDOGLU ”",
+    "crumbs": [
+      "Takım Üyeleri",
+      "Eğitim"
+    ]
   },
   {
     "objectID": "takim/selimfendoglu.html#işler",
     "href": "takim/selimfendoglu.html#işler",
-    "title": "Eğitim",
+    "title": "Selim Ugras FENDOGLU",
     "section": "İşler",
-    "text": "İşler\n\nİsdemir, pozisyon xx, yıl xxx\nBotaş, pozisyon yyy, yıl yyy"
+    "text": "İşler\n\nIsdemir, Enerji Üretim ve İşletme Mühendisi\nBotaş, pozisyon yyy, yD1l yyy",
+    "crumbs": [
+      "Takım Üyeleri",
+      "Selim Ugras FENDOGLU"
+    ]
   },
   {
     "objectID": "takim/selimfendoglu.html#stajlar",
     "href": "takim/selimfendoglu.html#stajlar",
-    "title": "ED\u001fitim",
+    "title": "Selim Ugras FENDOGLU",
     "section": "Stajlar",
-    "text": "Stajlar\n\nFirma aaa, pozisyon xx, yD1l xxx\nFirma bbb, pozisyon yyy, yD1l yyy"
+    "text": "Stajlar\n\nFirma aaa, pozisyon xx, yıl xxx\nFirma bbb, pozisyon yyy, yıl yyy",
+    "crumbs": [
+      "Takım Üyeleri",
+      "Selim Ugras FENDOGLU"
+    ]
   },
   {
     "objectID": "takim/MuhammedEmreSENDUR.html#işler",
     "href": "takim/MuhammedEmreSENDUR.html#işler",
     "title": "Muhammed Emre ŞENDUR",
     "section": "İşler",
-    "text": "İşler\n\nBİTES Savunma Havacılık ve Uzay Tekn. Yazılım Elekt. Tic. AŞ, Sistem Mühendisi, 11/2023-Devam ediyor.\nBİTES Savunma Havacılık ve Uzay Tekn. Yazılım Elekt. Tic. AŞ, Yazılım Test Mühendisi, 05/2022-11/2023"
+    "text": "İşler\n\nBİTES Savunma Havacılık ve Uzay Tekn. Yazılım Elekt. Tic. AŞ, Sistem Mühendisi, 11/2023-Devam ediyor.\nBİTES Savunma Havacılık ve Uzay Tekn. Yazılım Elekt. Tic. AŞ, Yazılım Test Mühendisi, 05/2022-11/2023",
+    "crumbs": [
+      "Takım Üyeleri",
+      "Muhammed Emre ŞENDUR"
+    ]
   },
   {
     "objectID": "takim/MuhammedEmreSENDUR.html#stajlar",
     "href": "takim/MuhammedEmreSENDUR.html#stajlar",
     "title": "Muhammed Emre ŞENDUR",
     "section": "Stajlar",
-    "text": "Stajlar\n\nTRT Genel Müdürlüğü-Yayın Denetimi ve Koordinasyon Merkezi, Stajyer, 08/2018-09/2018"
+    "text": "Stajlar\n\nTRT Genel Müdürlüğü-Yayın Denetimi ve Koordinasyon Merkezi, Stajyer, 08/2018-09/2018",
+    "crumbs": [
+      "Takım Üyeleri",
+      "Muhammed Emre ŞENDUR"
+    ]
   },
   {
     "objectID": "docs/project.html",
@@ -654,6 +674,32 @@
     "href": "takim/selimfendoglu.html#d0eler",
     "title": "ED\u001fitim",
     "section": "D0E\u001fler",
-    "text": "D0E\u001fler\n\nD0sdemir, pozisyon xx, yD1l xxx\nBotaE\u001f, pozisyon yyy, yD1l yyy"
+    "text": "D0E\u001fler\n\nIsdemir, Enerji ??retim ve ????letme M??hendisi\nBota??\u001f, pozisyon yyy, yD1l yyy",
+    "crumbs": [
+      "Takım Üyeleri",
+      "ED\u001fitim"
+    ]
+  },
+  {
+    "objectID": "takim/MehmetAliGundogan.html#işler",
+    "href": "takim/MehmetAliGundogan.html#işler",
+    "title": "Mehmet Ali Gündoğan",
+    "section": "İşler",
+    "text": "İşler\n\nEkinoks Software, pozisyon Sistem Test Tasarım Mühendisi, 2023 - Devam Ediyor.",
+    "crumbs": [
+      "Takım Üyeleri",
+      "Mehmet Ali Gündoğan"
+    ]
+  },
+  {
+    "objectID": "takim/MehmetAliGundogan.html#stajlar",
+    "href": "takim/MehmetAliGundogan.html#stajlar",
+    "title": "Mehmet Ali Gündoğan",
+    "section": "Stajlar",
+    "text": "Stajlar\n\nKarel Elektronik, Elektrik Elektronik Mühendisliği Stajı, Temmuz 2021- Ağustos 2021\nMeteksan Savunma, Elektrik Elektronik Mühendisliği Stajı, Haziran 2020 - Temmuz 2020",
+    "crumbs": [
+      "Takım Üyeleri",
+      "Mehmet Ali Gündoğan"
+    ]
   }
 ]

@@ -1,39 +1,33 @@
 ---
-
 title: " Selim Ugras FENDOGLU "
-
 ---
 
-![](/assets/images/selim_fendoglu.jpeg){fig-align="center"}
+![](/assets/images/selim_fendoglu.jpg){fig-align="center"}
 
-# EDitim
+# Eğitim
 
-<<<<<<< Updated upstream
--   Lisans, Gaziantep Cniversitesi, TC<rkiye, 20xx - 20xx.
--   YC<ksek Lisans, FD1rat Cniversitesi, TC<rkiye, 20xx - devam ediyor.
-=======
--   Lisans, Gaziantep Cniversitesi, TC<rkiye, 1993 - 2002
--   YC<ksek Lisans, FD1rat Cniversitesi, TC<rkiye, 2003 - 2010
->>>>>>> Stashed changes
 
-# D0E Deneyimi
+-   Lisans, Gaziantep Üniversitesi, Türkiye, 1993 - 2002
+-   Yüksek Lisans, Fırat Üniversitesi, Türkiye, 2003 - 2010
 
-## D0Eler
+# İş Deneyimi
 
-1.  Isdemir, Enerji ??retim ve ????letme M??hendisi
+## İşler
 
-2.  Bota??, pozisyon yyy, yD1l yyy
+1.  Isdemir, Enerji Üretim ve İşletme Mühendisi
+
+2.  Botaş, pozisyon yyy, yD1l yyy
 
 ## Stajlar
 
-1.  Firma aaa, pozisyon xx, yD1l xxx
+1.  Firma aaa, pozisyon xx, yıl xxx
 
-2.  Firma bbb, pozisyon yyy, yD1l yyy
+2.  Firma bbb, pozisyon yyy, yıl yyy
 
 # Projeler
 
-1.  TCBD0TAK 1001..........................
+1.  TCBD0TAK 1001..........................
 
-# YayD1nlar
+# Yayınlar
 
-1.  Dasdemir, E., Batta, R., Koksalan, M., Tezcaner CztC<rk, D. (2022) b
+1.  Dasdemir, E., Batta, R., Koksalan, M., Tezcaner Öztürk, D. (2022) b
