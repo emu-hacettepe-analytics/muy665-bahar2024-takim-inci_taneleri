@@ -29,7 +29,7 @@ title: "Mehmet Ali Gündoğan"
 
 # Yetkinlikler
 
-R, Quarto, Git, Python, MATLAB, Python, C#, .Net, WPF, WinForms, LtSpice, Pads PCB Design, Java
+R, Quarto, Git, Python, MATLAB, Python, C#, .Net, WPF, WinForms, LtSpice, Pads PCB Design, Java, HTML
 
 # Hobiler
 
