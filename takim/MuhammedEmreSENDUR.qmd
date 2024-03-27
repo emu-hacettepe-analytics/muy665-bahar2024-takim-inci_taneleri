@@ -2,7 +2,7 @@
 title: "Muhammed Emre ŞENDUR"
 ---
 
-![](/assets/images/vesikalik.jpeg){fig-align="center"}
+![](/assets/images/Muhammed_Emre_SENDUR.jpeg){fig-align="center"}
 
 # Eğitim
 
@@ -21,28 +21,20 @@ title: "Muhammed Emre ŞENDUR"
 
 1.  TRT Genel Müdürlüğü-Yayın Denetimi ve Koordinasyon Merkezi, Stajyer, 08/2018-09/2018
 
-
-
 # Projeler
 
-1. 2023 KARMA GERÇEKLİK DESTEKLİ AVİYONİK SÜİT (KGAS)
-2. 2022 SARPSİM EĞİTİM SİMÜLATÖRÜ
-3. 2022 STA-SİM KORNET SİMÜLATÖRÜ
-4. 2020-2021 ÇEVRİMİÇİ SINAV UYGULAMASI
-5. 2019-2020 DEPRESYON ANALİZİ
-
+1.  2023 KARMA GERÇEKLİK DESTEKLİ AVİYONİK SÜİT (KGAS)
+2.  2022 SARPSİM EĞİTİM SİMÜLATÖRÜ
+3.  2022 STA-SİM KORNET SİMÜLATÖRÜ
+4.  2020-2021 ÇEVRİMİÇİ SINAV UYGULAMASI
+5.  2019-2020 DEPRESYON ANALİZİ
 
 # Yayınlar
-
-
 
 # Yetkinlikler
 
 R, Quarto, Git, Python, Jira, XML, WireShark
 
 # Hobiler
--Müzik dinlemek.
--Dönem filmleri izlemek.
--Bilgisayar oyunları.
--Otomotiv endüstrisini takip etmek.
 
+-Müzik dinlemek. -Dönem filmleri izlemek. -Bilgisayar oyunları. -Otomotiv endüstrisini takip etmek.
