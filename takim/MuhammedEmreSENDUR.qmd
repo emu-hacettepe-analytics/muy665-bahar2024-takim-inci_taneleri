@@ -33,7 +33,7 @@ title: "Muhammed Emre ŞENDUR"
 
 # Yetkinlikler
 
-R, Quarto, Git, Python, Jira, XML, WireShark
+R,Python, Jira, XML, WireShark
 
 # Hobiler
 
