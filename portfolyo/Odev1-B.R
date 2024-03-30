@@ -1,5 +1,7 @@
+installed.packages("library")
+installed.packages("mtcars")
 # mtcars veri setini yükle
-data("mtcars")
+
 
 # Özel Özet Fonksiyonu Yazın
 custom_summary <- function(vec) {
