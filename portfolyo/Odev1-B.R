@@ -1,3 +1,4 @@
+# mtcars veri setini yükle
 installed.packages("library")
 installed.packages("mtcars")
 # mtcars veri setini yükle
