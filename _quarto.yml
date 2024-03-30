@@ -11,7 +11,7 @@ website:
         href: index.qmd
       - text: Takım Üyeleri
         href: takim.qmd
-      - text: Porfolyo
+      - text: Portfolyo
         href: portfolyo.qmd
       - text: Proje
         href: proje.qmd
