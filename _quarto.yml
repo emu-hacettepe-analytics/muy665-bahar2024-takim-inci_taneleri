@@ -39,7 +39,8 @@ website:
         - takim/selimfendoglu.qmd
         - takim/MuhammedEmreSENDUR.qmd
         - takim/MehmetAliGundogan.qmd  
-        - takim/berkalpSimsek.qmd  
+        - takim/berkalpSimsek.qmd
+        - takim/IremAVCI.qmd
         
         
   page-navigation: true
