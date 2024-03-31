@@ -2,16 +2,27 @@
 title: "Ödev-1"
 ---
 
-\
-(Aşağıdakiler örnek olarak verilmiştir.)
+Bu çalışmada 5 görevimiz var. Bu görevler, GitHub Classroom reposundaki web sitemizin takım arkadaşlarımızın yer alacağı şekilde ayarlanması. Takım Üyeleri sayfasında takım üyelerinin özgeçmişlerinin güncellenmesi ve Özgeçmişlerin PDF eklenmesi istenmiştir. Bu görevlere ait yapılan geliştirmelere web sayfamız üzerinden erişebilirsiniz.
 
-Bu çalışmada 5 görevimiz var. Bu görevler, GitHub Classroom reposundaki web sitemizin takım arkadaşlarımızın yer alacağı şekilde ayarlanması. Bunlara sırayla aşağıda cevap arıyoruz.
+Varsayılan web sayfamızda yer alan "Portfolyo" menüsü üzerinden Ödev-1 kapsamında gerçekleştirilen diğer üç görevimizi gözlemleyebilirsiniz.
 
-## (3-A)
+## (3-A) **Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler - Mustafa Baydoğan & Erdi Daşdemir-Özet**
 
-Mustafa Gökçe Baydoğan hocamız, Boğaziçi Üniversitesi’nde öğretim görevlisi ve Algopoly adlı, veri alanında uzmanlaşmış şirketin kurucusu. Veri analitiği dersleri veriyor. Enerji ve lojistik alanlarında danışmanlık yapıyor. Akademik ve iş hayatında optimizasyon problemleri ile uğraşıyor. Karşılaştıkları problemlerde matematiksel modelleme ve simülasyon metotları ile çözümlemeler yapıyor. Problemlerin çözümleri deterministik yaklaşımlarla çözülemeyecek durumda olunca olasılıksal, stokastik yaklaşımlarla modelleme yaptığından bahsetti. Tabi günümüzde karşılaşılan problemlere ilişkin veriler büyüdükçe ve teknik imkanlar arttıkça, veri madenciliği ve veri analizleri ile çözümler üretmek mümkün oldu ve bu verilerin analizinde makine öğrenmesi de gitgide popüler hale geldi. İşletmelerde önce sorunlar belirleniyor, sorunu oluşturan nedenler araştırılıyor ve tespit ediliyor. Bu nedenlerle ilgili veriler ve gerekli bilgiler toplanıyor. Çözüm alternatifleri ve olası sonuçları birlikte belirleniyor. Bu çerçevede problemlerin çözümü için metotlar geliştiriliyor. Ne kadar simit satılacağı, hangi mağazada hangi üründen ne kadar bulundurulacağı gibi problemler tahmin yöntemleri ve optimizasyon teknikleri ile çözülüyor. Bu tip süreçlerde veriyi veri gibi değerlendirmek çözüm bulmak için handikap olabilir. Mustafa hoca bir çalışmasında kerestelerin kurutma işlemi sonrasında eğilme probleminin önüne geçmek için, kerestelerin kurutma öncesi dijital fotoğraflarını veri olarak kullanmış. Verileri yorumlamak için de ormancılık alanında, ahşap bilgisi üzerine araştırmalar yapmış. Özetle veri analizinde, verileri doğru yorumlayabilmek için onları anlamlandırmak, yapılan analizler için açıklama üretmek ve analizi görselleştirerek anlatabilmek çok önemli. Verileri anlamlandırabilmek için de özniteliklerine ayırabilmek bu işin sanatı. Veriler Excel gibi uygulamalarda satır satır ayrılamadıklarında (resim, video, ses gibi), bu dosyalar unstructured (yapısal olmayan) veri tipi olarak değerlendiriliyor. Derin öğrenme algoritmalarında yapısal olmayan bu tip verilerle sonuç alınabiliyor, kendi içinde öznitelikler çıkarılabiliyor. Metin (yazı) verilerini de derin öğrenme metoduyla çalışabiliyor ve öznitelik çıkarmaya uğraşmıyoruz. Bununla birlikte yapılan veri analizleri neticesinde çıkan sonuçlar açıklama olmadan yeterli olamıyor ve derin öğrenme metodunda da çok fazla açıklama üretemiyoruz. Örneğin, tahmini yapıyoruz ama bunu veri görselleri ile desteklememiz gerekir. Problem çözümlerine örnek olarak, online perakende sektöründe sık kullanılan sıralama algoritmaları da derin öğrenme metodundan faydalanır. Burada müşterinin bıraktığı dijital ayak izi, yorumlar gibi verilerle birlikte hava durumu, promosyonlar gibi parametreler tüketicinin önüne satın alma olasılığının yüksek olduğu ürünleri getirebilir. Sonuç olarak hem geleneksel öğrenme hem de derin öğrenme, veri bazlı problemlere çözümler üretebilir. Bu noktada doğru sonuca varabilmek için hangi sistemin neyi yapı neyi yapamadığını bilmek çok önemlidir. Mesela elektrik piyasasında tahmin yöntemleri, sıralama algoritmasında ise makine öğrenmesi önemli enstrümanlardır. Günümüzde hala az ve/veya kirli veri ile uğraşmak ciddi miktarda insan kaynağı gerektirmektedir. Sistemi anlayabilmek ve sorunu tanımlayabilmek önemlidir. Yapısal ve yapısal olmayan veriler için alternatif yaklaşımlar geliştirmek halen gereklidir. Derin öğrenme metodu, yapısal olmayan veriler için uygun görünmektedir ancak; halen üzerinde çalışmalar devam etmektedir. Açık veri kaynaklarından elde edilebilecek zengin bilgi içeriği çalışmalarımıza fayda sağlayabilir. Verileri yorumlayabilmek hala önemlidir. Karar verme için kullanılan tahminler yüzde yüz doğru olmak zorunda değildir, bu bağlamda aralık tahminleri yapmak daha makul olabilmektedir. Takviyeli/pekiştirmeli öğrenme yaklaşımları karar verme için gitgide önemli hale geliyor. Optimizasyon problemlerinde makine öğrenmesi kullanımı araştırılıyor. Makine öğrenmesinde regresyon modelleri kullanılıyor ve MSE ile yakın tahminler görülebiliyor. Örneğin, kargo dağıtımı için her gün yeni bir optimizasyon yapabiliriz ama her gün problemi yeniden çözmek süreçleri uzatabilir. Bunun yerine, “Çözülmüş problemler üzerinden öğrenme, yeniden çözmenin yerini alabilir mi?” konusu tartışılmaktadır.
+-   Mustafa Gökçe Baydoğan hocamız, Boğaziçi Üniversitesi’nde öğretim görevlisi ve Algopoly adlı, veri alanında uzmanlaşmış şirketin kurucusu. Veri analitiği dersleri veriyor. Enerji ve lojistik alanlarında danışmanlık yapıyor. Akademik ve iş hayatında optimizasyon problemleri ile uğraşıyor. Karşılaştıkları problemlerde matematiksel modelleme ve simülasyon metotları ile çözümlemeler yapıyor. Problemlerin çözümleri deterministik yaklaşımlarla çözülemeyecek durumda olunca olasılıksal, stokastik yaklaşımlarla modelleme yaptığından bahsetti. Tabi günümüzde karşılaşılan problemlere ilişkin veriler büyüdükçe ve teknik imkanlar arttıkça, veri madenciliği ve veri analizleri ile çözümler üretmek mümkün oldu ve bu verilerin analizinde makine öğrenmesi de gitgide popüler hale geldi. İşletmelerde önce sorunlar belirleniyor, sorunu oluşturan nedenler araştırılıyor ve tespit ediliyor. Bu nedenlerle ilgili veriler ve gerekli bilgiler toplanıyor. Çözüm alternatifleri ve olası sonuçları birlikte belirleniyor. Bu çerçevede problemlerin çözümü için metotlar geliştiriliyor.
 
-## (3-b)
+-   Ne kadar simit satılacağı, hangi mağazada hangi üründen ne kadar bulundurulacağı gibi problemler tahmin yöntemleri ve optimizasyon teknikleri ile çözülüyor.
+
+-   Bu tip süreçlerde veriyi veri gibi değerlendirmek çözüm bulmak için handikap olabilir. Mustafa hoca bir çalışmasında kerestelerin kurutma işlemi sonrasında eğilme probleminin önüne geçmek için, kerestelerin kurutma öncesi dijital fotoğraflarını veri olarak kullanmış. Verileri yorumlamak için de ormancılık alanında, ahşap bilgisi üzerine araştırmalar yapmış. Özetle veri analizinde, verileri doğru yorumlayabilmek için onları anlamlandırmak, yapılan analizler için açıklama üretmek ve analizi görselleştirerek anlatabilmek çok önemli. Verileri anlamlandırabilmek için de özniteliklerine ayırabilmek bu işin sanatı. Veriler Excel gibi uygulamalarda satır satır ayrılamadıklarında (resim, video, ses gibi), bu dosyalar unstructured (yapısal olmayan) veri tipi olarak değerlendiriliyor. Derin öğrenme algoritmalarında yapısal olmayan bu tip verilerle sonuç alınabiliyor, kendi içinde öznitelikler çıkarılabiliyor. Metin (yazı) verilerini de derin öğrenme metoduyla çalışabiliyor ve öznitelik çıkarmaya uğraşmıyoruz. Bununla birlikte yapılan veri analizleri neticesinde çıkan sonuçlar açıklama olmadan yeterli olamıyor ve derin öğrenme metodunda da çok fazla açıklama üretemiyoruz. Örneğin, tahmini yapıyoruz ama bunu veri görselleri ile desteklememiz gerekir.
+
+-   Problem çözümlerine örnek olarak, online perakende sektöründe sık kullanılan sıralama algoritmaları da derin öğrenme metodundan faydalanır. Burada müşterinin bıraktığı dijital ayak izi, yorumlar gibi verilerle birlikte hava durumu, promosyonlar gibi parametreler tüketicinin önüne satın alma olasılığının yüksek olduğu ürünleri getirebilir.
+
+-   Sonuç olarak hem geleneksel öğrenme hem de derin öğrenme, veri bazlı problemlere çözümler üretebilir. Bu noktada doğru sonuca varabilmek için hangi sistemin neyi yapı neyi yapamadığını bilmek çok önemlidir. Mesela elektrik piyasasında tahmin yöntemleri, sıralama algoritmasında ise makine öğrenmesi önemli enstrümanlardır.
+
+-   Günümüzde hala az ve/veya kirli veri ile uğraşmak ciddi miktarda insan kaynağı gerektirmektedir. Sistemi anlayabilmek ve sorunu tanımlayabilmek önemlidir. Yapısal ve yapısal olmayan veriler için alternatif yaklaşımlar geliştirmek halen gereklidir. Derin öğrenme metodu, yapısal olmayan veriler için uygun görünmektedir ancak; halen üzerinde çalışmalar devam etmektedir. Açık veri kaynaklarından elde edilebilecek zengin bilgi içeriği çalışmalarımıza fayda sağlayabilir. Verileri yorumlayabilmek hala önemlidir. Karar verme için kullanılan tahminler yüzde yüz doğru olmak zorunda değildir, bu bağlamda aralık tahminleri yapmak daha makul olabilmektedir. Takviyeli/pekiştirmeli öğrenme yaklaşımları karar verme için gitgide önemli hale geliyor. Optimizasyon problemlerinde makine öğrenmesi kullanımı araştırılıyor. Makine öğrenmesinde regresyon modelleri kullanılıyor ve MSE ile yakın tahminler görülebiliyor.
+
+-   Örneğin, kargo dağıtımı için her gün yeni bir optimizasyon yapabiliriz ama her gün problemi yeniden çözmek süreçleri uzatabilir. Bunun yerine, “Çözülmüş problemler üzerinden öğrenme, yeniden çözmenin yerini alabilir mi?” konusu tartışılmaktadır.
+
+## (3-B) MTCARS
 
 ```{r}
 # mtcars veri setini yükle
@@ -45,4 +56,42 @@ for (col_name in colnames(mtcars))
 # apply ile Alternatif Bir Yaklaşım
 cat("\napply ile Alternatif Bir Yaklaşım:\n")
 apply(mtcars, 2, custom_summary)
+```
+
+## (3-C) DSLABS
+
+```{r}
+# dslabs paketini yüklenmeli (eğer yüklü değilse)
+installed.packages("library")
+installed.packages("dslabs")
+
+
+# dslabs paketinden "na_example" veri setini yükle:
+library(dslabs)
+data("na_example")
+
+# Veri setinin içeriğini gösterimi:
+print(na_example)
+
+# NA değerlerinin toplam sayısı:
+na_count <- sum(is.na(na_example))
+cat("NA Değerlerinin Toplam Sayısı:", na_count, "\n")
+
+# Tüm NA değerlerini ders numarası 665 ile değiştir:
+na_example_modified <- na_example
+na_example_modified[is.na(na_example_modified)] <- 665
+
+# Değiştirilmiş veri setini yeni bir değişken olarak kaydedilmesi:
+write.csv(na_example_modified, "na_example_modified.csv", row.names = FALSE)
+
+# Güncellenmiş veri setini gösterin
+print(na_example_modified)
+
+# NA değerlerinin yeni toplam sayısını belirtin
+na_count_new <- sum(is.na(na_example_modified))
+cat("Güncellenmiş Veri Setindeki NA Değerlerinin Toplam Sayısı:", na_count_new, "\n")
+
+# 665 numarasının kaç kez yer aldığını raporlayın
+count_665 <- sum(na_example_modified == 665, na.rm = TRUE)
+cat("Güncellenmiş Veri Setinde 665 Numarasının Toplam Sayısı:", count_665, "\n")
 ```
