@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Takım: İnci Taneleri",
     "section": "",
-    "text": "MUY660-İş Analitiği dersi takım sayfamıza hoş geldiniz.\nBu analitik çalışmalarımızı paylaşıyoruz.\nLütfen faaliyetlerimizi görmek için için bizi takipte kalın."
+    "text": "MUY660-İş Analitiği dersi takım sayfamıza hoş geldiniz.\nBu sayfada analitik çalışmalarımızı paylaşıyoruz.\nLütfen faaliyetlerimizi görmek için bizi takipte kalın."
   },
   {
     "objectID": "teammembers/volkansonmez.html",
@@ -194,14 +194,14 @@
     "href": "index.html#proje-adı",
     "title": "Takım: İnci Taneleri",
     "section": "Proje Adı",
-    "text": "Proje Adı\nMUY660-İş Analitiği iyileştirme çalışmaları (örnek)"
+    "text": "Proje Adı\nMUY660-İş Analitiği İyileştirme Çalışmaları (Örnek)"
   },
   {
     "objectID": "index.html#proje-konusu",
     "href": "index.html#proje-konusu",
     "title": "Takım: İnci Taneleri",
     "section": "Proje Konusu",
-    "text": "Proje Konusu\nÖrnek: Bu projede MUY660-İş Analitiği ders içeriğinin analitik yaklaşımlarla iyileştirilmesini hedefledik. Bu doğrultuda tüm üniversitelerdeki benzer derslerin verisini toplayarak bir veri seti oluşturduk Analiz için …….. yöntemleri kullanarak, ……. çalışmaları yaptık Sonuç olarak, MUY660-İş Analitiği dersinin dünyadaki tüm derslerden daha iyi olduğunu ve bu dersi aldığımız için çok mutlu olduğumuzu tespit ettik."
+    "text": "Proje Konusu\nÖrnek: Bu projede MUY660-İş Analitiği ders içeriğinin analitik yaklaşımlarla iyileştirilmesini hedefledik. Bu doğrultuda tüm üniversitelerdeki benzer derslerin verisini toplayarak bir veri seti oluşturduk. Analiz için …….. yöntemleri kullanarak, ……. çalışmaları yaptık. Sonuç olarak, MUY660-İş Analitiği dersinin dünyadaki tüm derslerden daha iyi olduğunu ve bu dersi aldığımız için çok mutlu olduğumuzu tespit ettik."
   },
   {
     "objectID": "index.html#veri-seti-hakkında-özet-bilgi",
@@ -215,7 +215,7 @@
     "href": "index.html#sonuçlar",
     "title": "Takım: İnci Taneleri",
     "section": "Sonuçlar",
-    "text": "Sonuçlar\nBurada key takeways verilmelidir. En az 3 en fazla 5 madde ile çarpıcı sonuçlar sunulmalıdır."
+    "text": "Sonuçlar\n(Burada key takeaways verilmelidir. En az 3 en fazla 5 madde ile çarpıcı sonuçlar sunulmalıdır.)"
   },
   {
     "objectID": "index.html#takım-üyeleri",
@@ -236,10 +236,7 @@
     "href": "takim.html",
     "title": "Takım Üyeleri",
     "section": "",
-    "text": "Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfalarına gitmek için sol menüyü veya aşağıdaki linkleri kullanabilirsiniz.\n\nTakım Üyeleri\n\nSelim Uğraş Fendoğlu\nMuhammed Emre Sendur\nMehmet Ali Gündoğan\nSebastian Szymański\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Takım Üyeleri"
-    ]
+    "text": "Takım üyelerimizin detaylı özgeçmişlerinin yer aldığı kişisel sayfalarına gitmek için sol menüyü veya aşağıdaki linkleri kullanabilirsiniz.\n\nTakım Üyeleri\n\nSelim Uğraş Fendoğlu\nMuhammed Emre Sendur\nMehmet Ali Gündoğan\nSebastian Szymański\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "proje.html",
@@ -539,11 +536,7 @@
     "href": "takim/selimfendoglu.html#işler",
     "title": "Selim Ugras FENDOGLU",
     "section": "İşler",
-    "text": "İşler\n\nIsdemir, Enerji Üretim ve İşletme Mühendisi\nBotaş, pozisyon yyy, yD1l yyy",
-    "crumbs": [
-      "Takım Üyeleri",
-      "Selim Ugras FENDOGLU"
-    ]
+    "text": "İşler\n\nIsdemir, Enerji Üretim ve İşletme Mühendisi, 2005 - 2006\nBOTAŞ, Başmühendis, 2007 - 2017\nBOTAŞ, Teknik İşler Müdürü, 2017 - 2018\nBOTAŞ, Mekanik Projeler Müdürü, 2018 - 2021\nBOTAŞ, Mühendislik ve Tasarım Müdürü, 2021 - 2022\nBOTAŞ, Dış Hizmetler Daire Başkan Yardımcısı, 2022 - Devam ediyor."
   },
   {
     "objectID": "takim/selimfendoglu.html#stajlar",
@@ -649,22 +642,14 @@
     "href": "takim/MehmetAliGundogan.html#işler",
     "title": "Mehmet Ali Gündoğan",
     "section": "İşler",
-    "text": "İşler\n\nEkinoks Software, pozisyon Sistem Test Tasarım Mühendisi, 2023 - Devam Ediyor.",
-    "crumbs": [
-      "Takım Üyeleri",
-      "Mehmet Ali Gündoğan"
-    ]
+    "text": "İşler\n\nEkinoks Software, pozisyon Sistem Test Tasarım Mühendisi, 2023 - Devam Ediyor."
   },
   {
     "objectID": "takim/MehmetAliGundogan.html#stajlar",
     "href": "takim/MehmetAliGundogan.html#stajlar",
     "title": "Mehmet Ali Gündoğan",
     "section": "Stajlar",
-    "text": "Stajlar\n\nKarel Elektronik, Elektrik Elektronik Mühendisliği Stajı, Temmuz 2021- Ağustos 2021\nMeteksan Savunma, Elektrik Elektronik Mühendisliği Stajı, Haziran 2020 - Temmuz 2020",
-    "crumbs": [
-      "Takım Üyeleri",
-      "Mehmet Ali Gündoğan"
-    ]
+    "text": "Stajlar\n\nKarel Elektronik, Elektrik Elektronik Mühendisliği Stajı, Temmuz 2021- Ağustos 2021\nMeteksan Savunma, Elektrik Elektronik Mühendisliği Stajı, Haziran 2020 - Temmuz 2020"
   },
   {
     "objectID": "takim/IremAVCI.html#işler",

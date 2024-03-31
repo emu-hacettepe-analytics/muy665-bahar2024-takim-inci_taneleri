@@ -5,9 +5,9 @@ sidebar: false
 
 MUY660-İş Analitiği dersi takım sayfamıza hoş geldiniz.
 
-Bu analitik çalışmalarımızı paylaşıyoruz.
+Bu sayfada analitik çalışmalarımızı paylaşıyoruz.
 
-Lütfen faaliyetlerimizi görmek için için bizi takipte kalın.
+Lütfen faaliyetlerimizi görmek için bizi takipte kalın.
 
 ## Takım Üyeleri
 
@@ -21,14 +21,14 @@ Lütfen faaliyetlerimizi görmek için için bizi takipte kalın.
 
 ## Proje Adı
 
-MUY660-İş Analitiği iyileştirme çalışmaları (örnek)
+MUY660-İş Analitiği İyileştirme Çalışmaları (Örnek)
 
 ## Proje Konusu
 
-Örnek: Bu projede MUY660-İş Analitiği ders içeriğinin analitik yaklaşımlarla iyileştirilmesini hedefledik. Bu doğrultuda tüm üniversitelerdeki benzer derslerin verisini toplayarak bir veri seti oluşturduk Analiz için ........ yöntemleri kullanarak, ....... çalışmaları yaptık Sonuç olarak, MUY660-İş Analitiği dersinin dünyadaki tüm derslerden daha iyi olduğunu ve bu dersi aldığımız için çok mutlu olduğumuzu tespit ettik.
+Örnek: Bu projede MUY660-İş Analitiği ders içeriğinin analitik yaklaşımlarla iyileştirilmesini hedefledik. Bu doğrultuda tüm üniversitelerdeki benzer derslerin verisini toplayarak bir veri seti oluşturduk. Analiz için ........ yöntemleri kullanarak, ....... çalışmaları yaptık. Sonuç olarak, MUY660-İş Analitiği dersinin dünyadaki tüm derslerden daha iyi olduğunu ve bu dersi aldığımız için çok mutlu olduğumuzu tespit ettik.
 
 ## Veri Seti Hakkında Özet Bilgi
 
 ## Sonuçlar
 
-Burada key takeways verilmelidir. En az 3 en fazla 5 madde ile çarpıcı sonuçlar sunulmalıdır.
+(Burada key takeaways verilmelidir. En az 3 en fazla 5 madde ile çarpıcı sonuçlar sunulmalıdır.)

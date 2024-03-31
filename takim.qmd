@@ -2,13 +2,13 @@
 title: "Takım Üyeleri"
 ---
 
-Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfalarına gitmek için sol menüyü veya aşağıdaki linkleri kullanabilirsiniz.
+Takım üyelerimizin detaylı özgeçmişlerinin yer aldığı kişisel sayfalarına gitmek için sol menüyü veya aşağıdaki linkleri kullanabilirsiniz.
 
 # Takım Üyeleri
 
 1.  [Selim Uğraş Fendoğlu](/takim/selimfendoglu.qmd)
 
-2.  [Muhammed Emre Sendur ](/takim/MuhammedEmreSendur.qmd)
+2.  [Muhammed Emre Sendur](/takim/MuhammedEmreSendur.qmd)
 
 3.  [Mehmet Ali Gündoğan](/takim/MehmetAliGundogan.qmd)
 
