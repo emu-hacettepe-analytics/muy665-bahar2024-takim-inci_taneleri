@@ -2,7 +2,7 @@
 title: " Selim Ugras FENDOGLU "
 ---
 
-![](/assets/images/selim_fendoglu.jpg){fig-align="center"}
+[![CV Görüntülemek İçin Tıklayınız](/assets/images/selim_fendoglu.jpg){fig-align="center" width="500"}](/assets/CV's/selimfendoglu_cv.pdf)
 
 # Eğitim
 
