@@ -2,7 +2,7 @@
 title: "Mehmet Ali Gündoğan"
 ---
 
-[![CV Görüntülemek İçin Tıklayınız](/assets/images/mehmet_ali_gundogan.jpg){fig-align="center" width="500"}](/assets/CV's/Mehmet Ali Gündoğan - CV .pdf)
+[![CV Görüntülemek İçin Tıklayınız](/assets/images/mehmet_ali_gundogan.jpg){fig-align="center" width="500"}](/assets/CV's/Mehmet%20Ali%20Gündoğan%20-%20CV%20.pdf)
 
 # Eğitim
 
