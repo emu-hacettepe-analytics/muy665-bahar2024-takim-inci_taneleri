@@ -6,7 +6,7 @@ title: "Muhammed Emre ŞENDUR"
 
 # Eğitim
 
--   Lisans, KIRIKKALE ÜNİVERSİTESİ, Türkiye, 09/2016 - 07/2021.
+-   Lisans,Bilgisayar Mühendisliği, KIRIKKALE ÜNİVERSİTESİ, Türkiye, 09/2016 - 07/2021.
 -   Yüksek Lisans, Endüstri Mühendisliği, Hacettepe Üniversitesi, Türkiye, 10/2023 - Devam ediyor.
 
 # İş Deneyimi
