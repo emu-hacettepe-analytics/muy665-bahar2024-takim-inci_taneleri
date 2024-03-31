@@ -33,7 +33,7 @@ title: "Muhammed Emre ŞENDUR"
 
 # Yetkinlikler
 
-R,Python, Jira, XML, WireShark
+R,Python, Jira, XML, WireShark,  Html, CSS, Php,C, C++, C#.Net, Java
 
 # Hobiler
 
