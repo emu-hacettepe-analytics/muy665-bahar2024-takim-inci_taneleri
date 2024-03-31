@@ -2,7 +2,7 @@
 title: "Muhammed Emre ŞENDUR"
 ---
 
-![](images/Muhammed_Emre_SENDUR.jpeg){fig-align="center" width="500"}
+[![Özgeçmişime ulaşmak için fotoğrafa tıklayınız.](images/Muhammed_Emre_SENDUR.jpeg){fig-align="center" width="500"}](/assets/CV's/MUHAMMED_EMRE_SENDUR_OZGECMIS.pdf)
 
 # Eğitim
 
