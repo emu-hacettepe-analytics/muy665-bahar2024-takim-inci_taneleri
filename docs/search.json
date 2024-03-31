@@ -321,13 +321,9 @@
   {
     "objectID": "portfolyo/calisma1.html",
     "href": "portfolyo/calisma1.html",
-    "title": "Çalışma 1",
+    "title": "Ödev-1",
     "section": "",
-    "text": "(Aşağıdakiler örnek olarak verilmiştir.)\nBu çalışmada 3 görevimiz var. Bu görevler….. Bunlara sırayla aşağıda cevap arıyoruz.",
-    "crumbs": [
-      "Portfolyo",
-      "Çalışma 1"
-    ]
+    "text": "(Aşağıdakiler örnek olarak verilmiştir.)\nBu çalışmada 5 görevimiz var. Bu görevler, GitHub Classroom reposundaki web sitemizin takım arkadaşlarımızın yer alacağı şekilde ayarlanması. Bunlara sırayla aşağıda cevap arıyoruz."
   },
   {
     "objectID": "proje.html#veri-kaynağı",
@@ -388,13 +384,9 @@
   {
     "objectID": "portfolyo/calisma1.html#a",
     "href": "portfolyo/calisma1.html#a",
-    "title": "Çalışma 1",
-    "section": "(a)",
-    "text": "(a)\n\n1 + 1\n\n[1] 2",
-    "crumbs": [
-      "Portfolyo",
-      "Çalışma 1"
-    ]
+    "title": "Ödev-1",
+    "section": "(3-A)",
+    "text": "(3-A)\nMustafa Gökçe Baydoğan hocamız, Boğaziçi Üniversitesi’nde öğretim görevlisi ve Algopoly adlı, veri alanında uzmanlaşmış şirketin kurucusu. Veri analitiği dersleri veriyor. Enerji ve lojistik alanlarında danışmanlık yapıyor. Akademik ve iş hayatında optimizasyon problemleri ile uğraşıyor. Karşılaştıkları problemlerde matematiksel modelleme ve simülasyon metotları ile çözümlemeler yapıyor. Problemlerin çözümleri deterministik yaklaşımlarla çözülemeyecek durumda olunca olasılıksal, stokastik yaklaşımlarla modelleme yaptığından bahsetti. Tabi günümüzde karşılaşılan problemlere ilişkin veriler büyüdükçe ve teknik imkanlar arttıkça, veri madenciliği ve veri analizleri ile çözümler üretmek mümkün oldu ve bu verilerin analizinde makine öğrenmesi de gitgide popüler hale geldi. İşletmelerde önce sorunlar belirleniyor, sorunu oluşturan nedenler araştırılıyor ve tespit ediliyor. Bu nedenlerle ilgili veriler ve gerekli bilgiler toplanıyor. Çözüm alternatifleri ve olası sonuçları birlikte belirleniyor. Bu çerçevede problemlerin çözümü için metotlar geliştiriliyor. Ne kadar simit satılacağı, hangi mağazada hangi üründen ne kadar bulundurulacağı gibi problemler tahmin yöntemleri ve optimizasyon teknikleri ile çözülüyor. Bu tip süreçlerde veriyi veri gibi değerlendirmek çözüm bulmak için handikap olabilir. Mustafa hoca bir çalışmasında kerestelerin kurutma işlemi sonrasında eğilme probleminin önüne geçmek için, kerestelerin kurutma öncesi dijital fotoğraflarını veri olarak kullanmış. Verileri yorumlamak için de ormancılık alanında, ahşap bilgisi üzerine araştırmalar yapmış. Özetle veri analizinde, verileri doğru yorumlayabilmek için onları anlamlandırmak, yapılan analizler için açıklama üretmek ve analizi görselleştirerek anlatabilmek çok önemli. Verileri anlamlandırabilmek için de özniteliklerine ayırabilmek bu işin sanatı. Veriler Excel gibi uygulamalarda satır satır ayrılamadıklarında (resim, video, ses gibi), bu dosyalar unstructured (yapısal olmayan) veri tipi olarak değerlendiriliyor. Derin öğrenme algoritmalarında yapısal olmayan bu tip verilerle sonuç alınabiliyor, kendi içinde öznitelikler çıkarılabiliyor. Metin (yazı) verilerini de derin öğrenme metoduyla çalışabiliyor ve öznitelik çıkarmaya uğraşmıyoruz. Bununla birlikte yapılan veri analizleri neticesinde çıkan sonuçlar açıklama olmadan yeterli olamıyor ve derin öğrenme metodunda da çok fazla açıklama üretemiyoruz. Örneğin, tahmini yapıyoruz ama bunu veri görselleri ile desteklememiz gerekir. Problem çözümlerine örnek olarak, online perakende sektöründe sık kullanılan sıralama algoritmaları da derin öğrenme metodundan faydalanır. Burada müşterinin bıraktığı dijital ayak izi, yorumlar gibi verilerle birlikte hava durumu, promosyonlar gibi parametreler tüketicinin önüne satın alma olasılığının yüksek olduğu ürünleri getirebilir. Sonuç olarak hem geleneksel öğrenme hem de derin öğrenme, veri bazlı problemlere çözümler üretebilir. Bu noktada doğru sonuca varabilmek için hangi sistemin neyi yapı neyi yapamadığını bilmek çok önemlidir. Mesela elektrik piyasasında tahmin yöntemleri, sıralama algoritmasında ise makine öğrenmesi önemli enstrümanlardır. Günümüzde hala az ve/veya kirli veri ile uğraşmak ciddi miktarda insan kaynağı gerektirmektedir. Sistemi anlayabilmek ve sorunu tanımlayabilmek önemlidir. Yapısal ve yapısal olmayan veriler için alternatif yaklaşımlar geliştirmek halen gereklidir. Derin öğrenme metodu, yapısal olmayan veriler için uygun görünmektedir ancak; halen üzerinde çalışmalar devam etmektedir. Açık veri kaynaklarından elde edilebilecek zengin bilgi içeriği çalışmalarımıza fayda sağlayabilir. Verileri yorumlayabilmek hala önemlidir. Karar verme için kullanılan tahminler yüzde yüz doğru olmak zorunda değildir, bu bağlamda aralık tahminleri yapmak daha makul olabilmektedir. Takviyeli/pekiştirmeli öğrenme yaklaşımları karar verme için gitgide önemli hale geliyor. Optimizasyon problemlerinde makine öğrenmesi kullanımı araştırılıyor. Makine öğrenmesinde regresyon modelleri kullanılıyor ve MSE ile yakın tahminler görülebiliyor. Örneğin, kargo dağıtımı için her gün yeni bir optimizasyon yapabiliriz ama her gün problemi yeniden çözmek süreçleri uzatabilir. Bunun yerine, “Çözülmüş problemler üzerinden öğrenme, yeniden çözmenin yerini alabilir mi?” konusu tartışılmaktadır."
   },
   {
     "objectID": "portfolyo/calisma2.html#a",
@@ -421,13 +413,9 @@
   {
     "objectID": "portfolyo/calisma1.html#b",
     "href": "portfolyo/calisma1.html#b",
-    "title": "Çalışma 1",
-    "section": "(b)",
-    "text": "(b)",
-    "crumbs": [
-      "Portfolyo",
-      "Çalışma 1"
-    ]
+    "title": "Ödev-1",
+    "section": "(3-b)",
+    "text": "(3-b)\n\n# mtcars veri setini yükle\ninstalled.packages(\"library\")\n\n     Package LibPath Version Priority Depends Imports LinkingTo Suggests\n     Enhances License License_is_FOSS License_restricts_use OS_type Archs\n     MD5sum NeedsCompilation Built\n\ninstalled.packages(\"mtcars\")\n\n     Package LibPath Version Priority Depends Imports LinkingTo Suggests\n     Enhances License License_is_FOSS License_restricts_use OS_type Archs\n     MD5sum NeedsCompilation Built\n\n# Özel Özet Fonksiyonu Yazın\ncustom_summary &lt;- function(vec) \n{\n  summary_list &lt;- list(\n    Ortalama = mean(vec),\n    Medyan = median(vec),\n    Standart_Sapma = sd(vec),\n    Minimum = min(vec),\n    Maksimum = max(vec)\n  )\n  return(summary_list)\n}\n\n# Fonksiyonu Döngü Kullanarak Uygulama\ncat(\"Fonksiyonu Döngü Kullanarak Uygulama:\\n\")\n\nFonksiyonu Döngü Kullanarak Uygulama:\n\nfor (col_name in colnames(mtcars)) \n{\n  cat(col_name, \":\\n\")\n  cat(\"------------------------------\\n\")\n  result &lt;- custom_summary(mtcars[[col_name]])\n  print(result)\n  cat(\"\\n\")\n}\n\nmpg :\n------------------------------\n$Ortalama\n[1] 20.09062\n\n$Medyan\n[1] 19.2\n\n$Standart_Sapma\n[1] 6.026948\n\n$Minimum\n[1] 10.4\n\n$Maksimum\n[1] 33.9\n\n\ncyl :\n------------------------------\n$Ortalama\n[1] 6.1875\n\n$Medyan\n[1] 6\n\n$Standart_Sapma\n[1] 1.785922\n\n$Minimum\n[1] 4\n\n$Maksimum\n[1] 8\n\n\ndisp :\n------------------------------\n$Ortalama\n[1] 230.7219\n\n$Medyan\n[1] 196.3\n\n$Standart_Sapma\n[1] 123.9387\n\n$Minimum\n[1] 71.1\n\n$Maksimum\n[1] 472\n\n\nhp :\n------------------------------\n$Ortalama\n[1] 146.6875\n\n$Medyan\n[1] 123\n\n$Standart_Sapma\n[1] 68.56287\n\n$Minimum\n[1] 52\n\n$Maksimum\n[1] 335\n\n\ndrat :\n------------------------------\n$Ortalama\n[1] 3.596563\n\n$Medyan\n[1] 3.695\n\n$Standart_Sapma\n[1] 0.5346787\n\n$Minimum\n[1] 2.76\n\n$Maksimum\n[1] 4.93\n\n\nwt :\n------------------------------\n$Ortalama\n[1] 3.21725\n\n$Medyan\n[1] 3.325\n\n$Standart_Sapma\n[1] 0.9784574\n\n$Minimum\n[1] 1.513\n\n$Maksimum\n[1] 5.424\n\n\nqsec :\n------------------------------\n$Ortalama\n[1] 17.84875\n\n$Medyan\n[1] 17.71\n\n$Standart_Sapma\n[1] 1.786943\n\n$Minimum\n[1] 14.5\n\n$Maksimum\n[1] 22.9\n\n\nvs :\n------------------------------\n$Ortalama\n[1] 0.4375\n\n$Medyan\n[1] 0\n\n$Standart_Sapma\n[1] 0.5040161\n\n$Minimum\n[1] 0\n\n$Maksimum\n[1] 1\n\n\nam :\n------------------------------\n$Ortalama\n[1] 0.40625\n\n$Medyan\n[1] 0\n\n$Standart_Sapma\n[1] 0.4989909\n\n$Minimum\n[1] 0\n\n$Maksimum\n[1] 1\n\n\ngear :\n------------------------------\n$Ortalama\n[1] 3.6875\n\n$Medyan\n[1] 4\n\n$Standart_Sapma\n[1] 0.7378041\n\n$Minimum\n[1] 3\n\n$Maksimum\n[1] 5\n\n\ncarb :\n------------------------------\n$Ortalama\n[1] 2.8125\n\n$Medyan\n[1] 2\n\n$Standart_Sapma\n[1] 1.6152\n\n$Minimum\n[1] 1\n\n$Maksimum\n[1] 8\n\n# apply ile Alternatif Bir Yaklaşım\ncat(\"\\napply ile Alternatif Bir Yaklaşım:\\n\")\n\n\napply ile Alternatif Bir Yaklaşım:\n\napply(mtcars, 2, custom_summary)\n\n$mpg\n$mpg$Ortalama\n[1] 20.09062\n\n$mpg$Medyan\n[1] 19.2\n\n$mpg$Standart_Sapma\n[1] 6.026948\n\n$mpg$Minimum\n[1] 10.4\n\n$mpg$Maksimum\n[1] 33.9\n\n\n$cyl\n$cyl$Ortalama\n[1] 6.1875\n\n$cyl$Medyan\n[1] 6\n\n$cyl$Standart_Sapma\n[1] 1.785922\n\n$cyl$Minimum\n[1] 4\n\n$cyl$Maksimum\n[1] 8\n\n\n$disp\n$disp$Ortalama\n[1] 230.7219\n\n$disp$Medyan\n[1] 196.3\n\n$disp$Standart_Sapma\n[1] 123.9387\n\n$disp$Minimum\n[1] 71.1\n\n$disp$Maksimum\n[1] 472\n\n\n$hp\n$hp$Ortalama\n[1] 146.6875\n\n$hp$Medyan\n[1] 123\n\n$hp$Standart_Sapma\n[1] 68.56287\n\n$hp$Minimum\n[1] 52\n\n$hp$Maksimum\n[1] 335\n\n\n$drat\n$drat$Ortalama\n[1] 3.596563\n\n$drat$Medyan\n[1] 3.695\n\n$drat$Standart_Sapma\n[1] 0.5346787\n\n$drat$Minimum\n[1] 2.76\n\n$drat$Maksimum\n[1] 4.93\n\n\n$wt\n$wt$Ortalama\n[1] 3.21725\n\n$wt$Medyan\n[1] 3.325\n\n$wt$Standart_Sapma\n[1] 0.9784574\n\n$wt$Minimum\n[1] 1.513\n\n$wt$Maksimum\n[1] 5.424\n\n\n$qsec\n$qsec$Ortalama\n[1] 17.84875\n\n$qsec$Medyan\n[1] 17.71\n\n$qsec$Standart_Sapma\n[1] 1.786943\n\n$qsec$Minimum\n[1] 14.5\n\n$qsec$Maksimum\n[1] 22.9\n\n\n$vs\n$vs$Ortalama\n[1] 0.4375\n\n$vs$Medyan\n[1] 0\n\n$vs$Standart_Sapma\n[1] 0.5040161\n\n$vs$Minimum\n[1] 0\n\n$vs$Maksimum\n[1] 1\n\n\n$am\n$am$Ortalama\n[1] 0.40625\n\n$am$Medyan\n[1] 0\n\n$am$Standart_Sapma\n[1] 0.4989909\n\n$am$Minimum\n[1] 0\n\n$am$Maksimum\n[1] 1\n\n\n$gear\n$gear$Ortalama\n[1] 3.6875\n\n$gear$Medyan\n[1] 4\n\n$gear$Standart_Sapma\n[1] 0.7378041\n\n$gear$Minimum\n[1] 3\n\n$gear$Maksimum\n[1] 5\n\n\n$carb\n$carb$Ortalama\n[1] 2.8125\n\n$carb$Medyan\n[1] 2\n\n$carb$Standart_Sapma\n[1] 1.6152\n\n$carb$Minimum\n[1] 1\n\n$carb$Maksimum\n[1] 8"
   },
   {
     "objectID": "takim/dusantadic.html",
@@ -791,5 +779,12 @@
       "Takım Üyeleri",
       "İrem AVCI"
     ]
+  },
+  {
+    "objectID": "portfolyo/calisma1.html#a-1",
+    "href": "portfolyo/calisma1.html#a-1",
+    "title": "Ödev-1",
+    "section": "(a)",
+    "text": "(a)\n\n1 + 1\n\n[1] 2"
   }
 ]
