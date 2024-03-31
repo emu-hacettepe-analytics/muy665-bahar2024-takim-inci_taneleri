@@ -2,7 +2,7 @@
 title: "İrem AVCI"
 ---
 
-![](/assets/images/IremAvci.jpg){fig-align="center"}
+![](images/IremAvci.jpg){fig-align="center" width="500"}
 
 # Eğitim
 
@@ -30,10 +30,7 @@ title: "İrem AVCI"
 
 # Projeler
 
-1.  TÜBİTAK 1001..........................
-
-# Yayınlar
-
+# 
 
 # Yetkinlikler
 
