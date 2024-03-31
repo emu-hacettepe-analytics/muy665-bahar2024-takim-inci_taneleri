@@ -2,7 +2,7 @@
 title: "İrem AVCI"
 ---
 
-![](images/IremAvci.jpg){fig-align="center" width="500"}
+![](images/IremAvci.jpeg){fig-align="center" width="500"}
 
 # Eğitim
 
