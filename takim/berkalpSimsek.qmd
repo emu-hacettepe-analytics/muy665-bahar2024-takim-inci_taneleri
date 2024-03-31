@@ -1,0 +1,40 @@
+---
+title: " Berkalp SIMSEK "
+---
+
+[![Özgeçmişime PDF biçiminde erişmek için fotoğrafa tıklayabilirsiniz.](/assets/images/clipboard-2301446966.png){fig-align="left"}](/assets/berkalpSimsek_CV.pdf)
+
+# Eğitim
+
+-   Yüksek Lisans, Hacettepe Üniversitesi, Endüstri Mühendisliği, Mühendislik Yönetimi, Devam ediyor.
+-   Lisans, TOBB Ekonomi ve Teknoloji Üniversitesi, Elektrik ve Elektronik Mühendisliği, 2019
+-   Lise, Ankara Atatürk Anadolu Lisesi, 2013
+
+# Deneyim
+
+## İşler
+
+1.  Togg, Fonksiyonel Emniyet Mühendisi, 2023 - Devam ediyor.
+
+2.  TUSAŞ, Ürün Emniyeti Mühendisi, 2022-2023
+
+3.  Karel Elektronik, Tasarım Mühendisi, 2021-2022
+
+4.  Karel Elektronik, Ar-Ge Mühendisi, 2019-2021
+
+## Stajlar
+
+1.  Karel Elektronik, Uzun Dönem Staj ve Aday Mühendislik, Mayıs 2018 - Ekim 2019
+2.  ISSD Bilişim Elektronik, Uzun Dönem Staj, Mayıs 2015 - Ağustos 2015
+
+# Yetkinlikler
+
+1.  Elektronik Ekipman ve Sistemlerin Emniyet ve Güvenilirlik Analizleri
+
+2.  Java, C++, Python, R Programlama
+
+3.  MATLAB
+
+# Hobiler
+
+Otomotiv, Popüler Bilim, Teknoloji, Fotoğrafçılık, Yüzme

@@ -222,7 +222,7 @@
     "href": "index.html#takım-üyeleri",
     "title": "Takım: İnci Taneleri",
     "section": "Takım Üyeleri",
-    "text": "Takım Üyeleri\n\nSelim Ugras Fendoğlu\nMuhammed Emre Şendur\nMehmet Ali Gündoğan\nSebastian Szymański"
+    "text": "Takım Üyeleri\n\nSelim Ugras Fendoğlu\nMuhammed Emre Şendur\nMehmet Ali Gündoğan\nBerkalp Şimşek"
   },
   {
     "objectID": "portfolyo.html",
@@ -236,7 +236,7 @@
     "href": "takim.html",
     "title": "Takım Üyeleri",
     "section": "",
-    "text": "Takım üyelerimizin detaylı özgeçmişlerinin yer aldığı kişisel sayfalarına gitmek için sol menüyü veya aşağıdaki linkleri kullanabilirsiniz.\n\nTakım Üyeleri\n\nSelim Uğraş Fendoğlu\nMuhammed Emre Sendur\nMehmet Ali Gündoğan\nSebastian Szymański\n\n\n\n\n\n Back to top"
+    "text": "Takım üyelerimizin detaylı özgeçmişlerinin yer aldığı kişisel sayfalarına gitmek için sol menüyü veya aşağıdaki linkleri kullanabilirsiniz.\n\nTakım Üyeleri\n\nSelim Uğraş Fendoğlu\nMuhammed Emre Sendur\nMehmet Ali Gündoğan\nBerkalp Şimşek\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "proje.html",
@@ -664,5 +664,26 @@
     "title": "İrem AVCI",
     "section": "Stajlar",
     "text": "Stajlar\n\nFirma aaa, pozisyon xx, yıl xxx\nFirma bbb, pozisyon yyy, yıl yyy"
+  },
+  {
+    "objectID": "takim/berkalpSimsek.html#işler",
+    "href": "takim/berkalpSimsek.html#işler",
+    "title": "Berkalp SIMSEK",
+    "section": "İşler",
+    "text": "İşler\n\nTogg, Fonksiyonel Emniyet Mühendisi, 2023 - Devam ediyor.\nTUSAŞ, Ürün Emniyeti Mühendisi, 2022-2023\nKarel Elektronik, Tasarım Mühendisi, 2021-2022\nKarel Elektronik, Ar-Ge Mühendisi, 2019-2021"
+  },
+  {
+    "objectID": "takim/berkalpSimsek.html#stajlar",
+    "href": "takim/berkalpSimsek.html#stajlar",
+    "title": "Berkalp SIMSEK",
+    "section": "Stajlar",
+    "text": "Stajlar\n\nKarel Elektronik, Uzun Dönem Staj ve Aday Mühendislik, Mayıs 2018 - Ekim 2019\nISSD Bilişim Elektronik, Uzun Dönem Staj, Mayıs 2015 - Ağustos 2015"
+  },
+  {
+    "objectID": "takim/berkalpSimsek.html",
+    "href": "takim/berkalpSimsek.html",
+    "title": "Berkalp SIMSEK",
+    "section": "",
+    "text": "Özgeçmişime PDF biçiminde erişmek için fotoğrafa tıklayabilirsiniz."
   }
 ]
