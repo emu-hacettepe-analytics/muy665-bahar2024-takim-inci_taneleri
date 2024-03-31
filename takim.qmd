@@ -13,3 +13,5 @@ Takım üyelerimizin detaylı özgeçmişlerinin yer aldığı kişisel sayfalar
 3.  [Mehmet Ali Gündoğan](/takim/MehmetAliGundogan.qmd)
 
 4.  [Berkalp Şimşek](/takim/berkalpSimsek.qmd)
+
+5.  [İrem Avcı](/takim/IremAVCI.qmd)
