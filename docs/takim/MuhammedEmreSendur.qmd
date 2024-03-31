@@ -2,11 +2,11 @@
 title: "Muhammed Emre ŞENDUR"
 ---
 
-![](/assets/images/Muhammed_Emre_SENDUR.jpeg){fig-align="center"}
+![](images/Muhammed_Emre_SENDUR.jpeg){fig-align="center" width="500"}
 
 # Eğitim
 
--   Lisans, KIRIKKALE ÜNİVERSİTESİ, Türkiye, 09/2016 - 07/2021.
+-   Lisans,Bilgisayar Mühendisliği, KIRIKKALE ÜNİVERSİTESİ, Türkiye, 09/2016 - 07/2021.
 -   Yüksek Lisans, Endüstri Mühendisliği, Hacettepe Üniversitesi, Türkiye, 10/2023 - Devam ediyor.
 
 # İş Deneyimi
@@ -33,7 +33,7 @@ title: "Muhammed Emre ŞENDUR"
 
 # Yetkinlikler
 
-R, Quarto, Git, Python, Jira, XML, WireShark
+R,Python, Jira, XML, WireShark, Html, CSS, Php,C, C++, C#.Net, Java
 
 # Hobiler
 

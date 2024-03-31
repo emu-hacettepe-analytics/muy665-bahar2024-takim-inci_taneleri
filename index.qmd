@@ -19,6 +19,8 @@ Lütfen faaliyetlerimizi görmek için bizi takipte kalın.
 
 4.  [Berkalp Şimşek](/takim/berkalpSimsek.qmd)
 
+5.  [İrem Avcı](/takim/IremAVCI.qmd)
+
 ## Proje Adı
 
 MUY660-İş Analitiği İyileştirme Çalışmaları (Örnek)
