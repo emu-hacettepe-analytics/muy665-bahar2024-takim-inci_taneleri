@@ -2,7 +2,7 @@
 title: "Muhammed Emre ŞENDUR"
 ---
 
-![](/assets/images/Muhammed_Emre_SENDUR.jpeg){fig-align="center"}
+![](images/Muhammed_Emre_SENDUR.jpeg){fig-align="center" width="500"}
 
 # Eğitim
 
@@ -33,7 +33,7 @@ title: "Muhammed Emre ŞENDUR"
 
 # Yetkinlikler
 
-R,Python, Jira, XML, WireShark,  Html, CSS, Php,C, C++, C#.Net, Java
+R,Python, Jira, XML, WireShark, Html, CSS, Php,C, C++, C#.Net, Java
 
 # Hobiler
 
