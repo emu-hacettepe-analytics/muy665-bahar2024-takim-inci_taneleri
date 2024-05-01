@@ -2,55 +2,39 @@
 title: "İrem AVCI"
 ---
 
-[![CV Görüntülemek İçin Tıklayınız](/assets/images/IremAvci.jpg){fig-align="center" width="500"}s](/assets/CV's/Irem_Avci_CV.pdf)
+[![CV Görüntülemek İçin Tıklayınız](/assets/images/IremAvci.jpg){fig-align="center" width="500"}](/assets/CV's/Irem_Avci_CV.pdf)
 
 # Eğitim
 
--   Yüksek Lisans
-	Hacettepe Üniversitesi - Mühendislik Yönetimi
-	10/2023 - Halen
-	
--   Lisans
-	Başkent Üniversitesi - Biyomedikal Mühendisliği
-	09/2016 - 07/2021
-	
--   Lise
-	75.Yıl Anadolu Lisesi
-	10/2010 - 06/2014
+-   Yüksek Lisans Hacettepe Üniversitesi - Mühendislik Yönetimi 10/2023 - Halen
+
+-   Lisans Başkent Üniversitesi - Biyomedikal Mühendisliği 09/2016 - 07/2021
+
+-   Lise 75.Yıl Anadolu Lisesi 10/2010 - 06/2014
 
 # İş Deneyimi
 
 ## İşler
 
-1.  BİTES Savunma Havacılık ve Uzay Tekn. Yazılım Elekt. Tic. AŞ
-	03/2023-Halen
-	Proje Mühendisi
-	
-2.  ODS Consulting Group 
-	05/2022-03/2023
-	Proje Geliştirme Danışmanı
-	
-3.  Vector Bilimse Test Cihazları
-	08/2020-01/2022
-	Ar-Ge Mühendisi
+1.  BİTES Savunma Havacılık ve Uzay Tekn. Yazılım Elekt. Tic. AŞ 03/2023-Halen Proje Mühendisi
 
-4.  AIV Labs/Psaron HTI
-	10/2019-04/2020
-	Aday Mühendis
+2.  ODS Consulting Group 05/2022-03/2023 Proje Geliştirme Danışmanı
+
+3.  Vector Bilimse Test Cihazları 08/2020-01/2022 Ar-Ge Mühendisi
+
+4.  AIV Labs/Psaron HTI 10/2019-04/2020 Aday Mühendis
 
 ## Stajlar
 
-1.  Ekolsan Medikal ve Elektronik Cihazlar
-	06/2019-08/2019
+1.  Ekolsan Medikal ve Elektronik Cihazlar 06/2019-08/2019
 
-2.  Koru Hastanesi
-	06/2018-08/2018
+2.  Koru Hastanesi 06/2018-08/2018
 
 # Projeler
 
-1. 2019 - Hava Akışının İncelenmesi için Optik Ölçüm Sisteminin Geliştirilmesi
+1.  2019 - Hava Akışının İncelenmesi için Optik Ölçüm Sisteminin Geliştirilmesi
 
-2. 2019 - PIR Hareket Algılama Sensörü ile Egzersiz Takibi
+2.  2019 - PIR Hareket Algılama Sensörü ile Egzersiz Takibi
 
 # 
 
@@ -61,4 +45,5 @@ R, Quarto, Git, Python, MS Project, JIRA, MS Office, Minitab, GIMP, Ardunio, Aut
 Proje Yöetimi, İş Planı Hazırlama, Takım Çalışması, Bütçe Planlama, Risk Yönetimi, İç ve Dış Paydaş Yönetimi
 
 # Hobiler
+
 Sanat, Takım Oyunları
