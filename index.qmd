@@ -3,6 +3,8 @@ title: "Takım: İnci Taneleri"
 sidebar: false
 ---
 
+![Grup Fotografı](assets/images/Inci_Tanleri_Grup_Foto.jpg){fig-align="center" width="512"}
+
 MUY660-İş Analitiği dersi takım sayfamıza hoş geldiniz.
 
 Bu sayfada analitik çalışmalarımızı paylaşıyoruz.
