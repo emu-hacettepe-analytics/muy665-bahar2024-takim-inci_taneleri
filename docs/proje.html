@@ -122,7 +122,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#veri-kaynağı" id="toc-veri-kaynağı" class="nav-link" data-scroll-target="#veri-kaynağı"><span class="header-section-number">2.1</span> Veri Kaynağı</a></li>
   <li><a href="#veri-hakkında-genel-bilgiler" id="toc-veri-hakkında-genel-bilgiler" class="nav-link" data-scroll-target="#veri-hakkında-genel-bilgiler"><span class="header-section-number">2.2</span> Veri Hakkında Genel Bilgiler</a></li>
   <li><a href="#tercih-sebebi" id="toc-tercih-sebebi" class="nav-link" data-scroll-target="#tercih-sebebi"><span class="header-section-number">2.3</span> Tercih Sebebi</a></li>
-  <li><a href="#ön-işleme" id="toc-ön-işleme" class="nav-link" data-scroll-target="#ön-işleme"><span class="header-section-number">2.4</span> Ön İşleme</a></li>
+  <li><a href="#verilerin-ön-işlemelerin-yapılması" id="toc-verilerin-ön-işlemelerin-yapılması" class="nav-link" data-scroll-target="#verilerin-ön-işlemelerin-yapılması"><span class="header-section-number">2.4</span> Verilerin Ön İşlemelerin Yapılması</a></li>
   </ul></li>
   <li><a href="#analiz" id="toc-analiz" class="nav-link" data-scroll-target="#analiz"><span class="header-section-number">3</span> Analiz</a>
   <ul class="collapse">
@@ -196,9 +196,33 @@ ul.task-list li input[type="checkbox"] {
 <li><p><strong>Proje Gereksinimleri ve Amaçları</strong>: Projemizin gereksinimleri doğrultusunda, enerji üretimi verilerini analiz etmek önemliydi. Bu veri seti, projemizin amaçlarına uygun bir şekilde, analiz yapmak için uygun bir temel sağlıyor.</p></li>
 </ol>
 </section>
-<section id="ön-işleme" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="ön-işleme"><span class="header-section-number">2.4</span> Ön İşleme</h2>
-<p>xxxxxx</p>
+<section id="verilerin-ön-işlemelerin-yapılması" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="verilerin-ön-işlemelerin-yapılması"><span class="header-section-number">2.4</span> Verilerin Ön İşlemelerin Yapılması</h2>
+<p>Veri analizi sürecinde, verinin doğru ve güvenilir sonuçlar üretmesi için ön işleme adımları oldukça önemlidir. Bu adımlar, veri setinin temizlenmesi, eksik değerlerin doldurulması ve gerekiyorsa verinin dönüştürülmesi gibi işlemleri içerir. İşte veri ön işleme adı altında gerçekleştirdiğimiz detaylı işlemler:</p>
+<ol type="1">
+<li><p><strong>Veri Temizleme</strong>:</p>
+<ul>
+<li><p>Veri setindeki gereksiz veya tutarsız verileri belirleyerek kaldırdık.</p></li>
+<li><p>Anlamsız veya yanlış verileri düzeltmek için veri setini inceledik ve düzenledik.</p></li>
+<li><p>Veri setindeki gereksiz sütunları (değişkenleri) kaldırdık veya gereksiz gözlemleri (satırları) sildik.</p></li>
+</ul></li>
+<li><p><strong>Eksik Veri Analizi ve Doldurma</strong>:</p>
+<ul>
+<li><p>Eksik verileri belirleyerek, eksik veri analizi yaptık ve eksik veri sayısını ve dağılımını değerlendirdik.</p></li>
+<li><p>Eksik verileri uygun bir yöntemle doldurarak veri kaybını minimize ettik. Örneğin, eksik sayısal verileri ortalama veya medyan değerleri ile doldurduk, eksik kategorik verileri mod değerleriyle doldurduk veya eksik verileri tahmin etmek için makine öğrenimi modelleri kullandık.</p></li>
+</ul></li>
+<li><p><strong>Veri Dönüşümleri</strong>:</p>
+<ul>
+<li><p>Kategorik değişkenleri sayısal değerlere dönüştürdük. Bu, makine öğrenimi modellerinin kullanılabilirliğini artırabilir.</p></li>
+<li><p>Gerektiğinde, sayısal değişkenlerin dağılımlarını dönüştürerek normal dağılıma daha yakın hale getirdik. Bu, model performansını iyileştirebilir.</p></li>
+</ul></li>
+<li><p><strong>Aykırı Değerleri İncelenmesi ve İşlenmesi</strong>:</p>
+<ul>
+<li><p>Aykırı değerleri belirleyerek, bu değerlerin neden kaynaklandığını ve nasıl işlenebileceğini inceledik.</p></li>
+<li><p>Aykırı değerleri düzeltmek veya kaldırmak için uygun yöntemleri kullandık. Örneğin, aykırı değerleri ortalama veya medyan değerleri ile değiştirdik veya sınırladık.</p></li>
+</ul></li>
+</ol>
+<p>Bu ön işleme adımları, veri setimizi analiz etmeden önce temizlememizi ve hazırlamamızı sağlar. Doğru ön işleme adımları kullanılarak, veri setimizin kalitesini artırabilir ve sonuçlarımızın güvenilirliğini sağlayabiliriz</p>
 </section>
 </section>
 <section id="analiz" class="level1" data-number="3">

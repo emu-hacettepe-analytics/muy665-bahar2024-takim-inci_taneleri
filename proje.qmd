@@ -55,9 +55,37 @@ Bu amaç doğrultusunda, enerji üretimi verilerini analiz etmek için bir veri 
 
 5.  **Proje Gereksinimleri ve Amaçları**: Projemizin gereksinimleri doğrultusunda, enerji üretimi verilerini analiz etmek önemliydi. Bu veri seti, projemizin amaçlarına uygun bir şekilde, analiz yapmak için uygun bir temel sağlıyor.
 
-## Ön İşleme
+## Verilerin Ön İşlemelerin Yapılması
 
-xxxxxx
+Veri analizi sürecinde, verinin doğru ve güvenilir sonuçlar üretmesi için ön işleme adımları oldukça önemlidir. Bu adımlar, veri setinin temizlenmesi, eksik değerlerin doldurulması ve gerekiyorsa verinin dönüştürülmesi gibi işlemleri içerir. İşte veri ön işleme adı altında gerçekleştirdiğimiz detaylı işlemler:
+
+1.  **Veri Temizleme**:
+
+    -   Veri setindeki gereksiz veya tutarsız verileri belirleyerek kaldırdık.
+
+    -   Anlamsız veya yanlış verileri düzeltmek için veri setini inceledik ve düzenledik.
+
+    -   Veri setindeki gereksiz sütunları (değişkenleri) kaldırdık veya gereksiz gözlemleri (satırları) sildik.
+
+2.  **Eksik Veri Analizi ve Doldurma**:
+
+    -   Eksik verileri belirleyerek, eksik veri analizi yaptık ve eksik veri sayısını ve dağılımını değerlendirdik.
+
+    -   Eksik verileri uygun bir yöntemle doldurarak veri kaybını minimize ettik. Örneğin, eksik sayısal verileri ortalama veya medyan değerleri ile doldurduk, eksik kategorik verileri mod değerleriyle doldurduk veya eksik verileri tahmin etmek için makine öğrenimi modelleri kullandık.
+
+3.  **Veri Dönüşümleri**:
+
+    -   Kategorik değişkenleri sayısal değerlere dönüştürdük. Bu, makine öğrenimi modellerinin kullanılabilirliğini artırabilir.
+
+    -   Gerektiğinde, sayısal değişkenlerin dağılımlarını dönüştürerek normal dağılıma daha yakın hale getirdik. Bu, model performansını iyileştirebilir.
+
+4.  **Aykırı Değerleri İncelenmesi ve İşlenmesi**:
+
+    -   Aykırı değerleri belirleyerek, bu değerlerin neden kaynaklandığını ve nasıl işlenebileceğini inceledik.
+
+    -   Aykırı değerleri düzeltmek veya kaldırmak için uygun yöntemleri kullandık. Örneğin, aykırı değerleri ortalama veya medyan değerleri ile değiştirdik veya sınırladık.
+
+Bu ön işleme adımları, veri setimizi analiz etmeden önce temizlememizi ve hazırlamamızı sağlar. Doğru ön işleme adımları kullanılarak, veri setimizin kalitesini artırabilir ve sonuçlarımızın güvenilirliğini sağlayabiliriz
 
 # Analiz
 

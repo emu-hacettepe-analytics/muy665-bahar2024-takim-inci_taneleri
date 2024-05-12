@@ -329,5 +329,12 @@
     "title": "Zamanın Akışında Enerji: Türkiye’nin Enerji Kaynakları Üzerine Dinamik Bir Analiz",
     "section": "",
     "text": "Projemizle ilgili güncellemelerden haberdar olmak için bu alanı takip edin.\n(Aşağıdaki başlıklar örnek olarak verilmiştir; lütfen gerektiği şekilde düzenlemekten çekinmeyin.)"
+  },
+  {
+    "objectID": "proje.html#verilerin-ön-işlemelerin-yapılması",
+    "href": "proje.html#verilerin-ön-işlemelerin-yapılması",
+    "title": "Zamanın Akışında Enerji: Türkiye’nin Enerji Kaynakları Üzerine Dinamik Bir Analiz",
+    "section": "2.4 Verilerin Ön İşlemelerin Yapılması",
+    "text": "2.4 Verilerin Ön İşlemelerin Yapılması\nVeri analizi sürecinde, verinin doğru ve güvenilir sonuçlar üretmesi için ön işleme adımları oldukça önemlidir. Bu adımlar, veri setinin temizlenmesi, eksik değerlerin doldurulması ve gerekiyorsa verinin dönüştürülmesi gibi işlemleri içerir. İşte veri ön işleme adı altında gerçekleştirdiğimiz detaylı işlemler:\n\nVeri Temizleme:\n\nVeri setindeki gereksiz veya tutarsız verileri belirleyerek kaldırdık.\nAnlamsız veya yanlış verileri düzeltmek için veri setini inceledik ve düzenledik.\nVeri setindeki gereksiz sütunları (değişkenleri) kaldırdık veya gereksiz gözlemleri (satırları) sildik.\n\nEksik Veri Analizi ve Doldurma:\n\nEksik verileri belirleyerek, eksik veri analizi yaptık ve eksik veri sayısını ve dağılımını değerlendirdik.\nEksik verileri uygun bir yöntemle doldurarak veri kaybını minimize ettik. Örneğin, eksik sayısal verileri ortalama veya medyan değerleri ile doldurduk, eksik kategorik verileri mod değerleriyle doldurduk veya eksik verileri tahmin etmek için makine öğrenimi modelleri kullandık.\n\nVeri Dönüşümleri:\n\nKategorik değişkenleri sayısal değerlere dönüştürdük. Bu, makine öğrenimi modellerinin kullanılabilirliğini artırabilir.\nGerektiğinde, sayısal değişkenlerin dağılımlarını dönüştürerek normal dağılıma daha yakın hale getirdik. Bu, model performansını iyileştirebilir.\n\nAykırı Değerleri İncelenmesi ve İşlenmesi:\n\nAykırı değerleri belirleyerek, bu değerlerin neden kaynaklandığını ve nasıl işlenebileceğini inceledik.\nAykırı değerleri düzeltmek veya kaldırmak için uygun yöntemleri kullandık. Örneğin, aykırı değerleri ortalama veya medyan değerleri ile değiştirdik veya sınırladık.\n\n\nBu ön işleme adımları, veri setimizi analiz etmeden önce temizlememizi ve hazırlamamızı sağlar. Doğru ön işleme adımları kullanılarak, veri setimizin kalitesini artırabilir ve sonuçlarımızın güvenilirliğini sağlayabiliriz"
   }
 ]
