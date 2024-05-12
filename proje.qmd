@@ -89,7 +89,113 @@ Bu ön işleme adımları, veri setimizi analiz etmeden önce temizlememizi ve h
 
 # Analiz
 
-xxxxxx
+Bu kapsamda 8 farklı grafik ile elimdeki veri setini analiz edeceğiz.
+
+## 1-Haftaiçi ve Haftasonu Gerçekleşen Üretim Grafiğinin Aylara Göre Dağılımı
+
+![](portfolyo/Proje/1-Haftaiçi-HaftaSonu.png){fig-align="center"}
+
+```{r}
+install.packages("ggplot2")
+install.packages("dplyr")
+install.packages("lubridate")
+install.packages("scales")
+
+# Gerekli kütüphaneleri yüklemeniz gerekmektedir.
+library(ggplot2)
+library(dplyr)
+library(lubridate)
+library(scales) # Binlik ayırıcılar için scales kütüphanesi
+
+# Veriyi doğru kodlama ile okuyun
+data <- read.csv("../muy665-bahar2024-takim-inci_taneleri/ElkUrtm23.csv", fileEncoding="UTF-8-BOM") #dosyayolunu kendi dosya yolunuza göre güncellemelisiniz.
+
+# Sütun adlarını düzeltiyoruz
+names(data)[names(data) == "ï..Tarih"] <- "Tarih"
+
+# Tarih sütununu gün.ay.yıl formatına çeviriyoruz
+data$Tarih <- as.Date(data$Tarih, format="%d.%m.%Y")
+
+# NA değerlerini veri setinden çıkarın
+data <- na.omit(data)
+
+# Hafta sonu/hafta içi ve ay bilgilerini çıkarın
+data$GunTipi <- ifelse(wday(data$Tarih) %in% c(1, 7), "Hafta Sonu", "Hafta İçi")
+data$Ay <- month(data$Tarih, label = TRUE, locale = "Turkish")
+
+# Ay ve gün tipine göre gruplayın ve toplamı alın, gruplamayı kaldırın
+monthly_data <- data %>%
+  group_by(Ay, GunTipi) %>%
+  summarise(Toplam = sum(Toplam, na.rm = TRUE), .groups = "drop")
+
+# Grafik çizin
+ggplot(monthly_data, aes(x=Ay, y=Toplam, fill=GunTipi)) +
+  geom_bar(stat="identity", position="dodge") +
+  labs(title="Aylık Toplam Elektrik Üretimi: Hafta İçi vs Hafta Sonu",
+       x="Ay", y="Toplam Elektrik (MWh)") +
+  scale_y_continuous(labels = scales::comma) + # Binlik ayırıcılar ekleniyor
+  scale_fill_manual(values=c("darkblue", "orange")) +
+  theme_minimal()
+```
+
+## 2-Üretim Türüne Göre Mevsimsel Dağılım Grafiği
+
+![](portfolyo/Proje/2-Üretim_Türüne_Göre_Mevsimsel.png){fig-align="center"}
+
+Grafiğimiz, her ay için yenilenebilir enerji kaynakları ile fosil yakıt kaynaklarının toplam elektrik üretim miktarlarını karşılaştırıyor. Yenilenebilir enerji kaynakları, çevresel etkileri düşük ve sürdürülebilir bir enerji sağladığı için önemlidir. Bu kaynaklar arasında barajlı, akarsu, rüzgar, güneş ve biyokütle gibi çeşitli kaynaklar yer alıyor. Grafiğimizde bu kaynakların aylık üretim toplamları mavi barlarla gösteriliyor.
+
+Diğer yandan, fosil yakıt kaynakları arasında doğalgaz, linyit, ithal kömür, fuel oil ve taş kömürü bulunuyor. Fosil yakıtlar, karbon emisyonlarına neden olarak çevresel sorunlara katkıda bulunmalarına rağmen, hala dünya genelinde enerji üretiminin önemli bir kısmını oluştururlar. Grafiğimizde fosil yakıt kaynaklarının aylık üretim toplamları turuncu barlarla gösteriliyor.
+
+Grafiğimiz, her iki enerji türünün aylık üretim miktarlarını yan yana göstererek, zaman içindeki üretim değişikliklerini ve eğilimleri izlemeyi kolaylaştırır. Örneğin, belirli aylarda yenilenebilir enerji üretiminin artışı veya azalışı, politikaların, mevsimsel koşulların veya piyasa dinamiklerinin bir sonucu olabildiğini düşünmekteyiz. Bu grafik, enerji üretimindeki değişiklikleri anlamak için önemlidir.
+
+```{r}
+install.packages("ggplot2")
+install.packages("dplyr")
+install.packages("tidyr")
+
+
+# Gerekli kütüphaneleri yükleyin
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+
+# Veriyi doğru kodlama ile okuyun
+data <- read.csv("../Downloads/ElkUrtm23.csv", fileEncoding="UTF-8-BOM")#dosyayolunu kendi dosya yolunuza göre güncellemelisiniz.
+
+# Sütun adlarını düzeltiyoruz
+names(data)[names(data) == "ï..Tarih"] <- "Tarih"
+
+# Tarih sütununu gün.ay.yıl formatına çeviriyoruz
+data$Tarih <- as.Date(data$Tarih, format = "%d.%m.%Y")
+
+# Ay ve mevsim bilgilerini ekleyin
+data$Ay <- as.numeric(format(data$Tarih, "%m"))
+data$Mevsim <- ifelse(data$Ay %in% c(12, 1, 2), "Kış",
+                      ifelse(data$Ay %in% c(3, 4, 5), "İlkbahar",
+                             ifelse(data$Ay %in% c(6, 7, 8), "Yaz", "Sonbahar")))
+
+# Veriyi uzun formatına çeviriyoruz
+long_data <- data %>%
+  select(Mevsim, DogalGaz, Barajli, Linyit, Akarsu, IthalKomur, Ruzgar, Gunes, FuelOil, Jeotermal, TasKomur, Biyokutle, Uluslararasi, AtikIsi) %>%
+  pivot_longer(cols = -Mevsim, names_to = "UretimTuru", values_to = "Miktar")
+
+# Mevsimlere ve üretim türlerine göre gruplayıp toplam üretimi hesaplıyoruz
+seasonal_data <- long_data %>%
+  group_by(Mevsim, UretimTuru) %>%
+  summarise(ToplamMiktar = sum(Miktar, na.rm = TRUE))
+
+# Grafik çizdiriyoruz
+ggplot(seasonal_data, aes(x = Mevsim, y = ToplamMiktar, fill = UretimTuru)) +
+  geom_bar(stat = "identity", position = position_dodge()) +
+  scale_y_continuous(labels = label_comma()) +  # y eksenindeki sayıları virgülle ayrılmış biçimde göster
+  labs(title = "Mevsimlere Göre Enerji Üretim Türleri",
+       x = "Mevsim",
+       y = "Toplam Üretim (MWh)",
+       fill = "Üretim Türü") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+```
 
 ## Keşifsel Veri Analizi
 
