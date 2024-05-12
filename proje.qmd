@@ -3,7 +3,7 @@ title: "Zamanın Akışında Enerji: Türkiye'nin Enerji Kaynakları Üzerine Di
 number-sections: true
 ---
 
-## ***İNCİ TANELERİ  Grubu Proje Sayfasına Hoşgeldiniz.***
+***İNCİ TANELERİ Grubu Proje Sayfasına Hoşgeldiniz***
 
 *Projemizle ilgili güncellemelerden haberdar olmak için bu alanı takip edin.*
 
@@ -11,7 +11,21 @@ number-sections: true
 
 # Proje Genel Bakış ve Kapsamı
 
-xxxxxx
+Bu proje kapsamında, yenilenebilir ve karbon bazlı enerji üretim verilerini detaylı bir şekilde analiz etmeyi hedefliyoruz.
+
+Amacımız, veri analizi ve görselleştirme tekniklerini kullanarak, enerji üretimi üzerindeki mevsimsel değişimleri, trendleri ve ilişkileri ortaya çıkarmak ve değerlendirmektir.
+
+**1. Veri Toplama ve Hazırlık:** İlk olarak, enerji üretimi verilerini titizlikle topladık ve ilgili verilerin işlenebilecek hale gelmesi için çalıştık. Bu aşamada, veri setini temizleme, eksik değerleri doldurma ve format değişikliklerini yaparak veri setini analiz için hazır hale getirmiş olduk.
+
+**2. Aylık Toplam Üretim Analizi:** Veri setimiz, her ayın toplam yenilenebilir ve karbon bazlı enerji üretimini içeriyor. Bu aşamada, aylık üretim verilerini inceleyerek hangi ayların daha yüksek veya düşük üretim seviyelerine sahip olduğunu belirleyecek ve bu eğilimleri analiz edeceğiz.
+
+**3. Mevsimsel Değişim Analizi:** Ayları mevsimlere göre gruplayarak, mevsimsel değişimlerin enerji üretimi üzerindeki etkilerini değerlendireceğiz. Bu analiz, mevsimler arasındaki enerji üretimi farklarını ve hangi mevsimlerde yenilenebilir/karbon bazlı enerji kaynaklarının daha fazla kullanıldığını belirleyecektir.
+
+**4. Grafiksel Temsiller ve Trend Analizi:** Veri setindeki eğilimleri daha iyi görselleştirmek için çeşitli grafikler kullanacağız. Bar grafikleri, çizgi grafikleri ve diğer görsel araçlar kullanarak veri setindeki trendleri görselleştirecek ve bu trendleri analiz edeceğiz.
+
+**5. Sonuçların İncelenmesi ve Yorumlanması:** Projemizin sonuçlarını dikkatlice inceleyip yorumlayacağız. Enerji üretimi üzerindeki mevsimsel değişimlerin ve trendlerin, iş stratejilerine, enerji politikalarına ve sürdürülebilirlik çabalarına olan olası etkilerini detaylı bir şekilde tartışacağız.
+
+Bu proje kapsamında, enerji sektöründeki veri odaklı bir yaklaşım kullanarak enerji üretimi verilerini analiz etme ve yorumlama konusunda bir çerçeve sunmayı amaçlamaktadır.
 
 # Veri
 
