@@ -29,11 +29,11 @@ Bu proje kapsamında, enerji sektöründeki veri odaklı bir yaklaşım kullanar
 
 # Veri
 
-xxxxxx
+2023 Yılı Elektrik Üretiminin Kaynak Bazlı Saatlik Veri Tabanı
 
 ## Veri Kaynağı
 
-xxxxxx
+EPİAŞ(Enerji Piyasaları İşletme A.Ş.) ŞEFFAFLIK PLATFORMU
 
 ## Veri Hakkında Genel Bilgiler
 
@@ -41,7 +41,19 @@ xxxxxx
 
 ## Tercih Sebebi
 
-xxxxxx
+Bu proje kapsamında, bir grup olarak enerji sektöründe önemli bir sorunu ele almayı amaçladık.
+
+Bu amaç doğrultusunda, enerji üretimi verilerini analiz etmek için bir veri seti seçme kararı aldık. İşte grup olarak bu veri setini seçme nedenlerimiz:
+
+1.  **İşbirliği ve Ortak Hedefler**: Grup üyeleri olarak birlikte çalışarak enerji sektöründeki belirli bir problemi çözmeyi hedefledik. Enerji üretimi verilerini analiz etmek, ortak hedeflerimize ulaşmamızı sağlayacak güçlü bir başlangıç noktasıydı.
+
+2.  **Analitik Yeteneklerimizin Birleştirilmesi**: Grup üyeleri arasında çeşitli analitik becerilere sahip bireyler bulunmaktadır. Bu veri setini seçerek, farklı perspektiflerden faydalanarak birlikte güçlü bir analiz yapma potansiyelimizi görmüş olduk.
+
+3.  **Ortak İlgi Alanları ve Uzmanlık Alanları**: Grup üyeleri, enerji sektörüne ilgi duyan veya bu alanda uzmanlaşmış kişilerdir. Bu veri seti, ortak ilgi alanlarımıza ve uzmanlık alanlarımıza hizmet ediyor ve bizi daha etkili bir şekilde çalışmaya teşvik ediyor.
+
+4.  **Birlikte Öğrenme ve Gelişme İhtiyacı**: Grup olarak, belirli bir konuda daha fazla bilgi edinmek ve analitik becerilerimizi geliştirmek istiyoruz. Bu veri setini seçerek, birlikte çalışarak yeni bilgiler öğrenme ve becerilerimizi geliştirme fırsatı bulacağımızı düşündük.
+
+5.  **Proje Gereksinimleri ve Amaçları**: Projemizin gereksinimleri doğrultusunda, enerji üretimi verilerini analiz etmek önemliydi. Bu veri seti, projemizin amaçlarına uygun bir şekilde, analiz yapmak için uygun bir temel sağlıyor.
 
 ## Ön İşleme
 
