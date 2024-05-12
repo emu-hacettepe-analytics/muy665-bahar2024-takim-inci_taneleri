@@ -1,9 +1,9 @@
 ---
-title: "Proje X (proje adını yazınız)"
+title: "Zamanın Akışında Enerji: Türkiye'nin Enerji Kaynakları Üzerine Dinamik Bir Analiz"
 number-sections: true
 ---
 
-**Proje sayfamıza hoş geldiniz.**
+## ***İNCİ TANELERİ  Grubu Proje Sayfasına Hoşgeldiniz.***
 
 *Projemizle ilgili güncellemelerden haberdar olmak için bu alanı takip edin.*
 
