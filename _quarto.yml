@@ -29,7 +29,6 @@ website:
       contents:
         - portfolyo.qmd
         - portfolyo/calisma1.qmd
-        - portfolyo/calisma2.qmd  
         
     - title: "Takım"
       style: "docked"

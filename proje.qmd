@@ -7,7 +7,7 @@ number-sections: true
 
 *Projemizle ilgili güncellemelerden haberdar olmak için bu alanı takip edin.*
 
-[\[Projemizin öngösterimi için lütfen tıklayınız\]]()
+[\[Projemizin ön gösterimi için lütfen tıklayınız\]]()
 
 # Proje Genel Bakış ve Kapsamı
 
@@ -99,6 +99,7 @@ Grafiğimiz, elektrik üretimi çeşitli kaynaklardan sağlanmaktadır. Bu kayna
 
 Grafiklerimiz, toplam elektrik üretimi içindeki karbon bazlı ve yenilenebilir enerji kaynaklarının payını göstermektedir. Karbon bazlı kaynakların hala önemli bir paya sahip olduğunu gözlemlemekteyiz; ancak yenilenebilir enerji kaynaklarının da giderek artan bir oranda elektrik üretiminde rol oynadığını belirtmek gerekir. Bu durum, sürdürülebilir enerji kullanımına doğru yapılan geçişin bir göstergesi olarak değerlendirilebilir.
 
+**R kodu: **
 ```{r, message=FALSE}
 
 # Gerekli kütüphaneyi yüklemeniz gerekmektedir
@@ -140,6 +141,7 @@ Grafiğimiz, aylık bazda hafta içi ve hafta sonu günlerine ayrılmış elektr
 
 Yıl sonuna doğru, özellikle Aralık ayında, hafta içi ve hafta sonu elektrik üretimi arasındaki fark en düşük seviyeye ulaşmaktadır. Bu, genel tatil sezonunun getirdiği azalmaların, iş günlerinde de elektrik tüketimini etkilediğini göstermektedir.
 
+**R kodu: **
 ```{r, message=FALSE}
 
 # Gerekli kütüphaneleri yüklemeniz gerekmektedir
@@ -188,6 +190,7 @@ Diğer yandan, fosil yakıt kaynakları arasında doğalgaz, linyit, ithal köm�
 
 Grafiğimiz, her iki enerji türünün aylık üretim miktarlarını yan yana göstererek, zaman içindeki üretim değişikliklerini ve eğilimleri izlemeyi kolaylaştırır. Örneğin, belirli aylarda yenilenebilir enerji üretiminin artışı veya azalışı, politikaların, mevsimsel koşulların veya piyasa dinamiklerinin bir sonucu olabildiğini düşünmekteyiz. Bu grafik, enerji üretimindeki değişiklikleri anlamak için önemlidir.
 
+**R kodu: **
 ```{r, message=FALSE}
 
 # Gerekli kütüphaneleri yükleyin
