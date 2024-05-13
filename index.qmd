@@ -25,13 +25,17 @@ Lütfen faaliyetlerimizi görmek için bizi takipte kalın.
 
 ## Proje Adı
 
-MUY660-İş Analitiği İyileştirme Çalışmaları (Örnek)
+Zamanın Akışında Enerji: Türkiye'nin Enerji Kaynakları Üzerine Dinamik Bir Analiz
 
 ## Proje Konusu
 
 Örnek: Bu projede MUY660-İş Analitiği ders içeriğinin analitik yaklaşımlarla iyileştirilmesini hedefledik. Bu doğrultuda tüm üniversitelerdeki benzer derslerin verisini toplayarak bir veri seti oluşturduk. Analiz için ........ yöntemleri kullanarak, ....... çalışmaları yaptık. Sonuç olarak, MUY660-İş Analitiği dersinin dünyadaki tüm derslerden daha iyi olduğunu ve bu dersi aldığımız için çok mutlu olduğumuzu tespit ettik.
 
 ## Veri Seti Hakkında Özet Bilgi
+
+Veri setimiz, Türkiye'deki elektrik üretim kaynaklarının saatlik olarak üretimini göstermektedir. Toplam 8760 saatlik veri bulunmaktadır, her bir kayıt bir saatlik zaman dilimini temsil eder. Veri seti, çeşitli enerji kaynaklarına göre üretilen elektrik miktarlarını içermektedir. Bu kaynaklar; DogalGaz, Barajli, Linyit, Akarsu, İthal Kömür, Rüzgar, Güneş, FuelOil, Jeotermal, Taş Kömürü, Biyokütle, Uluslararasi, Atık Isı’dır.
+
+Tarih: Gözlem yapılan tarih (gün/ay/yıl), Saat: Gözlem yapılan saat (24 saat formatında) ve Üretilen elektrik miktarı Megawatt (MW) cinsindedir.
 
 ## Sonuçlar
 
