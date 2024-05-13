@@ -37,7 +37,9 @@ EPİAŞ(Enerji Piyasaları İşletme A.Ş.) ŞEFFAFLIK PLATFORMU [\[Veri Setine 
 
 ## Veri Hakkında Genel Bilgiler
 
-xxxxxx
+Veri setimiz, Türkiye'deki elektrik üretim kaynaklarının saatlik olarak üretimini göstermektedir. Toplam 8760 saatlik veri bulunmaktadır, her bir kayıt bir saatlik zaman dilimini temsil eder. Veri seti, çeşitli enerji kaynaklarına göre üretilen elektrik miktarlarını içermektedir.
+
+Tarih: Gözlem yapılan tarih (gün/ay/yıl), Saat: Gözlem yapılan saat (24 saat formatında) ve Üretilen elektrik miktarı Megawatt (MW) cinsindedir.
 
 ## Tercih Sebebi
 
@@ -91,6 +93,45 @@ Bu ön işleme adımları, veri setimizi analiz etmeden önce temizlememizi ve h
 
 Bu kapsamda 8 farklı grafik ile elimizdeki "2023 Yılı Elektrik Üretiminin Kaynak Bazlı Saatlik Veri Tabanı" veri setini analiz edeceğiz.
 
+## Elektrik Üretiminde Yenilenebilir Enerji ve Karbon Tabanlı Kaynakların Payı: Bir Karşılaştırma
+
+Grafiğimiz, elektrik üretimi çeşitli kaynaklardan sağlanmaktadır. Bu kaynaklar arasında hem karbon bazlı hem de yenilenebilir enerji kaynakları bulunmaktadır. Karbon bazlı kaynaklar olarak doğalgaz, linyit, ithal kömür ve taş kömürü öne çıkmaktadır. Yenilenebilir enerji kaynakları ise barajlı hidroelektrik, rüzgar, güneş, jeotermal ve biyokütle gibi çeşitlilik göstermektedir.
+
+Grafiklerimiz, toplam elektrik üretimi içindeki karbon bazlı ve yenilenebilir enerji kaynaklarının payını göstermektedir. Karbon bazlı kaynakların hala önemli bir paya sahip olduğunu gözlemlemekteyiz; ancak yenilenebilir enerji kaynaklarının da giderek artan bir oranda elektrik üretiminde rol oynadığını belirtmek gerekir. Bu durum, sürdürülebilir enerji kullanımına doğru yapılan geçişin bir göstergesi olarak değerlendirilebilir.
+
+```{r, message=FALSE}
+
+# Gerekli kütüphaneyi yüklemeniz gerekmektedir
+library(readr)
+
+# Veri setimizi okuyoruz
+data <- read_csv("../muy665-bahar2024-takim-inci_taneleri/ElkUrtm23.csv")
+
+# Üretim türlerinin toplamlarını hesaplıyoruz
+production_types <- colSums(data[, 4:ncol(data)])
+
+# Karbon bazlı ve yenilenebilir enerji kaynaklarını tanımlıyoruz
+carbon_sources <- c("DogalGaz", "Linyit", "IthalKomur", "TasKomur")
+renewable_sources <- c("Barajli", "Ruzgar", "Gunes", "Jeotermal", "Biyokutle")
+
+# Karbon bazlı ve yenilenebilir kaynakların toplam üretimini hesaplıyoruz
+carbon_total <- sum(production_types[carbon_sources])
+renewable_total <- sum(production_types[renewable_sources])
+
+# Pasta grafiği için yeni bir vektör oluşturuyoruz
+energy_categories <- c(Karbon = carbon_total, Yenilenebilir = renewable_total)
+
+# Yüzdeleri hesaplıyoruz
+percentages <- round(100 * energy_categories / sum(energy_categories), 1)
+
+# Yüzdelerle etiketleri oluşturuyoruz
+labels <- paste(names(energy_categories), ": ", percentages, "%", sep="")
+
+# Pasta grafiği çizdiriyoruz
+pie(energy_categories, labels = labels, main = "Elektrik Üretimi: Karbon Bazlı vs. Yenilenebilir", col = c("darkgray", "green"))
+
+```
+
 ## Haftaiçi ve Haftasonu Gerçekleşen Üretim Grafiğinin Aylara Göre Dağılımı
 
 Grafiğimiz, aylık bazda hafta içi ve hafta sonu günlerine ayrılmış elektrik üretim miktarlarını karşılaştırarak sunmaktadır. Turuncu çubuklar, hafta içi günlerde üretilen elektrik miktarını, mavi çubuklar ise hafta sonlarında üretilen miktarı temsil etmektedir. Yıl boyunca, Ocak'tan Aralık'a kadar olan veriler incelendiğinde, hafta içi günlerde üretilen elektrik miktarının hafta sonlarına göre daha yüksek olduğunu gözlemliyoruz.
@@ -101,7 +142,7 @@ Yıl sonuna doğru, özellikle Aralık ayında, hafta içi ve hafta sonu elektri
 
 ```{r, message=FALSE}
 
-# Gerekli kütüphaneleri yüklemeniz gerekmektedir.
+# Gerekli kütüphaneleri yüklemeniz gerekmektedir
 library(ggplot2)
 library(dplyr)
 library(lubridate)
