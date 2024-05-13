@@ -7,7 +7,7 @@ number-sections: true
 
 *Projemizle ilgili güncellemelerden haberdar olmak için bu alanı takip edin.*
 
-(Aşağıdaki başlıklar örnek olarak verilmiştir; lütfen gerektiği şekilde düzenlemekten çekinmeyin.)
+[[Projemizin öngösterimi için lütfen tıklayınız]]()
 
 # Proje Genel Bakış ve Kapsamı
 
@@ -34,6 +34,7 @@ Bu proje kapsamında, enerji sektöründeki veri odaklı bir yaklaşım kullanar
 ## Veri Kaynağı
 
 EPİAŞ(Enerji Piyasaları İşletme A.Ş.) ŞEFFAFLIK PLATFORMU
+[[Veri Setine Erişmek için Tıklayınız]](https://seffaflik.epias.com.tr/home)
 
 ## Veri Hakkında Genel Bilgiler
 
@@ -89,17 +90,11 @@ Bu ön işleme adımları, veri setimizi analiz etmeden önce temizlememizi ve h
 
 # Analiz
 
-Bu kapsamda 8 farklı grafik ile elimdeki veri setini analiz edeceğiz.
+Bu kapsamda 8 farklı grafik ile elimizdeki "2023 Yılı Elektrik Üretiminin Kaynak Bazlı Saatlik Veri Tabanı" veri setini analiz edeceğiz.
 
 ## 1-Haftaiçi ve Haftasonu Gerçekleşen Üretim Grafiğinin Aylara Göre Dağılımı
 
-![](portfolyo/Proje/1-Haftaiçi-HaftaSonu.png){fig-align="center"}
-
-```{r}
-install.packages("ggplot2")
-install.packages("dplyr")
-install.packages("lubridate")
-install.packages("scales")
+```{r, message=FALSE}
 
 # Gerekli kütüphaneleri yüklemeniz gerekmektedir.
 library(ggplot2)
@@ -108,7 +103,7 @@ library(lubridate)
 library(scales) # Binlik ayırıcılar için scales kütüphanesi
 
 # Veriyi doğru kodlama ile okuyun
-data <- read.csv("../muy665-bahar2024-takim-inci_taneleri/ElkUrtm23.csv", fileEncoding="UTF-8-BOM") #dosyayolunu kendi dosya yolunuza göre güncellemelisiniz.
+data <- read.csv("../muy665-bahar2024-takim-inci_taneleri/ElkUrtm23.csv") 
 
 # Sütun adlarını düzeltiyoruz
 names(data)[names(data) == "ï..Tarih"] <- "Tarih"
@@ -121,7 +116,7 @@ data <- na.omit(data)
 
 # Hafta sonu/hafta içi ve ay bilgilerini çıkarın
 data$GunTipi <- ifelse(wday(data$Tarih) %in% c(1, 7), "Hafta Sonu", "Hafta İçi")
-data$Ay <- month(data$Tarih, label = TRUE, locale = "Turkish")
+data$Ay <- month(data$Tarih, label = TRUE)
 
 # Ay ve gün tipine göre gruplayın ve toplamı alın, gruplamayı kaldırın
 monthly_data <- data %>%
@@ -136,11 +131,10 @@ ggplot(monthly_data, aes(x=Ay, y=Toplam, fill=GunTipi)) +
   scale_y_continuous(labels = scales::comma) + # Binlik ayırıcılar ekleniyor
   scale_fill_manual(values=c("darkblue", "orange")) +
   theme_minimal()
+
 ```
 
 ## 2-Üretim Türüne Göre Mevsimsel Dağılım Grafiği
-
-![](portfolyo/Proje/2-Üretim_Türüne_Göre_Mevsimsel.png){fig-align="center"}
 
 Grafiğimiz, her ay için yenilenebilir enerji kaynakları ile fosil yakıt kaynaklarının toplam elektrik üretim miktarlarını karşılaştırıyor. Yenilenebilir enerji kaynakları, çevresel etkileri düşük ve sürdürülebilir bir enerji sağladığı için önemlidir. Bu kaynaklar arasında barajlı, akarsu, rüzgar, güneş ve biyokütle gibi çeşitli kaynaklar yer alıyor. Grafiğimizde bu kaynakların aylık üretim toplamları mavi barlarla gösteriliyor.
 
@@ -148,11 +142,7 @@ Diğer yandan, fosil yakıt kaynakları arasında doğalgaz, linyit, ithal köm�
 
 Grafiğimiz, her iki enerji türünün aylık üretim miktarlarını yan yana göstererek, zaman içindeki üretim değişikliklerini ve eğilimleri izlemeyi kolaylaştırır. Örneğin, belirli aylarda yenilenebilir enerji üretiminin artışı veya azalışı, politikaların, mevsimsel koşulların veya piyasa dinamiklerinin bir sonucu olabildiğini düşünmekteyiz. Bu grafik, enerji üretimindeki değişiklikleri anlamak için önemlidir.
 
-```{r}
-install.packages("ggplot2")
-install.packages("dplyr")
-install.packages("tidyr")
-
+```{r, message=FALSE}
 
 # Gerekli kütüphaneleri yükleyin
 library(ggplot2)
@@ -160,7 +150,7 @@ library(dplyr)
 library(tidyr)
 
 # Veriyi doğru kodlama ile okuyun
-data <- read.csv("../Downloads/ElkUrtm23.csv", fileEncoding="UTF-8-BOM")#dosyayolunu kendi dosya yolunuza göre güncellemelisiniz.
+data <- read.csv("../muy665-bahar2024-takim-inci_taneleri/ElkUrtm23.csv")
 
 # Sütun adlarını düzeltiyoruz
 names(data)[names(data) == "ï..Tarih"] <- "Tarih"

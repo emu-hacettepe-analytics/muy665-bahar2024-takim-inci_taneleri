@@ -47,7 +47,7 @@
     "href": "takim/IremAVCI.html",
     "title": "İrem AVCI",
     "section": "",
-    "text": "s",
+    "text": "CV Görüntülemek İçin Tıklayınız",
     "crumbs": [
       "Takım Üyeleri",
       "İrem AVCI"
@@ -80,14 +80,14 @@
     "href": "proje.html",
     "title": "Zamanın Akışında Enerji: Türkiye’nin Enerji Kaynakları Üzerine Dinamik Bir Analiz",
     "section": "",
-    "text": "İNCİ TANELERİ Grubu Proje Sayfasına Hoşgeldiniz\nProjemizle ilgili güncellemelerden haberdar olmak için bu alanı takip edin.\n(Aşağıdaki başlıklar örnek olarak verilmiştir; lütfen gerektiği şekilde düzenlemekten çekinmeyin.)"
+    "text": "İNCİ TANELERİ Grubu Proje Sayfasına Hoşgeldiniz\nProjemizle ilgili güncellemelerden haberdar olmak için bu alanı takip edin.\n[Projemizin öngösterimi için lütfen tıklayınız]"
   },
   {
     "objectID": "proje.html#veri-kaynağı",
     "href": "proje.html#veri-kaynağı",
     "title": "Zamanın Akışında Enerji: Türkiye’nin Enerji Kaynakları Üzerine Dinamik Bir Analiz",
     "section": "2.1 Veri Kaynağı",
-    "text": "2.1 Veri Kaynağı\nEPİAŞ(Enerji Piyasaları İşletme A.Ş.) ŞEFFAFLIK PLATFORMU"
+    "text": "2.1 Veri Kaynağı\nEPİAŞ(Enerji Piyasaları İşletme A.Ş.) ŞEFFAFLIK PLATFORMU [Veri Setine Erişmek için Tıklayınız]"
   },
   {
     "objectID": "proje.html#veri-hakkında-genel-bilgiler",
@@ -114,29 +114,29 @@
     "objectID": "proje.html#keşifsel-veri-analizi",
     "href": "proje.html#keşifsel-veri-analizi",
     "title": "Zamanın Akışında Enerji: Türkiye’nin Enerji Kaynakları Üzerine Dinamik Bir Analiz",
-    "section": "3.1 Keşifsel Veri Analizi",
-    "text": "3.1 Keşifsel Veri Analizi\nxxxxxx"
+    "section": "3.3 Keşifsel Veri Analizi",
+    "text": "3.3 Keşifsel Veri Analizi\nxxxxxx"
   },
   {
     "objectID": "proje.html#trend-analizi",
     "href": "proje.html#trend-analizi",
     "title": "Zamanın Akışında Enerji: Türkiye’nin Enerji Kaynakları Üzerine Dinamik Bir Analiz",
-    "section": "3.2 Trend Analizi",
-    "text": "3.2 Trend Analizi\nxxxxxx"
+    "section": "3.4 Trend Analizi",
+    "text": "3.4 Trend Analizi\nxxxxxx"
   },
   {
     "objectID": "proje.html#model-uydurma",
     "href": "proje.html#model-uydurma",
     "title": "Zamanın Akışında Enerji: Türkiye’nin Enerji Kaynakları Üzerine Dinamik Bir Analiz",
-    "section": "3.3 Model Uydurma",
-    "text": "3.3 Model Uydurma\nxxxxxx"
+    "section": "3.5 Model Uydurma",
+    "text": "3.5 Model Uydurma\nxxxxxx"
   },
   {
     "objectID": "proje.html#sonuçlar",
     "href": "proje.html#sonuçlar",
     "title": "Zamanın Akışında Enerji: Türkiye’nin Enerji Kaynakları Üzerine Dinamik Bir Analiz",
-    "section": "3.4 Sonuçlar",
-    "text": "3.4 Sonuçlar\nxxxxxx"
+    "section": "3.6 Sonuçlar",
+    "text": "3.6 Sonuçlar\nxxxxxx"
   },
   {
     "objectID": "portfolyo/calisma2.html",
@@ -293,21 +293,33 @@
     "href": "takim/MehmetAliGundogan.html",
     "title": "Mehmet Ali GÜNDOĞAN",
     "section": "",
-    "text": "CV Görüntülemek İçin Tıklayınız"
+    "text": "CV Görüntülemek İçin Tıklayınız",
+    "crumbs": [
+      "Takım Üyeleri",
+      "Mehmet Ali GÜNDOĞAN"
+    ]
   },
   {
     "objectID": "takim/MehmetAliGundogan.html#işler",
     "href": "takim/MehmetAliGundogan.html#işler",
     "title": "Mehmet Ali GÜNDOĞAN",
     "section": "İşler",
-    "text": "İşler\n\nEkinoks Software, pozisyon Sistem Test Tasarım Mühendisi, 2023 - Devam Ediyor."
+    "text": "İşler\n\nEkinoks Software, pozisyon Sistem Test Tasarım Mühendisi, 2023 - Devam Ediyor.",
+    "crumbs": [
+      "Takım Üyeleri",
+      "Mehmet Ali GÜNDOĞAN"
+    ]
   },
   {
     "objectID": "takim/MehmetAliGundogan.html#stajlar",
     "href": "takim/MehmetAliGundogan.html#stajlar",
     "title": "Mehmet Ali GÜNDOĞAN",
     "section": "Stajlar",
-    "text": "Stajlar\n\nKarel Elektronik, Elektrik Elektronik Mühendisliği Stajı, Temmuz 2021- Ağustos 2021\nMeteksan Savunma, Elektrik Elektronik Mühendisliği Stajı, Haziran 2020 - Temmuz 2020"
+    "text": "Stajlar\n\nKarel Elektronik, Elektrik Elektronik Mühendisliği Stajı, Temmuz 2021- Ağustos 2021\nMeteksan Savunma, Elektrik Elektronik Mühendisliği Stajı, Haziran 2020 - Temmuz 2020",
+    "crumbs": [
+      "Takım Üyeleri",
+      "Mehmet Ali GÜNDOĞAN"
+    ]
   },
   {
     "objectID": "takim/selimfendoglu.html",
@@ -336,5 +348,19 @@
     "title": "Zamanın Akışında Enerji: Türkiye’nin Enerji Kaynakları Üzerine Dinamik Bir Analiz",
     "section": "2.4 Verilerin Ön İşlemelerin Yapılması",
     "text": "2.4 Verilerin Ön İşlemelerin Yapılması\nVeri analizi sürecinde, verinin doğru ve güvenilir sonuçlar üretmesi için ön işleme adımları oldukça önemlidir. Bu adımlar, veri setinin temizlenmesi, eksik değerlerin doldurulması ve gerekiyorsa verinin dönüştürülmesi gibi işlemleri içerir. İşte veri ön işleme adı altında gerçekleştirdiğimiz detaylı işlemler:\n\nVeri Temizleme:\n\nVeri setindeki gereksiz veya tutarsız verileri belirleyerek kaldırdık.\nAnlamsız veya yanlış verileri düzeltmek için veri setini inceledik ve düzenledik.\nVeri setindeki gereksiz sütunları (değişkenleri) kaldırdık veya gereksiz gözlemleri (satırları) sildik.\n\nEksik Veri Analizi ve Doldurma:\n\nEksik verileri belirleyerek, eksik veri analizi yaptık ve eksik veri sayısını ve dağılımını değerlendirdik.\nEksik verileri uygun bir yöntemle doldurarak veri kaybını minimize ettik. Örneğin, eksik sayısal verileri ortalama veya medyan değerleri ile doldurduk, eksik kategorik verileri mod değerleriyle doldurduk veya eksik verileri tahmin etmek için makine öğrenimi modelleri kullandık.\n\nVeri Dönüşümleri:\n\nKategorik değişkenleri sayısal değerlere dönüştürdük. Bu, makine öğrenimi modellerinin kullanılabilirliğini artırabilir.\nGerektiğinde, sayısal değişkenlerin dağılımlarını dönüştürerek normal dağılıma daha yakın hale getirdik. Bu, model performansını iyileştirebilir.\n\nAykırı Değerleri İncelenmesi ve İşlenmesi:\n\nAykırı değerleri belirleyerek, bu değerlerin neden kaynaklandığını ve nasıl işlenebileceğini inceledik.\nAykırı değerleri düzeltmek veya kaldırmak için uygun yöntemleri kullandık. Örneğin, aykırı değerleri ortalama veya medyan değerleri ile değiştirdik veya sınırladık.\n\n\nBu ön işleme adımları, veri setimizi analiz etmeden önce temizlememizi ve hazırlamamızı sağlar. Doğru ön işleme adımları kullanılarak, veri setimizin kalitesini artırabilir ve sonuçlarımızın güvenilirliğini sağlayabiliriz"
+  },
+  {
+    "objectID": "proje.html#haftaiçi-ve-haftasonu-gerçekleşen-üretim-grafiğinin-aylara-göre-dağılımı",
+    "href": "proje.html#haftaiçi-ve-haftasonu-gerçekleşen-üretim-grafiğinin-aylara-göre-dağılımı",
+    "title": "Zamanın Akışında Enerji: Türkiye’nin Enerji Kaynakları Üzerine Dinamik Bir Analiz",
+    "section": "3.1 1-Haftaiçi ve Haftasonu Gerçekleşen Üretim Grafiğinin Aylara Göre Dağılımı",
+    "text": "3.1 1-Haftaiçi ve Haftasonu Gerçekleşen Üretim Grafiğinin Aylara Göre Dağılımı\n\n# Gerekli kütüphaneleri yüklemeniz gerekmektedir.\nlibrary(ggplot2)\nlibrary(dplyr)\nlibrary(lubridate)\nlibrary(scales) # Binlik ayırıcılar için scales kütüphanesi\n\n# Veriyi doğru kodlama ile okuyun\ndata &lt;- read.csv(\"../muy665-bahar2024-takim-inci_taneleri/ElkUrtm23.csv\") \n\n# Sütun adlarını düzeltiyoruz\nnames(data)[names(data) == \"ï..Tarih\"] &lt;- \"Tarih\"\n\n# Tarih sütununu gün.ay.yıl formatına çeviriyoruz\ndata$Tarih &lt;- as.Date(data$Tarih, format=\"%d.%m.%Y\")\n\n# NA değerlerini veri setinden çıkarın\ndata &lt;- na.omit(data)\n\n# Hafta sonu/hafta içi ve ay bilgilerini çıkarın\ndata$GunTipi &lt;- ifelse(wday(data$Tarih) %in% c(1, 7), \"Hafta Sonu\", \"Hafta İçi\")\ndata$Ay &lt;- month(data$Tarih, label = TRUE)\n\n# Ay ve gün tipine göre gruplayın ve toplamı alın, gruplamayı kaldırın\nmonthly_data &lt;- data %&gt;%\n  group_by(Ay, GunTipi) %&gt;%\n  summarise(Toplam = sum(Toplam, na.rm = TRUE), .groups = \"drop\")\n\n# Grafik çizin\nggplot(monthly_data, aes(x=Ay, y=Toplam, fill=GunTipi)) +\n  geom_bar(stat=\"identity\", position=\"dodge\") +\n  labs(title=\"Aylık Toplam Elektrik Üretimi: Hafta İçi vs Hafta Sonu\",\n       x=\"Ay\", y=\"Toplam Elektrik (MWh)\") +\n  scale_y_continuous(labels = scales::comma) + # Binlik ayırıcılar ekleniyor\n  scale_fill_manual(values=c(\"darkblue\", \"orange\")) +\n  theme_minimal()"
+  },
+  {
+    "objectID": "proje.html#üretim-türüne-göre-mevsimsel-dağılım-grafiği",
+    "href": "proje.html#üretim-türüne-göre-mevsimsel-dağılım-grafiği",
+    "title": "Zamanın Akışında Enerji: Türkiye’nin Enerji Kaynakları Üzerine Dinamik Bir Analiz",
+    "section": "3.2 2-Üretim Türüne Göre Mevsimsel Dağılım Grafiği",
+    "text": "3.2 2-Üretim Türüne Göre Mevsimsel Dağılım Grafiği\nGrafiğimiz, her ay için yenilenebilir enerji kaynakları ile fosil yakıt kaynaklarının toplam elektrik üretim miktarlarını karşılaştırıyor. Yenilenebilir enerji kaynakları, çevresel etkileri düşük ve sürdürülebilir bir enerji sağladığı için önemlidir. Bu kaynaklar arasında barajlı, akarsu, rüzgar, güneş ve biyokütle gibi çeşitli kaynaklar yer alıyor. Grafiğimizde bu kaynakların aylık üretim toplamları mavi barlarla gösteriliyor.\nDiğer yandan, fosil yakıt kaynakları arasında doğalgaz, linyit, ithal kömür, fuel oil ve taş kömürü bulunuyor. Fosil yakıtlar, karbon emisyonlarına neden olarak çevresel sorunlara katkıda bulunmalarına rağmen, hala dünya genelinde enerji üretiminin önemli bir kısmını oluştururlar. Grafiğimizde fosil yakıt kaynaklarının aylık üretim toplamları turuncu barlarla gösteriliyor.\nGrafiğimiz, her iki enerji türünün aylık üretim miktarlarını yan yana göstererek, zaman içindeki üretim değişikliklerini ve eğilimleri izlemeyi kolaylaştırır. Örneğin, belirli aylarda yenilenebilir enerji üretiminin artışı veya azalışı, politikaların, mevsimsel koşulların veya piyasa dinamiklerinin bir sonucu olabildiğini düşünmekteyiz. Bu grafik, enerji üretimindeki değişiklikleri anlamak için önemlidir.\n\n# Gerekli kütüphaneleri yükleyin\nlibrary(ggplot2)\nlibrary(dplyr)\nlibrary(tidyr)\n\n# Veriyi doğru kodlama ile okuyun\ndata &lt;- read.csv(\"../muy665-bahar2024-takim-inci_taneleri/ElkUrtm23.csv\")\n\n# Sütun adlarını düzeltiyoruz\nnames(data)[names(data) == \"ï..Tarih\"] &lt;- \"Tarih\"\n\n# Tarih sütununu gün.ay.yıl formatına çeviriyoruz\ndata$Tarih &lt;- as.Date(data$Tarih, format = \"%d.%m.%Y\")\n\n# Ay ve mevsim bilgilerini ekleyin\ndata$Ay &lt;- as.numeric(format(data$Tarih, \"%m\"))\ndata$Mevsim &lt;- ifelse(data$Ay %in% c(12, 1, 2), \"Kış\",\n                      ifelse(data$Ay %in% c(3, 4, 5), \"İlkbahar\",\n                             ifelse(data$Ay %in% c(6, 7, 8), \"Yaz\", \"Sonbahar\")))\n\n# Veriyi uzun formatına çeviriyoruz\nlong_data &lt;- data %&gt;%\n  select(Mevsim, DogalGaz, Barajli, Linyit, Akarsu, IthalKomur, Ruzgar, Gunes, FuelOil, Jeotermal, TasKomur, Biyokutle, Uluslararasi, AtikIsi) %&gt;%\n  pivot_longer(cols = -Mevsim, names_to = \"UretimTuru\", values_to = \"Miktar\")\n\n# Mevsimlere ve üretim türlerine göre gruplayıp toplam üretimi hesaplıyoruz\nseasonal_data &lt;- long_data %&gt;%\n  group_by(Mevsim, UretimTuru) %&gt;%\n  summarise(ToplamMiktar = sum(Miktar, na.rm = TRUE))\n\n# Grafik çizdiriyoruz\nggplot(seasonal_data, aes(x = Mevsim, y = ToplamMiktar, fill = UretimTuru)) +\n  geom_bar(stat = \"identity\", position = position_dodge()) +\n  scale_y_continuous(labels = label_comma()) +  # y eksenindeki sayıları virgülle ayrılmış biçimde göster\n  labs(title = \"Mevsimlere Göre Enerji Üretim Türleri\",\n       x = \"Mevsim\",\n       y = \"Toplam Üretim (MWh)\",\n       fill = \"Üretim Türü\") +\n  theme_minimal() +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1))"
   }
 ]
