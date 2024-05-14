@@ -99,7 +99,8 @@ Grafiğimiz, elektrik üretimi çeşitli kaynaklardan sağlanmaktadır. Bu kayna
 
 Grafiklerimiz, toplam elektrik üretimi içindeki karbon bazlı ve yenilenebilir enerji kaynaklarının payını göstermektedir. Karbon bazlı kaynakların hala önemli bir paya sahip olduğunu gözlemlemekteyiz; ancak yenilenebilir enerji kaynaklarının da giderek artan bir oranda elektrik üretiminde rol oynadığını belirtmek gerekir. Bu durum, sürdürülebilir enerji kullanımına doğru yapılan geçişin bir göstergesi olarak değerlendirilebilir.
 
-**R kodu: **
+**R kodu:**
+
 ```{r, message=FALSE}
 
 # Gerekli kütüphaneyi yüklemeniz gerekmektedir
@@ -141,7 +142,8 @@ Grafiğimiz, aylık bazda hafta içi ve hafta sonu günlerine ayrılmış elektr
 
 Yıl sonuna doğru, özellikle Aralık ayında, hafta içi ve hafta sonu elektrik üretimi arasındaki fark en düşük seviyeye ulaşmaktadır. Bu, genel tatil sezonunun getirdiği azalmaların, iş günlerinde de elektrik tüketimini etkilediğini göstermektedir.
 
-**R kodu: **
+**R kodu:**
+
 ```{r, message=FALSE}
 
 # Gerekli kütüphaneleri yüklemeniz gerekmektedir
@@ -190,7 +192,8 @@ Diğer yandan, fosil yakıt kaynakları arasında doğalgaz, linyit, ithal köm�
 
 Grafiğimiz, her iki enerji türünün aylık üretim miktarlarını yan yana göstererek, zaman içindeki üretim değişikliklerini ve eğilimleri izlemeyi kolaylaştırır. Örneğin, belirli aylarda yenilenebilir enerji üretiminin artışı veya azalışı, politikaların, mevsimsel koşulların veya piyasa dinamiklerinin bir sonucu olabildiğini düşünmekteyiz. Bu grafik, enerji üretimindeki değişiklikleri anlamak için önemlidir.
 
-**R kodu: **
+**R kodu:**
+
 ```{r, message=FALSE}
 
 # Gerekli kütüphaneleri yükleyin
@@ -234,6 +237,278 @@ ggplot(seasonal_data, aes(x = Mevsim, y = ToplamMiktar, fill = UretimTuru)) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
+```
+
+## Yıllık Olarka Toplam Üretilen Enerji Karşılaştırması
+
+Açıklama gelecek...
+
+**R kodu:**
+```{r, message=FALSE}
+library(tidyverse)
+
+# Enerji kaynaklarına göre toplamları hesapla
+energy_totals <- colSums(data[, c("DogalGaz", "Barajli", "Linyit", "Akarsu", "IthalKomur", "Ruzgar", 
+                                  "Gunes", "FuelOil", "Jeotermal", "TasKomur", "Biyokutle", 
+                                  "Uluslararasi", "AtikIsi")])
+
+# Toplam üretim
+total_production <- sum(energy_totals)
+
+# Yüzdelik hesaplamaları yap
+energy_percentages <- energy_totals / total_production * 100
+
+# Enerji kaynaklarını ve yüzdelerini bir dataframe'e çevir
+energy_df <- data.frame(Enerji_Kaynagi = names(energy_percentages), Yuzde = energy_percentages)
+
+# Pie chart çiz
+pie(energy_df$Yuzde, labels = paste(energy_df$Enerji_Kaynagi, 
+                                    sprintf("(%.1f%%)", energy_df$Yuzde)), 
+    main = "Yıllık Enerji Üretiminin Kaynaklara Göre Dağılımı",
+    col = rainbow(length(energy_df$Yuzde)))
+
+# Efsane ekleme
+legend("topright", legend = energy_df$Enerji_Kaynagi, fill = rainbow(length(energy_df$Yuzde)))
+
+```
+
+## Hidrokarbon Kaynakların Dağılımı
+
+Açıklama gelecek...
+
+**R kodu:**
+```{r, message=FALSE}
+library(tidyverse)
+library(lubridate)
+
+
+# Aylık toplamları hesapla ve hidrokarbon kaynaklarına göre ayır
+monthly_hydrocarbons <- data %>%
+  mutate(Ay = floor_date(Tarih, "month")) %>%
+  group_by(Ay) %>%
+  summarise(
+    DogalGaz = sum(DogalGaz),
+    IthalKomur = sum(IthalKomur),
+    FuelOil = sum(FuelOil),
+    TasKomur = sum(TasKomur),
+    .groups = 'drop'
+  )
+
+# Erişilebilir format için veriyi long formata çevir
+monthly_long <- pivot_longer(monthly_hydrocarbons, cols = c(DogalGaz, IthalKomur, FuelOil, TasKomur),
+                             names_to = "Enerji_Kaynagi", values_to = "Uretim")
+
+# Grafik çiz
+ggplot(monthly_long, aes(x = Ay, y = Uretim, fill = Enerji_Kaynagi)) +
+  geom_bar(stat = "identity", position = position_dodge()) +
+  scale_fill_brewer(palette = "Set1") +
+  labs(title = "Aylık Hidrokarbon Enerji Kaynaklarının Dağılımı",
+       x = "Ay",
+       y = "Toplam Üretim (MWh)",
+       fill = "Enerji Kaynağı") +
+  theme_minimal()
+```
+
+## Hidrokarbon Kaynakların Dağılımı
+
+Açıklama gelecek...
+
+**R kodu:**
+```{r, message=FALSE}
+library(tidyverse)
+library(lubridate)
+
+
+# Aylık toplamları hesapla ve hidrokarbon kaynaklarına göre ayır
+monthly_hydrocarbons <- data %>%
+  mutate(Ay = floor_date(Tarih, "month")) %>%
+  group_by(Ay) %>%
+  summarise(
+    DogalGaz = sum(DogalGaz),
+    IthalKomur = sum(IthalKomur),
+    FuelOil = sum(FuelOil),
+    TasKomur = sum(TasKomur),
+    .groups = 'drop'
+  )
+
+# Erişilebilir format için veriyi long formata çevir
+monthly_long <- pivot_longer(monthly_hydrocarbons, cols = c(DogalGaz, IthalKomur, FuelOil, TasKomur),
+                             names_to = "Enerji_Kaynagi", values_to = "Uretim")
+
+# Grafik çiz
+ggplot(monthly_long, aes(x = Ay, y = Uretim, fill = Enerji_Kaynagi)) +
+  geom_bar(stat = "identity", position = position_dodge()) +
+  scale_fill_brewer(palette = "Set1") +
+  labs(title = "Aylık Hidrokarbon Enerji Kaynaklarının Dağılımı",
+       x = "Ay",
+       y = "Toplam Üretim (MWh)",
+       fill = "Enerji Kaynağı") +
+  theme_minimal()
+```
+
+## İthal Edilen ve Üretilen Enerji Karşılaştırılması
+
+Açıklama gelecek...
+
+**R kodu:**
+```{r, message=FALSE}
+library(tidyverse)
+
+# Veriyi İthal ve Yerli olarak grupla
+data_long <- pivot_longer(data, 
+                          cols = c("DogalGaz", "Linyit", "IthalKomur", "FuelOil", "TasKomur", "Uluslararasi",
+                                   "Barajli", "Akarsu", "Ruzgar", "Gunes", "Jeotermal", "Biyokutle", "AtikIsi"),
+                          names_to = "Enerji_Kaynagi", values_to = "Uretim")
+
+# Enerji kaynaklarını İthal ve Yerli olarak etiketle
+data_long <- data_long %>%
+  mutate(Grup = case_when(
+    Enerji_Kaynagi %in% c("DogalGaz", "Linyit", "IthalKomur", "FuelOil", "TasKomur", "Uluslararasi") ~ "İthal",
+    TRUE ~ "Yerli"
+  ))
+
+# Yıllık toplamları hesapla
+yearly_totals <- data_long %>%
+  group_by(Grup) %>%
+  summarise(ToplamUretim = sum(Uretim, na.rm = TRUE))
+
+# Bar grafiği çiz
+ggplot(yearly_totals, aes(x = Grup, y = ToplamUretim, fill = Grup)) +
+  geom_col() +
+  labs(title = "Yıllık Toplam Üretim: İthal vs. Yerli",
+       x = "Grup",
+       y = "Toplam Üretim (MWh)") +
+  scale_fill_manual(values = c("İthal" = "red", "Yerli" = "green")) +
+  theme_minimal()
+
+```
+
+## Toplam Üretimin Hidrokarbon Üretim İle Karşılaştırılması
+
+Açıklama gelecek...
+
+**R kodu:**
+```{r, message=FALSE}
+library(tidyverse)
+library(lubridate)
+
+# Veriyi yükle
+data <- read.csv("ElkUrtm23.csv")
+
+# Tarih formatını düzelt
+data$Tarih <- dmy(data$Tarih)
+
+# Aylık toplamları hesapla
+monthly_data <- data %>%
+  mutate(Ay = floor_date(Tarih, "month")) %>%
+  group_by(Ay) %>%
+  summarise(
+    Toplam = sum(Toplam),
+    Hidrokarbon = sum(DogalGaz + IthalKomur + FuelOil + TasKomur),
+    .groups = 'drop'
+  )
+
+# Yüzdesel dağılımı hesapla
+monthly_data$HidrokarbonYuzde = (monthly_data$Hidrokarbon / monthly_data$Toplam) * 100
+
+# Grafik çiz
+ggplot(monthly_data, aes(x = Ay)) +
+  geom_col(aes(y = Toplam), fill = "blue", alpha = 0.7) +
+  geom_col(aes(y = Hidrokarbon), fill = "red", alpha = 0.7) +
+  labs(title = "Aylık Toplam ve Hidrokarbon Enerji Üretimi", x = "Ay", y = "Enerji Üretimi (MWh)") +
+  theme_minimal()
+
+# Yüzdelik dağılım grafiği
+ggplot(monthly_data, aes(x = Ay, y = HidrokarbonYuzde, group = 1)) +
+  geom_line(color = "darkred", size = 1) +
+  geom_point(color = "darkred", size = 2) +
+  labs(title = "Hidrokarbon Enerji Üretiminin Yüzdesel Dağılımı", x = "Ay", y = "Yüzde (%)") +
+  theme_minimal()
+```
+
+## Toplam Üretimin Yenilenebilir Enerji Üretimi İle Karşılaştırılması
+
+Açıklama gelecek...
+
+**R kodu:**
+```{r, message=FALSE}
+library(tidyverse)
+library(lubridate)
+
+# Veriyi yükle
+data <- read.csv("ElkUrtm23.csv")
+
+# Tarih ve Saat sütunlarını birleştirerek doğru datetime formatını oluştur
+data$DateTime <- mdy_hm(paste(data$Tarih, data$Saat))
+
+# Artık 'Tarih' ve 'Saat' sütunlarına ihtiyacımız yok, bu yüzden silebiliriz
+data <- data %>% select(-Tarih, -Saat)
+
+# Aylık toplamları hesapla
+monthly_data <- data %>%
+  mutate(Ay = floor_date(DateTime, "month")) %>%
+  group_by(Ay) %>%
+  summarise(
+    Toplam = sum(Toplam),
+    Yenilenebilir = sum(Barajli + Akarsu + Ruzgar + Gunes + Jeotermal + Biyokutle),
+    .groups = 'drop'
+  )
+
+# Yüzdesel dağılımı hesapla
+monthly_data$YenilenebilirYuzde = (monthly_data$Yenilenebilir / monthly_data$Toplam) * 100
+
+# Grafik çiz
+ggplot(monthly_data, aes(x = Ay)) +
+  geom_col(aes(y = Toplam), fill = "blue", alpha = 0.7) +
+  geom_col(aes(y = Yenilenebilir), fill = "green", alpha = 0.7) +
+  labs(title = "Aylık Toplam ve Yenilenebilir Enerji Üretimi", x = "Ay", y = "Enerji Üretimi (MWh)") +
+  theme_minimal()
+
+# Yüzdelik dağılım grafiği
+ggplot(monthly_data, aes(x = Ay, y = YenilenebilirYuzde, group = 1)) +
+  geom_line(color = "red", size = 1) +
+  geom_point(color = "red", size = 2) +
+  labs(title = "Yenilenebilir Enerji Üretiminin Yüzdesel Dağılımı", x = "Ay", y = "Yüzde (%)") +
+  theme_minimal()
+
+```
+
+## Yenilenebilir Kaynaklarla Üretilen Enerjinin Dağılımı
+
+Açıklama gelecek...
+
+**R kodu:**
+```{r, message=FALSE}
+library(tidyverse)
+library(lubridate)
+
+# Aylık toplamları hesapla ve yenilenebilir enerji kaynaklarına göre ayır
+monthly_renewables <- data %>%
+  mutate(Ay = floor_date(DateTime, "month")) %>%
+  group_by(Ay) %>%
+  summarise(
+    Barajli = sum(Barajli),
+    Akarsu = sum(Akarsu),
+    Ruzgar = sum(Ruzgar),
+    Gunes = sum(Gunes),
+    Jeotermal = sum(Jeotermal),
+    Biyokutle = sum(Biyokutle),
+    .groups = 'drop'
+  )
+
+# Erişilebilir format için veriyi uzun formata çevir
+monthly_long <- pivot_longer(monthly_renewables, cols = c(Barajli, Akarsu, Ruzgar, Gunes, Jeotermal, Biyokutle),
+                             names_to = "Enerji_Kaynagi", values_to = "Uretim")
+
+# Grafik çiz
+ggplot(monthly_long, aes(x = Ay, y = Uretim, fill = Enerji_Kaynagi)) +
+  geom_bar(stat = "identity", position = position_dodge()) +
+  scale_fill_brewer(palette = "Set3") +
+  labs(title = "Aylık Yenilenebilir Enerji Kaynaklarının Dağılımı",
+       x = "Ay",
+       y = "Toplam Üretim (MWh)",
+       fill = "Enerji Kaynağı") +
+  theme_minimal()
 ```
 
 ## Keşifsel Veri Analizi
