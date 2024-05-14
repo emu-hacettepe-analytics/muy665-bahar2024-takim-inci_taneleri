@@ -244,6 +244,7 @@ ggplot(seasonal_data, aes(x = Mevsim, y = ToplamMiktar, fill = UretimTuru)) +
 Açıklama gelecek...
 
 **R kodu:**
+
 ```{r, message=FALSE}
 library(tidyverse)
 
@@ -277,6 +278,7 @@ legend("topright", legend = energy_df$Enerji_Kaynagi, fill = rainbow(length(ener
 Açıklama gelecek...
 
 **R kodu:**
+
 ```{r, message=FALSE}
 library(tidyverse)
 library(lubridate)
@@ -314,6 +316,7 @@ ggplot(monthly_long, aes(x = Ay, y = Uretim, fill = Enerji_Kaynagi)) +
 Açıklama gelecek...
 
 **R kodu:**
+
 ```{r, message=FALSE}
 library(tidyverse)
 library(lubridate)
@@ -351,6 +354,7 @@ ggplot(monthly_long, aes(x = Ay, y = Uretim, fill = Enerji_Kaynagi)) +
 Açıklama gelecek...
 
 **R kodu:**
+
 ```{r, message=FALSE}
 library(tidyverse)
 
@@ -388,6 +392,7 @@ ggplot(yearly_totals, aes(x = Grup, y = ToplamUretim, fill = Grup)) +
 Açıklama gelecek...
 
 **R kodu:**
+
 ```{r, message=FALSE}
 library(tidyverse)
 library(lubridate)
@@ -431,6 +436,7 @@ ggplot(monthly_data, aes(x = Ay, y = HidrokarbonYuzde, group = 1)) +
 Açıklama gelecek...
 
 **R kodu:**
+
 ```{r, message=FALSE}
 library(tidyverse)
 library(lubridate)
@@ -478,6 +484,7 @@ ggplot(monthly_data, aes(x = Ay, y = YenilenebilirYuzde, group = 1)) +
 Açıklama gelecek...
 
 **R kodu:**
+
 ```{r, message=FALSE}
 library(tidyverse)
 library(lubridate)
