@@ -241,7 +241,33 @@ ggplot(seasonal_data, aes(x = Mevsim, y = ToplamMiktar, fill = UretimTuru)) +
 
 ## Yıllık Olarka Toplam Üretilen Enerji Karşılaştırması
 
-Açıklama gelecek...
+Bu pasta grafiğinde, 2023 yılı boyunca enerji üretiminin farklı kaynaklara göre dağılımını görüyoruz. Her bir dilim, belirli bir enerji kaynağının toplam üretimdeki payını göstermektedir. İşte grafiğin detaylı yorumu:
+
+İthal Kömür (21.2%):
+
+İthal kömür, toplam enerji üretiminin en büyük payına sahip. Bu, kömür santrallerinin enerji üretiminde önemli bir rol oynadığını gösteriyor. İthal kömür, Türkiye'nin enerji ihtiyacını karşılamak için kritik bir kaynak. Doğalgaz (19.6%):
+
+Doğalgaz, ikinci en büyük enerji kaynağı. Doğalgaz santralleri, özellikle hızlı talep artışlarına yanıt verme kabiliyetleri nedeniyle tercih ediliyor. Barajlı Enerji (13.1%):
+
+Barajlı enerji, toplam üretimde önemli bir yer tutuyor. Bu, su kaynaklarının enerji üretiminde etkin bir şekilde kullanıldığını gösteriyor. Barajlar, yenilenebilir enerji kaynakları arasında büyük bir paya sahip. Linyit (12.0%):
+
+Linyit, kömür türleri arasında önemli bir yer tutmakta. Linyit santralleri, yerel kömür kaynaklarını kullanarak enerji üretiminde önemli bir katkı sağlıyor. Rüzgar (10.0%):
+
+Rüzgar enerjisi, yenilenebilir enerji kaynakları arasında önemli bir paya sahip. Rüzgar türbinleri, özellikle rüzgar potansiyeli yüksek bölgelerde enerji üretiminde büyük rol oynuyor. Güneş (6.0%):
+
+Güneş enerjisi, özellikle yaz aylarında önemli bir üretim kaynağı. Güneş panelleri, enerji üretimine sürekli ve temiz bir katkı sağlıyor. Jeotermal (5.9%):
+
+Jeotermal enerji, yeraltı sıcak su kaynaklarını kullanarak enerji üretiminde kullanılıyor. Türkiye, jeotermal kaynaklar açısından zengin bir ülke ve bu potansiyel enerji üretiminde değerlendiriliyor. Akarsu (5.8%):
+
+Akarsu enerjisi, özellikle küçük ölçekli hidroelektrik santrallerle enerji üretimine katkı sağlıyor. Bu kaynak, çevre dostu ve yenilenebilir bir enerji kaynağı olarak öne çıkıyor. Biyokütle (4.8%):
+
+Biyokütle enerjisi, organik atıklardan enerji üretimini ifade eder. Biyokütle santralleri, hem atık yönetimi sağlıyor hem de enerji üretimine katkıda bulunuyor. Taş Kömür (2.4%):
+
+Taş kömür, enerji üretiminde daha düşük bir paya sahip. Ancak, özellikle belirli dönemlerde yedek enerji kaynağı olarak kullanılıyor olabilir. Fuel Oil (0.5%):
+
+Fuel Oil, çok düşük bir paya sahip. Bu kaynak, genellikle acil durumlarda veya yedek enerji kaynağı olarak kullanılıyor. Uluslararası (0.4%) ve Atık Isı (0.4%):
+
+Bu iki kategori, toplam üretimde çok küçük paylara sahip. Uluslararası enerji, muhtemelen ithalat veya ihracat yoluyla elde edilen enerji miktarını ifade ediyor. Atık ısı ise, enerji üretiminde kullanılan atık ısı geri kazanımıdır. Bu grafik, Türkiye'nin enerji üretiminde çeşitliliği ve farklı kaynakların önemini göstermektedir. İthal kömür ve doğalgaz, fosil yakıtlar arasında en büyük paya sahipken, barajlı enerji ve rüzgar enerjisi gibi yenilenebilir kaynaklar da önemli bir katkı sağlamaktadır.
 
 **R kodu:**
 
@@ -275,7 +301,17 @@ legend("topright", legend = energy_df$Enerji_Kaynagi, fill = rainbow(length(ener
 
 ## Hidrokarbon Kaynakların Dağılımı
 
-Açıklama gelecek...
+Grafikte 2023 yılı boyunca dört farklı enerji kaynağının aylık üretim miktarlarını görüyoruz. Doğalgaz (kırmızı), Fuel Oil (mavi), İthal Kömür (yeşil) ve Taş Kömür (mor) renkleriyle temsil ediliyor. İşte dikkat çeken noktalar:
+
+Ocak Ayı:
+
+Doğalgaz ve ithal kömür, Ocak ayında en çok kullanılan enerji kaynakları. Kışın soğuk havalarıyla birlikte enerji talebi artıyor, bu yüzden bu iki kaynak yoğun bir şekilde kullanılmış. Fuel Oil ve taş kömür kullanımının düşük seviyelerde olduğunu görüyoruz. Belki de bu dönemde daha maliyetli veya daha az verimli oldukları için tercih edilmemişler. Nisan Ayı:
+
+Bahar aylarına gelindiğinde doğalgaz kullanımı düşüş göstermiş. Muhtemelen hava ısındığı için ısıtma ihtiyacı azalmış ve doğalgaz talebi de buna bağlı olarak azalmış. İthal kömür yine en yüksek seviyede kullanılmış. Görünüşe göre, bu dönemlerde kömür, enerji üretiminde önemli bir rol oynamış. Fuel Oil ve taş kömür yine düşük seviyelerde kalmış. Bu kaynaklar genellikle yedek enerji kaynakları olarak kullanılıyor olabilir. Temmuz Ayı:
+
+Yaz aylarında doğalgaz ve ithal kömür kullanımı zirve yapmış. Yazın enerji talebi artar çünkü insanlar klimalarını daha fazla kullanır. Bu dönemde ithal kömür kullanımı rekor seviyelere ulaşmış. Belki de enerji talebinin karşılanmasında kömür santralleri önemli bir rol oynamış. Fuel Oil ve taş kömür yine düşük seviyelerde ama sabit kalmış. Bu kaynaklar, daha çok ani ihtiyaçlar için yedek tutuluyor olabilir. Ekim Ayı:
+
+Sonbaharda, doğalgaz kullanımı tekrar artmış. Havanın soğumaya başlamasıyla birlikte ısınma ihtiyacı da artmış olabilir. İthal kömür kullanımı biraz düşmüş ama yine de yüksek seviyelerde kalmış. Fuel Oil ve taş kömür ise yıl boyunca olduğu gibi düşük seviyelerde kalmaya devam etmiş. Genel olarak, yıl boyunca enerji kaynaklarının kullanımı mevsimsel değişikliklere bağlı olarak dalgalanma göstermiş. Kış aylarında doğalgaz, yaz aylarında ise ithal kömür en çok kullanılan kaynaklar olmuş. Fuel Oil ve taş kömür ise yıl boyunca daha az kullanılmış, belki de yedek enerji kaynağı olarak rol oynamışlar. Bu veriler, enerji talebi ve üretim stratejileri hakkında bize önemli ipuçları veriyor.
 
 **R kodu:**
 
@@ -309,87 +345,45 @@ ggplot(monthly_long, aes(x = Ay, y = Uretim, fill = Enerji_Kaynagi)) +
        y = "Toplam Üretim (MWh)",
        fill = "Enerji Kaynağı") +
   theme_minimal()
-```
-
-## Hidrokarbon Kaynakların Dağılımı
-
-Açıklama gelecek...
-
-**R kodu:**
-
-```{r, message=FALSE}
-library(tidyverse)
-library(lubridate)
-
-
-# Aylık toplamları hesapla ve hidrokarbon kaynaklarına göre ayır
-monthly_hydrocarbons <- data %>%
-  mutate(Ay = floor_date(Tarih, "month")) %>%
-  group_by(Ay) %>%
-  summarise(
-    DogalGaz = sum(DogalGaz),
-    IthalKomur = sum(IthalKomur),
-    FuelOil = sum(FuelOil),
-    TasKomur = sum(TasKomur),
-    .groups = 'drop'
-  )
-
-# Erişilebilir format için veriyi long formata çevir
-monthly_long <- pivot_longer(monthly_hydrocarbons, cols = c(DogalGaz, IthalKomur, FuelOil, TasKomur),
-                             names_to = "Enerji_Kaynagi", values_to = "Uretim")
-
-# Grafik çiz
-ggplot(monthly_long, aes(x = Ay, y = Uretim, fill = Enerji_Kaynagi)) +
-  geom_bar(stat = "identity", position = position_dodge()) +
-  scale_fill_brewer(palette = "Set1") +
-  labs(title = "Aylık Hidrokarbon Enerji Kaynaklarının Dağılımı",
-       x = "Ay",
-       y = "Toplam Üretim (MWh)",
-       fill = "Enerji Kaynağı") +
-  theme_minimal()
-```
-
-## İthal Edilen ve Üretilen Enerji Karşılaştırılması
-
-Açıklama gelecek...
-
-**R kodu:**
-
-```{r, message=FALSE}
-library(tidyverse)
-
-# Veriyi İthal ve Yerli olarak grupla
-data_long <- pivot_longer(data, 
-                          cols = c("DogalGaz", "Linyit", "IthalKomur", "FuelOil", "TasKomur", "Uluslararasi",
-                                   "Barajli", "Akarsu", "Ruzgar", "Gunes", "Jeotermal", "Biyokutle", "AtikIsi"),
-                          names_to = "Enerji_Kaynagi", values_to = "Uretim")
-
-# Enerji kaynaklarını İthal ve Yerli olarak etiketle
-data_long <- data_long %>%
-  mutate(Grup = case_when(
-    Enerji_Kaynagi %in% c("DogalGaz", "Linyit", "IthalKomur", "FuelOil", "TasKomur", "Uluslararasi") ~ "İthal",
-    TRUE ~ "Yerli"
-  ))
-
-# Yıllık toplamları hesapla
-yearly_totals <- data_long %>%
-  group_by(Grup) %>%
-  summarise(ToplamUretim = sum(Uretim, na.rm = TRUE))
-
-# Bar grafiği çiz
-ggplot(yearly_totals, aes(x = Grup, y = ToplamUretim, fill = Grup)) +
-  geom_col() +
-  labs(title = "Yıllık Toplam Üretim: İthal vs. Yerli",
-       x = "Grup",
-       y = "Toplam Üretim (MWh)") +
-  scale_fill_manual(values = c("İthal" = "red", "Yerli" = "green")) +
-  theme_minimal()
-
 ```
 
 ## Toplam Üretimin Hidrokarbon Üretim İle Karşılaştırılması
 
-Açıklama gelecek...
+Bu grafikte, 2023 yılı boyunca aylık toplam enerji üretimi ve hidrokarbon enerji üretimi (muhtemelen fosil yakıtlardan elde edilen enerji) gösterilmektedir. Mavi renkle toplam enerji üretimi ve kırmızı renkle hidrokarbon enerji üretimi belirtilmiş. İşte grafiğin detaylı yorumu:
+
+1.  **Ocak 2023:**
+
+    -   Toplam enerji üretimi (mavi) yüksek seviyelerde.
+
+    -   Hidrokarbon enerji üretimi (kırmızı) de yüksek, toplam üretimin önemli bir kısmını oluşturuyor.
+
+2.  **Nisan 2023:**
+
+    -   Toplam enerji üretimi bir miktar düşmüş.
+
+    -   Hidrokarbon enerji üretimi, toplam enerji üretiminin büyük bir kısmını oluşturuyor. Bu dönemde fosil yakıtların yoğun kullanıldığını gösteriyor.
+
+3.  **Temmuz 2023:**
+
+    -   Yaz aylarında toplam enerji üretimi zirve yapmış.
+
+    -   Hidrokarbon enerji üretimi yine yüksek, ancak toplam enerji üretimine oranla biraz daha azalmış. Bu, yaz aylarında yenilenebilir enerji kaynaklarının (örneğin güneş ve rüzgar) kullanımının artmasıyla açıklanabilir.
+
+4.  **Ekim 2023:**
+
+    -   Sonbaharda toplam enerji üretimi düşüş göstermiş ancak yine de yüksek seviyelerde.
+
+    -   Hidrokarbon enerji üretimi, toplam enerji üretiminin büyük bir kısmını oluşturmaya devam ediyor.
+
+**Genel Değerlendirme:**
+
+-   **Toplam Enerji Üretimi:** Yıl boyunca dalgalanmalar göstermiş, yaz aylarında zirveye ulaşmış. Bu durum, yaz aylarında artan enerji talebiyle (özellikle klima kullanımı nedeniyle) ilişkili olabilir.
+
+-   **Hidrokarbon Enerji Üretimi:** Hidrokarbon enerji üretimi yıl boyunca toplam üretimin önemli bir kısmını oluşturuyor. Fosil yakıtların enerji üretiminde büyük bir rol oynadığı görülüyor.
+
+-   **Yenilenebilir Enerji:** Grafikte doğrudan belirtilmemiş, ancak toplam enerji üretimi ile hidrokarbon enerji üretimi arasındaki fark, yenilenebilir enerji kaynaklarının (barajlar, rüzgar, güneş vb.) kullanıldığını gösterebilir. Özellikle yaz aylarında bu fark daha belirgin hale gelmiş.
+
+Bu grafikten, Türkiye'nin enerji üretiminde fosil yakıtların önemli bir yer tuttuğunu, ancak yenilenebilir enerji kaynaklarının da katkıda bulunduğunu anlıyoruz.
 
 **R kodu:**
 
@@ -433,7 +427,37 @@ ggplot(monthly_data, aes(x = Ay, y = HidrokarbonYuzde, group = 1)) +
 
 ## Toplam Üretimin Yenilenebilir Enerji Üretimi İle Karşılaştırılması
 
-Açıklama gelecek...
+Bu grafikte, 2023 yılı boyunca aylık toplam enerji üretimi ve yenilenebilir enerji üretimi gösterilmektedir. Mavi renkle toplam enerji üretimi ve yeşil renkle yenilenebilir enerji üretimi belirtilmiş. İşte grafiğin detaylı yorumu:
+
+1.  **Ocak 2023:**
+
+    -   Ocak ayında toplam enerji üretimi (mavi) yüksek seviyelerde.
+
+    -   Yenilenebilir enerji üretimi (yeşil), toplam üretimin yaklaşık yarısını oluşturmaktadır. Bu, kış aylarında yenilenebilir enerji kaynaklarının önemli bir katkı sağladığını göstermektedir.
+
+2.  **Nisan 2023:**
+
+    -   Nisan ayında toplam enerji üretimi bir miktar düşmüş, ancak yenilenebilir enerji üretimi yine toplam üretimin önemli bir kısmını oluşturuyor. Bahar aylarında barajlar ve rüzgar enerjisi gibi yenilenebilir kaynakların kullanımının artmış olabileceğini gösterir.
+
+3.  **Temmuz 2023:**
+
+    -   Yaz aylarında toplam enerji üretimi zirveye ulaşmış.
+
+    -   Yenilenebilir enerji üretimi toplam üretimin yaklaşık yarısı kadar. Bu dönemde güneş enerjisinin katkısı önemli olabilir çünkü yaz aylarında güneş enerjisi üretimi genellikle artar.
+
+4.  **Ekim 2023:**
+
+    -   Sonbaharda toplam enerji üretimi düşmüş, ancak yine de yüksek seviyelerde.
+
+    -   Yenilenebilir enerji üretimi, toplam üretimin önemli bir kısmını oluşturmaya devam ediyor. Bu, yıl boyunca yenilenebilir enerji kaynaklarının sürekli olarak kullanıldığını gösteriyor.
+
+**Genel Değerlendirme:**
+
+-   **Toplam Enerji Üretimi:** Yıl boyunca dalgalanmalar göstermiş, yaz aylarında zirveye ulaşmış. Bu durum, mevsimsel enerji talebi değişiklikleriyle ilişkilidir.
+
+-   **Yenilenebilir Enerji Üretimi:** Yenilenebilir enerji kaynakları, yıl boyunca toplam enerji üretiminin önemli bir kısmını oluşturmuştur. Bu, yenilenebilir enerji kaynaklarının sürekli ve güvenilir bir enerji kaynağı olarak kullanıldığını gösterir.
+
+Grafik, Türkiye'nin enerji üretiminde yenilenebilir kaynakların önemli bir yer tuttuğunu ve yıl boyunca enerji üretiminde sürekli bir katkı sağladığını göstermektedir. Yenilenebilir enerji kaynaklarının kullanımının artırılması, enerji güvenliği ve çevresel sürdürülebilirlik açısından kritik öneme sahiptir.
 
 **R kodu:**
 

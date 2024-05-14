@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.551">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -22,7 +22,7 @@ ul.task-list li input[type="checkbox"] {
 }
 /* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -81,13 +81,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
+  "limit": 20,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -96,7 +90,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -111,9 +104,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
+      <div class="navbar-brand-container">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">İnci Taneleri Takımı Analitik Labı</span>
     </a>
@@ -125,34 +118,34 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
-<span class="menu-text">Ana Sayfa</span></a>
+    <a class="nav-link" href="./index.html" rel="" target="">
+ <span class="menu-text">Ana Sayfa</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./takim.html"> 
-<span class="menu-text">Takım Üyeleri</span></a>
+    <a class="nav-link" href="./takim.html" rel="" target="">
+ <span class="menu-text">Takım Üyeleri</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./portfolyo.html"> 
-<span class="menu-text">Portfolyo</span></a>
+    <a class="nav-link" href="./portfolyo.html" rel="" target="">
+ <span class="menu-text">Portfolyo</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./proje.html" aria-current="page"> 
-<span class="menu-text">Proje</span></a>
+    <a class="nav-link active" href="./proje.html" rel="" target="" aria-current="page">
+ <span class="menu-text">Proje</span></a>
   </li>  
 </ul>
-          </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
-    <a href="https://github.com" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
+            <div class="quarto-navbar-tools ms-auto">
+    <a href="https://github.com" rel="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
+          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
     <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
@@ -172,21 +165,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#üretim-türüne-göre-mevsimsel-dağılım-grafiği" id="toc-üretim-türüne-göre-mevsimsel-dağılım-grafiği" class="nav-link" data-scroll-target="#üretim-türüne-göre-mevsimsel-dağılım-grafiği"><span class="header-section-number">3.3</span> Üretim Türüne Göre Mevsimsel Dağılım Grafiği</a></li>
   <li><a href="#yıllık-olarka-toplam-üretilen-enerji-karşılaştırması" id="toc-yıllık-olarka-toplam-üretilen-enerji-karşılaştırması" class="nav-link" data-scroll-target="#yıllık-olarka-toplam-üretilen-enerji-karşılaştırması"><span class="header-section-number">3.4</span> Yıllık Olarka Toplam Üretilen Enerji Karşılaştırması</a></li>
   <li><a href="#hidrokarbon-kaynakların-dağılımı" id="toc-hidrokarbon-kaynakların-dağılımı" class="nav-link" data-scroll-target="#hidrokarbon-kaynakların-dağılımı"><span class="header-section-number">3.5</span> Hidrokarbon Kaynakların Dağılımı</a></li>
-  <li><a href="#hidrokarbon-kaynakların-dağılımı-1" id="toc-hidrokarbon-kaynakların-dağılımı-1" class="nav-link" data-scroll-target="#hidrokarbon-kaynakların-dağılımı-1"><span class="header-section-number">3.6</span> Hidrokarbon Kaynakların Dağılımı</a></li>
-  <li><a href="#ithal-edilen-ve-üretilen-enerji-karşılaştırılması" id="toc-ithal-edilen-ve-üretilen-enerji-karşılaştırılması" class="nav-link" data-scroll-target="#ithal-edilen-ve-üretilen-enerji-karşılaştırılması"><span class="header-section-number">3.7</span> İthal Edilen ve Üretilen Enerji Karşılaştırılması</a></li>
-  <li><a href="#toplam-üretimin-hidrokarbon-üretim-ile-karşılaştırılması" id="toc-toplam-üretimin-hidrokarbon-üretim-ile-karşılaştırılması" class="nav-link" data-scroll-target="#toplam-üretimin-hidrokarbon-üretim-ile-karşılaştırılması"><span class="header-section-number">3.8</span> Toplam Üretimin Hidrokarbon Üretim İle Karşılaştırılması</a></li>
-  <li><a href="#toplam-üretimin-yenilenebilir-enerji-üretimi-ile-karşılaştırılması" id="toc-toplam-üretimin-yenilenebilir-enerji-üretimi-ile-karşılaştırılması" class="nav-link" data-scroll-target="#toplam-üretimin-yenilenebilir-enerji-üretimi-ile-karşılaştırılması"><span class="header-section-number">3.9</span> Toplam Üretimin Yenilenebilir Enerji Üretimi İle Karşılaştırılması</a></li>
-  <li><a href="#yenilenebilir-kaynaklarla-üretilen-enerjinin-dağılımı" id="toc-yenilenebilir-kaynaklarla-üretilen-enerjinin-dağılımı" class="nav-link" data-scroll-target="#yenilenebilir-kaynaklarla-üretilen-enerjinin-dağılımı"><span class="header-section-number">3.10</span> Yenilenebilir Kaynaklarla Üretilen Enerjinin Dağılımı</a></li>
-  <li><a href="#keşifsel-veri-analizi" id="toc-keşifsel-veri-analizi" class="nav-link" data-scroll-target="#keşifsel-veri-analizi"><span class="header-section-number">3.11</span> Keşifsel Veri Analizi</a></li>
-  <li><a href="#trend-analizi" id="toc-trend-analizi" class="nav-link" data-scroll-target="#trend-analizi"><span class="header-section-number">3.12</span> Trend Analizi</a></li>
-  <li><a href="#model-uydurma" id="toc-model-uydurma" class="nav-link" data-scroll-target="#model-uydurma"><span class="header-section-number">3.13</span> Model Uydurma</a></li>
-  <li><a href="#sonuçlar" id="toc-sonuçlar" class="nav-link" data-scroll-target="#sonuçlar"><span class="header-section-number">3.14</span> Sonuçlar</a></li>
+  <li><a href="#toplam-üretimin-hidrokarbon-üretim-ile-karşılaştırılması" id="toc-toplam-üretimin-hidrokarbon-üretim-ile-karşılaştırılması" class="nav-link" data-scroll-target="#toplam-üretimin-hidrokarbon-üretim-ile-karşılaştırılması"><span class="header-section-number">3.6</span> Toplam Üretimin Hidrokarbon Üretim İle Karşılaştırılması</a></li>
+  <li><a href="#toplam-üretimin-yenilenebilir-enerji-üretimi-ile-karşılaştırılması" id="toc-toplam-üretimin-yenilenebilir-enerji-üretimi-ile-karşılaştırılması" class="nav-link" data-scroll-target="#toplam-üretimin-yenilenebilir-enerji-üretimi-ile-karşılaştırılması"><span class="header-section-number">3.7</span> Toplam Üretimin Yenilenebilir Enerji Üretimi İle Karşılaştırılması</a></li>
+  <li><a href="#yenilenebilir-kaynaklarla-üretilen-enerjinin-dağılımı" id="toc-yenilenebilir-kaynaklarla-üretilen-enerjinin-dağılımı" class="nav-link" data-scroll-target="#yenilenebilir-kaynaklarla-üretilen-enerjinin-dağılımı"><span class="header-section-number">3.8</span> Yenilenebilir Kaynaklarla Üretilen Enerjinin Dağılımı</a></li>
+  <li><a href="#keşifsel-veri-analizi" id="toc-keşifsel-veri-analizi" class="nav-link" data-scroll-target="#keşifsel-veri-analizi"><span class="header-section-number">3.9</span> Keşifsel Veri Analizi</a></li>
+  <li><a href="#trend-analizi" id="toc-trend-analizi" class="nav-link" data-scroll-target="#trend-analizi"><span class="header-section-number">3.10</span> Trend Analizi</a></li>
+  <li><a href="#model-uydurma" id="toc-model-uydurma" class="nav-link" data-scroll-target="#model-uydurma"><span class="header-section-number">3.11</span> Model Uydurma</a></li>
+  <li><a href="#sonuçlar" id="toc-sonuçlar" class="nav-link" data-scroll-target="#sonuçlar"><span class="header-section-number">3.12</span> Sonuçlar</a></li>
   </ul></li>
   <li><a href="#sonuçlar-ve-ana-çıkarımlar" id="toc-sonuçlar-ve-ana-çıkarımlar" class="nav-link" data-scroll-target="#sonuçlar-ve-ana-çıkarımlar"><span class="header-section-number">4</span> Sonuçlar ve Ana Çıkarımlar</a></li>
   </ul>
 </nav>
 </nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
     </div>
@@ -208,9 +199,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
   
 
-
 </header>
-
 
 <p><strong><em>İNCİ TANELERİ Grubu Proje Sayfasına Hoşgeldiniz</em></strong></p>
 <p><em>Projemizle ilgili güncellemelerden haberdar olmak için bu alanı takip edin.</em></p>
@@ -317,11 +306,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="co"># Pasta grafiği çizdiriyoruz</span></span>
 <span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="fu">pie</span>(energy_categories, <span class="at">labels =</span> labels, <span class="at">main =</span> <span class="st">"Elektrik Üretimi: Karbon Bazlı vs. Yenilenebilir"</span>, <span class="at">col =</span> <span class="fu">c</span>(<span class="st">"darkgray"</span>, <span class="st">"green"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="proje_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
+<p><img src="proje_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 </section>
@@ -368,11 +353,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values=</span><span class="fu">c</span>(<span class="st">"darkblue"</span>, <span class="st">"orange"</span>)) <span class="sc">+</span></span>
 <span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="proje_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
+<p><img src="proje_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 </section>
@@ -424,17 +405,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
 <span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="proje_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
+<p><img src="proje_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 </section>
 <section id="yıllık-olarka-toplam-üretilen-enerji-karşılaştırması" class="level2" data-number="3.4">
 <h2 data-number="3.4" class="anchored" data-anchor-id="yıllık-olarka-toplam-üretilen-enerji-karşılaştırması"><span class="header-section-number">3.4</span> Yıllık Olarka Toplam Üretilen Enerji Karşılaştırması</h2>
-<p>Açıklama gelecek…</p>
+<p>Bu pasta grafiğinde, 2023 yılı boyunca enerji üretiminin farklı kaynaklara göre dağılımını görüyoruz. Her bir dilim, belirli bir enerji kaynağının toplam üretimdeki payını göstermektedir. İşte grafiğin detaylı yorumu:</p>
+<p>İthal Kömür (21.2%):</p>
+<p>İthal kömür, toplam enerji üretiminin en büyük payına sahip. Bu, kömür santrallerinin enerji üretiminde önemli bir rol oynadığını gösteriyor. İthal kömür, Türkiye’nin enerji ihtiyacını karşılamak için kritik bir kaynak. Doğalgaz (19.6%):</p>
+<p>Doğalgaz, ikinci en büyük enerji kaynağı. Doğalgaz santralleri, özellikle hızlı talep artışlarına yanıt verme kabiliyetleri nedeniyle tercih ediliyor. Barajlı Enerji (13.1%):</p>
+<p>Barajlı enerji, toplam üretimde önemli bir yer tutuyor. Bu, su kaynaklarının enerji üretiminde etkin bir şekilde kullanıldığını gösteriyor. Barajlar, yenilenebilir enerji kaynakları arasında büyük bir paya sahip. Linyit (12.0%):</p>
+<p>Linyit, kömür türleri arasında önemli bir yer tutmakta. Linyit santralleri, yerel kömür kaynaklarını kullanarak enerji üretiminde önemli bir katkı sağlıyor. Rüzgar (10.0%):</p>
+<p>Rüzgar enerjisi, yenilenebilir enerji kaynakları arasında önemli bir paya sahip. Rüzgar türbinleri, özellikle rüzgar potansiyeli yüksek bölgelerde enerji üretiminde büyük rol oynuyor. Güneş (6.0%):</p>
+<p>Güneş enerjisi, özellikle yaz aylarında önemli bir üretim kaynağı. Güneş panelleri, enerji üretimine sürekli ve temiz bir katkı sağlıyor. Jeotermal (5.9%):</p>
+<p>Jeotermal enerji, yeraltı sıcak su kaynaklarını kullanarak enerji üretiminde kullanılıyor. Türkiye, jeotermal kaynaklar açısından zengin bir ülke ve bu potansiyel enerji üretiminde değerlendiriliyor. Akarsu (5.8%):</p>
+<p>Akarsu enerjisi, özellikle küçük ölçekli hidroelektrik santrallerle enerji üretimine katkı sağlıyor. Bu kaynak, çevre dostu ve yenilenebilir bir enerji kaynağı olarak öne çıkıyor. Biyokütle (4.8%):</p>
+<p>Biyokütle enerjisi, organik atıklardan enerji üretimini ifade eder. Biyokütle santralleri, hem atık yönetimi sağlıyor hem de enerji üretimine katkıda bulunuyor. Taş Kömür (2.4%):</p>
+<p>Taş kömür, enerji üretiminde daha düşük bir paya sahip. Ancak, özellikle belirli dönemlerde yedek enerji kaynağı olarak kullanılıyor olabilir. Fuel Oil (0.5%):</p>
+<p>Fuel Oil, çok düşük bir paya sahip. Bu kaynak, genellikle acil durumlarda veya yedek enerji kaynağı olarak kullanılıyor. Uluslararası (0.4%) ve Atık Isı (0.4%):</p>
+<p>Bu iki kategori, toplam üretimde çok küçük paylara sahip. Uluslararası enerji, muhtemelen ithalat veya ihracat yoluyla elde edilen enerji miktarını ifade ediyor. Atık ısı ise, enerji üretiminde kullanılan atık ısı geri kazanımıdır. Bu grafik, Türkiye’nin enerji üretiminde çeşitliliği ve farklı kaynakların önemini göstermektedir. İthal kömür ve doğalgaz, fosil yakıtlar arasında en büyük paya sahipken, barajlı enerji ve rüzgar enerjisi gibi yenilenebilir kaynaklar da önemli bir katkı sağlamaktadır.</p>
 <p><strong>R kodu:</strong></p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
@@ -462,17 +452,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Efsane ekleme</span></span>
 <span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="st">"topright"</span>, <span class="at">legend =</span> energy_df<span class="sc">$</span>Enerji_Kaynagi, <span class="at">fill =</span> <span class="fu">rainbow</span>(<span class="fu">length</span>(energy_df<span class="sc">$</span>Yuzde)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="proje_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
+<p><img src="proje_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 </section>
 <section id="hidrokarbon-kaynakların-dağılımı" class="level2" data-number="3.5">
 <h2 data-number="3.5" class="anchored" data-anchor-id="hidrokarbon-kaynakların-dağılımı"><span class="header-section-number">3.5</span> Hidrokarbon Kaynakların Dağılımı</h2>
-<p>Açıklama gelecek…</p>
+<p>Grafikte 2023 yılı boyunca dört farklı enerji kaynağının aylık üretim miktarlarını görüyoruz. Doğalgaz (kırmızı), Fuel Oil (mavi), İthal Kömür (yeşil) ve Taş Kömür (mor) renkleriyle temsil ediliyor. İşte dikkat çeken noktalar:</p>
+<p>Ocak Ayı:</p>
+<p>Doğalgaz ve ithal kömür, Ocak ayında en çok kullanılan enerji kaynakları. Kışın soğuk havalarıyla birlikte enerji talebi artıyor, bu yüzden bu iki kaynak yoğun bir şekilde kullanılmış. Fuel Oil ve taş kömür kullanımının düşük seviyelerde olduğunu görüyoruz. Belki de bu dönemde daha maliyetli veya daha az verimli oldukları için tercih edilmemişler. Nisan Ayı:</p>
+<p>Bahar aylarına gelindiğinde doğalgaz kullanımı düşüş göstermiş. Muhtemelen hava ısındığı için ısıtma ihtiyacı azalmış ve doğalgaz talebi de buna bağlı olarak azalmış. İthal kömür yine en yüksek seviyede kullanılmış. Görünüşe göre, bu dönemlerde kömür, enerji üretiminde önemli bir rol oynamış. Fuel Oil ve taş kömür yine düşük seviyelerde kalmış. Bu kaynaklar genellikle yedek enerji kaynakları olarak kullanılıyor olabilir. Temmuz Ayı:</p>
+<p>Yaz aylarında doğalgaz ve ithal kömür kullanımı zirve yapmış. Yazın enerji talebi artar çünkü insanlar klimalarını daha fazla kullanır. Bu dönemde ithal kömür kullanımı rekor seviyelere ulaşmış. Belki de enerji talebinin karşılanmasında kömür santralleri önemli bir rol oynamış. Fuel Oil ve taş kömür yine düşük seviyelerde ama sabit kalmış. Bu kaynaklar, daha çok ani ihtiyaçlar için yedek tutuluyor olabilir. Ekim Ayı:</p>
+<p>Sonbaharda, doğalgaz kullanımı tekrar artmış. Havanın soğumaya başlamasıyla birlikte ısınma ihtiyacı da artmış olabilir. İthal kömür kullanımı biraz düşmüş ama yine de yüksek seviyelerde kalmış. Fuel Oil ve taş kömür ise yıl boyunca olduğu gibi düşük seviyelerde kalmaya devam etmiş. Genel olarak, yıl boyunca enerji kaynaklarının kullanımı mevsimsel değişikliklere bağlı olarak dalgalanma göstermiş. Kış aylarında doğalgaz, yaz aylarında ise ithal kömür en çok kullanılan kaynaklar olmuş. Fuel Oil ve taş kömür ise yıl boyunca daha az kullanılmış, belki de yedek enerji kaynağı olarak rol oynamışlar. Bu veriler, enerji talebi ve üretim stratejileri hakkında bize önemli ipuçları veriyor.</p>
 <p><strong>R kodu:</strong></p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
@@ -509,136 +500,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 (`geom_bar()`).</code></pre>
 </div>
 <div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="proje_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
+<p><img src="proje_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 </section>
-<section id="hidrokarbon-kaynakların-dağılımı-1" class="level2" data-number="3.6">
-<h2 data-number="3.6" class="anchored" data-anchor-id="hidrokarbon-kaynakların-dağılımı-1"><span class="header-section-number">3.6</span> Hidrokarbon Kaynakların Dağılımı</h2>
-<p>Açıklama gelecek…</p>
+<section id="toplam-üretimin-hidrokarbon-üretim-ile-karşılaştırılması" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="toplam-üretimin-hidrokarbon-üretim-ile-karşılaştırılması"><span class="header-section-number">3.6</span> Toplam Üretimin Hidrokarbon Üretim İle Karşılaştırılması</h2>
+<p>Bu grafikte, 2023 yılı boyunca aylık toplam enerji üretimi ve hidrokarbon enerji üretimi (muhtemelen fosil yakıtlardan elde edilen enerji) gösterilmektedir. Mavi renkle toplam enerji üretimi ve kırmızı renkle hidrokarbon enerji üretimi belirtilmiş. İşte grafiğin detaylı yorumu:</p>
+<ol type="1">
+<li><p><strong>Ocak 2023:</strong></p>
+<ul>
+<li><p>Toplam enerji üretimi (mavi) yüksek seviyelerde.</p></li>
+<li><p>Hidrokarbon enerji üretimi (kırmızı) de yüksek, toplam üretimin önemli bir kısmını oluşturuyor.</p></li>
+</ul></li>
+<li><p><strong>Nisan 2023:</strong></p>
+<ul>
+<li><p>Toplam enerji üretimi bir miktar düşmüş.</p></li>
+<li><p>Hidrokarbon enerji üretimi, toplam enerji üretiminin büyük bir kısmını oluşturuyor. Bu dönemde fosil yakıtların yoğun kullanıldığını gösteriyor.</p></li>
+</ul></li>
+<li><p><strong>Temmuz 2023:</strong></p>
+<ul>
+<li><p>Yaz aylarında toplam enerji üretimi zirve yapmış.</p></li>
+<li><p>Hidrokarbon enerji üretimi yine yüksek, ancak toplam enerji üretimine oranla biraz daha azalmış. Bu, yaz aylarında yenilenebilir enerji kaynaklarının (örneğin güneş ve rüzgar) kullanımının artmasıyla açıklanabilir.</p></li>
+</ul></li>
+<li><p><strong>Ekim 2023:</strong></p>
+<ul>
+<li><p>Sonbaharda toplam enerji üretimi düşüş göstermiş ancak yine de yüksek seviyelerde.</p></li>
+<li><p>Hidrokarbon enerji üretimi, toplam enerji üretiminin büyük bir kısmını oluşturmaya devam ediyor.</p></li>
+</ul></li>
+</ol>
+<p><strong>Genel Değerlendirme:</strong></p>
+<ul>
+<li><p><strong>Toplam Enerji Üretimi:</strong> Yıl boyunca dalgalanmalar göstermiş, yaz aylarında zirveye ulaşmış. Bu durum, yaz aylarında artan enerji talebiyle (özellikle klima kullanımı nedeniyle) ilişkili olabilir.</p></li>
+<li><p><strong>Hidrokarbon Enerji Üretimi:</strong> Hidrokarbon enerji üretimi yıl boyunca toplam üretimin önemli bir kısmını oluşturuyor. Fosil yakıtların enerji üretiminde büyük bir rol oynadığı görülüyor.</p></li>
+<li><p><strong>Yenilenebilir Enerji:</strong> Grafikte doğrudan belirtilmemiş, ancak toplam enerji üretimi ile hidrokarbon enerji üretimi arasındaki fark, yenilenebilir enerji kaynaklarının (barajlar, rüzgar, güneş vb.) kullanıldığını gösterebilir. Özellikle yaz aylarında bu fark daha belirgin hale gelmiş.</p></li>
+</ul>
+<p>Bu grafikten, Türkiye’nin enerji üretiminde fosil yakıtların önemli bir yer tuttuğunu, ancak yenilenebilir enerji kaynaklarının da katkıda bulunduğunu anlıyoruz.</p>
 <p><strong>R kodu:</strong></p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Aylık toplamları hesapla ve hidrokarbon kaynaklarına göre ayır</span></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>monthly_hydrocarbons <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Ay =</span> <span class="fu">floor_date</span>(Tarih, <span class="st">"month"</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Ay) <span class="sc">%&gt;%</span></span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">DogalGaz =</span> <span class="fu">sum</span>(DogalGaz),</span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">IthalKomur =</span> <span class="fu">sum</span>(IthalKomur),</span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">FuelOil =</span> <span class="fu">sum</span>(FuelOil),</span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">TasKomur =</span> <span class="fu">sum</span>(TasKomur),</span>
-<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">'drop'</span></span>
-<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Erişilebilir format için veriyi long formata çevir</span></span>
-<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>monthly_long <span class="ot">&lt;-</span> <span class="fu">pivot_longer</span>(monthly_hydrocarbons, <span class="at">cols =</span> <span class="fu">c</span>(DogalGaz, IthalKomur, FuelOil, TasKomur),</span>
-<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>                             <span class="at">names_to =</span> <span class="st">"Enerji_Kaynagi"</span>, <span class="at">values_to =</span> <span class="st">"Uretim"</span>)</span>
-<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Grafik çiz</span></span>
-<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(monthly_long, <span class="fu">aes</span>(<span class="at">x =</span> Ay, <span class="at">y =</span> Uretim, <span class="at">fill =</span> Enerji_Kaynagi)) <span class="sc">+</span></span>
-<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">position =</span> <span class="fu">position_dodge</span>()) <span class="sc">+</span></span>
-<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_brewer</span>(<span class="at">palette =</span> <span class="st">"Set1"</span>) <span class="sc">+</span></span>
-<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Aylık Hidrokarbon Enerji Kaynaklarının Dağılımı"</span>,</span>
-<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Ay"</span>,</span>
-<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Toplam Üretim (MWh)"</span>,</span>
-<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>       <span class="at">fill =</span> <span class="st">"Enerji Kaynağı"</span>) <span class="sc">+</span></span>
-<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 4 rows containing missing values or values outside the scale range
-(`geom_bar()`).</code></pre>
-</div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="proje_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="ithal-edilen-ve-üretilen-enerji-karşılaştırılması" class="level2" data-number="3.7">
-<h2 data-number="3.7" class="anchored" data-anchor-id="ithal-edilen-ve-üretilen-enerji-karşılaştırılması"><span class="header-section-number">3.7</span> İthal Edilen ve Üretilen Enerji Karşılaştırılması</h2>
-<p>Açıklama gelecek…</p>
-<p><strong>R kodu:</strong></p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Veriyi İthal ve Yerli olarak grupla</span></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>data_long <span class="ot">&lt;-</span> <span class="fu">pivot_longer</span>(data, </span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>                          <span class="at">cols =</span> <span class="fu">c</span>(<span class="st">"DogalGaz"</span>, <span class="st">"Linyit"</span>, <span class="st">"IthalKomur"</span>, <span class="st">"FuelOil"</span>, <span class="st">"TasKomur"</span>, <span class="st">"Uluslararasi"</span>,</span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>                                   <span class="st">"Barajli"</span>, <span class="st">"Akarsu"</span>, <span class="st">"Ruzgar"</span>, <span class="st">"Gunes"</span>, <span class="st">"Jeotermal"</span>, <span class="st">"Biyokutle"</span>, <span class="st">"AtikIsi"</span>),</span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>                          <span class="at">names_to =</span> <span class="st">"Enerji_Kaynagi"</span>, <span class="at">values_to =</span> <span class="st">"Uretim"</span>)</span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Enerji kaynaklarını İthal ve Yerli olarak etiketle</span></span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>data_long <span class="ot">&lt;-</span> data_long <span class="sc">%&gt;%</span></span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Grup =</span> <span class="fu">case_when</span>(</span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>    Enerji_Kaynagi <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"DogalGaz"</span>, <span class="st">"Linyit"</span>, <span class="st">"IthalKomur"</span>, <span class="st">"FuelOil"</span>, <span class="st">"TasKomur"</span>, <span class="st">"Uluslararasi"</span>) <span class="sc">~</span> <span class="st">"İthal"</span>,</span>
-<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>    <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"Yerli"</span></span>
-<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>  ))</span>
-<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Yıllık toplamları hesapla</span></span>
-<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>yearly_totals <span class="ot">&lt;-</span> data_long <span class="sc">%&gt;%</span></span>
-<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Grup) <span class="sc">%&gt;%</span></span>
-<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">ToplamUretim =</span> <span class="fu">sum</span>(Uretim, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span>
-<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Bar grafiği çiz</span></span>
-<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(yearly_totals, <span class="fu">aes</span>(<span class="at">x =</span> Grup, <span class="at">y =</span> ToplamUretim, <span class="at">fill =</span> Grup)) <span class="sc">+</span></span>
-<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>() <span class="sc">+</span></span>
-<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Yıllık Toplam Üretim: İthal vs. Yerli"</span>,</span>
-<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Grup"</span>,</span>
-<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Toplam Üretim (MWh)"</span>) <span class="sc">+</span></span>
-<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"İthal"</span> <span class="ot">=</span> <span class="st">"red"</span>, <span class="st">"Yerli"</span> <span class="ot">=</span> <span class="st">"green"</span>)) <span class="sc">+</span></span>
-<span id="cb9-28"><a href="#cb9-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="proje_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="toplam-üretimin-hidrokarbon-üretim-ile-karşılaştırılması" class="level2" data-number="3.8">
-<h2 data-number="3.8" class="anchored" data-anchor-id="toplam-üretimin-hidrokarbon-üretim-ile-karşılaştırılması"><span class="header-section-number">3.8</span> Toplam Üretimin Hidrokarbon Üretim İle Karşılaştırılması</h2>
-<p>Açıklama gelecek…</p>
-<p><strong>R kodu:</strong></p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Veriyi yükle</span></span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"ElkUrtm23.csv"</span>)</span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Tarih formatını düzelt</span></span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>data<span class="sc">$</span>Tarih <span class="ot">&lt;-</span> <span class="fu">dmy</span>(data<span class="sc">$</span>Tarih)</span>
-<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Aylık toplamları hesapla</span></span>
-<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>monthly_data <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span></span>
-<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Ay =</span> <span class="fu">floor_date</span>(Tarih, <span class="st">"month"</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Ay) <span class="sc">%&gt;%</span></span>
-<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
-<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">Toplam =</span> <span class="fu">sum</span>(Toplam),</span>
-<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">Hidrokarbon =</span> <span class="fu">sum</span>(DogalGaz <span class="sc">+</span> IthalKomur <span class="sc">+</span> FuelOil <span class="sc">+</span> TasKomur),</span>
-<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">'drop'</span></span>
-<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Yüzdesel dağılımı hesapla</span></span>
-<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a>monthly_data<span class="sc">$</span>HidrokarbonYuzde <span class="ot">=</span> (monthly_data<span class="sc">$</span>Hidrokarbon <span class="sc">/</span> monthly_data<span class="sc">$</span>Toplam) <span class="sc">*</span> <span class="dv">100</span></span>
-<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Grafik çiz</span></span>
-<span id="cb10-24"><a href="#cb10-24" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(monthly_data, <span class="fu">aes</span>(<span class="at">x =</span> Ay)) <span class="sc">+</span></span>
-<span id="cb10-25"><a href="#cb10-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="fu">aes</span>(<span class="at">y =</span> Toplam), <span class="at">fill =</span> <span class="st">"blue"</span>, <span class="at">alpha =</span> <span class="fl">0.7</span>) <span class="sc">+</span></span>
-<span id="cb10-26"><a href="#cb10-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="fu">aes</span>(<span class="at">y =</span> Hidrokarbon), <span class="at">fill =</span> <span class="st">"red"</span>, <span class="at">alpha =</span> <span class="fl">0.7</span>) <span class="sc">+</span></span>
-<span id="cb10-27"><a href="#cb10-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Aylık Toplam ve Hidrokarbon Enerji Üretimi"</span>, <span class="at">x =</span> <span class="st">"Ay"</span>, <span class="at">y =</span> <span class="st">"Enerji Üretimi (MWh)"</span>) <span class="sc">+</span></span>
-<span id="cb10-28"><a href="#cb10-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Veriyi yükle</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"ElkUrtm23.csv"</span>)</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Tarih formatını düzelt</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>data<span class="sc">$</span>Tarih <span class="ot">&lt;-</span> <span class="fu">dmy</span>(data<span class="sc">$</span>Tarih)</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Aylık toplamları hesapla</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>monthly_data <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Ay =</span> <span class="fu">floor_date</span>(Tarih, <span class="st">"month"</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Ay) <span class="sc">%&gt;%</span></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">Toplam =</span> <span class="fu">sum</span>(Toplam),</span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">Hidrokarbon =</span> <span class="fu">sum</span>(DogalGaz <span class="sc">+</span> IthalKomur <span class="sc">+</span> FuelOil <span class="sc">+</span> TasKomur),</span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">'drop'</span></span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Yüzdesel dağılımı hesapla</span></span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>monthly_data<span class="sc">$</span>HidrokarbonYuzde <span class="ot">=</span> (monthly_data<span class="sc">$</span>Hidrokarbon <span class="sc">/</span> monthly_data<span class="sc">$</span>Toplam) <span class="sc">*</span> <span class="dv">100</span></span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Grafik çiz</span></span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(monthly_data, <span class="fu">aes</span>(<span class="at">x =</span> Ay)) <span class="sc">+</span></span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="fu">aes</span>(<span class="at">y =</span> Toplam), <span class="at">fill =</span> <span class="st">"blue"</span>, <span class="at">alpha =</span> <span class="fl">0.7</span>) <span class="sc">+</span></span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="fu">aes</span>(<span class="at">y =</span> Hidrokarbon), <span class="at">fill =</span> <span class="st">"red"</span>, <span class="at">alpha =</span> <span class="fl">0.7</span>) <span class="sc">+</span></span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Aylık Toplam ve Hidrokarbon Enerji Üretimi"</span>, <span class="at">x =</span> <span class="st">"Ay"</span>, <span class="at">y =</span> <span class="st">"Enerji Üretimi (MWh)"</span>) <span class="sc">+</span></span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: Removed 1 row containing missing values or values outside the scale range
 (`geom_col()`).
@@ -646,18 +573,14 @@ Removed 1 row containing missing values or values outside the scale range
 (`geom_col()`).</code></pre>
 </div>
 <div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="proje_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
+<p><img src="proje_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
 </div>
-</div>
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Yüzdelik dağılım grafiği</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(monthly_data, <span class="fu">aes</span>(<span class="at">x =</span> Ay, <span class="at">y =</span> HidrokarbonYuzde, <span class="at">group =</span> <span class="dv">1</span>)) <span class="sc">+</span></span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">color =</span> <span class="st">"darkred"</span>, <span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"darkred"</span>, <span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Hidrokarbon Enerji Üretiminin Yüzdesel Dağılımı"</span>, <span class="at">x =</span> <span class="st">"Ay"</span>, <span class="at">y =</span> <span class="st">"Yüzde (%)"</span>) <span class="sc">+</span></span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Yüzdelik dağılım grafiği</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(monthly_data, <span class="fu">aes</span>(<span class="at">x =</span> Ay, <span class="at">y =</span> HidrokarbonYuzde, <span class="at">group =</span> <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">color =</span> <span class="st">"darkred"</span>, <span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"darkred"</span>, <span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Hidrokarbon Enerji Üretiminin Yüzdesel Dağılımı"</span>, <span class="at">x =</span> <span class="st">"Ay"</span>, <span class="at">y =</span> <span class="st">"Yüzde (%)"</span>) <span class="sc">+</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
 ℹ Please use `linewidth` instead.</code></pre>
@@ -671,52 +594,75 @@ Removed 1 row containing missing values or values outside the scale range
 (`geom_point()`).</code></pre>
 </div>
 <div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="proje_files/figure-html/unnamed-chunk-8-2.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
+<p><img src="proje_files/figure-html/unnamed-chunk-6-2.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 </section>
-<section id="toplam-üretimin-yenilenebilir-enerji-üretimi-ile-karşılaştırılması" class="level2" data-number="3.9">
-<h2 data-number="3.9" class="anchored" data-anchor-id="toplam-üretimin-yenilenebilir-enerji-üretimi-ile-karşılaştırılması"><span class="header-section-number">3.9</span> Toplam Üretimin Yenilenebilir Enerji Üretimi İle Karşılaştırılması</h2>
-<p>Açıklama gelecek…</p>
+<section id="toplam-üretimin-yenilenebilir-enerji-üretimi-ile-karşılaştırılması" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="toplam-üretimin-yenilenebilir-enerji-üretimi-ile-karşılaştırılması"><span class="header-section-number">3.7</span> Toplam Üretimin Yenilenebilir Enerji Üretimi İle Karşılaştırılması</h2>
+<p>Bu grafikte, 2023 yılı boyunca aylık toplam enerji üretimi ve yenilenebilir enerji üretimi gösterilmektedir. Mavi renkle toplam enerji üretimi ve yeşil renkle yenilenebilir enerji üretimi belirtilmiş. İşte grafiğin detaylı yorumu:</p>
+<ol type="1">
+<li><p><strong>Ocak 2023:</strong></p>
+<ul>
+<li><p>Ocak ayında toplam enerji üretimi (mavi) yüksek seviyelerde.</p></li>
+<li><p>Yenilenebilir enerji üretimi (yeşil), toplam üretimin yaklaşık yarısını oluşturmaktadır. Bu, kış aylarında yenilenebilir enerji kaynaklarının önemli bir katkı sağladığını göstermektedir.</p></li>
+</ul></li>
+<li><p><strong>Nisan 2023:</strong></p>
+<ul>
+<li>Nisan ayında toplam enerji üretimi bir miktar düşmüş, ancak yenilenebilir enerji üretimi yine toplam üretimin önemli bir kısmını oluşturuyor. Bahar aylarında barajlar ve rüzgar enerjisi gibi yenilenebilir kaynakların kullanımının artmış olabileceğini gösterir.</li>
+</ul></li>
+<li><p><strong>Temmuz 2023:</strong></p>
+<ul>
+<li><p>Yaz aylarında toplam enerji üretimi zirveye ulaşmış.</p></li>
+<li><p>Yenilenebilir enerji üretimi toplam üretimin yaklaşık yarısı kadar. Bu dönemde güneş enerjisinin katkısı önemli olabilir çünkü yaz aylarında güneş enerjisi üretimi genellikle artar.</p></li>
+</ul></li>
+<li><p><strong>Ekim 2023:</strong></p>
+<ul>
+<li><p>Sonbaharda toplam enerji üretimi düşmüş, ancak yine de yüksek seviyelerde.</p></li>
+<li><p>Yenilenebilir enerji üretimi, toplam üretimin önemli bir kısmını oluşturmaya devam ediyor. Bu, yıl boyunca yenilenebilir enerji kaynaklarının sürekli olarak kullanıldığını gösteriyor.</p></li>
+</ul></li>
+</ol>
+<p><strong>Genel Değerlendirme:</strong></p>
+<ul>
+<li><p><strong>Toplam Enerji Üretimi:</strong> Yıl boyunca dalgalanmalar göstermiş, yaz aylarında zirveye ulaşmış. Bu durum, mevsimsel enerji talebi değişiklikleriyle ilişkilidir.</p></li>
+<li><p><strong>Yenilenebilir Enerji Üretimi:</strong> Yenilenebilir enerji kaynakları, yıl boyunca toplam enerji üretiminin önemli bir kısmını oluşturmuştur. Bu, yenilenebilir enerji kaynaklarının sürekli ve güvenilir bir enerji kaynağı olarak kullanıldığını gösterir.</p></li>
+</ul>
+<p>Grafik, Türkiye’nin enerji üretiminde yenilenebilir kaynakların önemli bir yer tuttuğunu ve yıl boyunca enerji üretiminde sürekli bir katkı sağladığını göstermektedir. Yenilenebilir enerji kaynaklarının kullanımının artırılması, enerji güvenliği ve çevresel sürdürülebilirlik açısından kritik öneme sahiptir.</p>
 <p><strong>R kodu:</strong></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Veriyi yükle</span></span>
-<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"ElkUrtm23.csv"</span>)</span>
-<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Tarih ve Saat sütunlarını birleştirerek doğru datetime formatını oluştur</span></span>
-<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>data<span class="sc">$</span>DateTime <span class="ot">&lt;-</span> <span class="fu">mdy_hm</span>(<span class="fu">paste</span>(data<span class="sc">$</span>Tarih, data<span class="sc">$</span>Saat))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Veriyi yükle</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"ElkUrtm23.csv"</span>)</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Tarih ve Saat sütunlarını birleştirerek doğru datetime formatını oluştur</span></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>data<span class="sc">$</span>DateTime <span class="ot">&lt;-</span> <span class="fu">mdy_hm</span>(<span class="fu">paste</span>(data<span class="sc">$</span>Tarih, data<span class="sc">$</span>Saat))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: 5305 failed to parse.</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Artık 'Tarih' ve 'Saat' sütunlarına ihtiyacımız yok, bu yüzden silebiliriz</span></span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span> <span class="fu">select</span>(<span class="sc">-</span>Tarih, <span class="sc">-</span>Saat)</span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Aylık toplamları hesapla</span></span>
-<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>monthly_data <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span></span>
-<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Ay =</span> <span class="fu">floor_date</span>(DateTime, <span class="st">"month"</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Ay) <span class="sc">%&gt;%</span></span>
-<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
-<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">Toplam =</span> <span class="fu">sum</span>(Toplam),</span>
-<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">Yenilenebilir =</span> <span class="fu">sum</span>(Barajli <span class="sc">+</span> Akarsu <span class="sc">+</span> Ruzgar <span class="sc">+</span> Gunes <span class="sc">+</span> Jeotermal <span class="sc">+</span> Biyokutle),</span>
-<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">'drop'</span></span>
-<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Yüzdesel dağılımı hesapla</span></span>
-<span id="cb18-15"><a href="#cb18-15" aria-hidden="true" tabindex="-1"></a>monthly_data<span class="sc">$</span>YenilenebilirYuzde <span class="ot">=</span> (monthly_data<span class="sc">$</span>Yenilenebilir <span class="sc">/</span> monthly_data<span class="sc">$</span>Toplam) <span class="sc">*</span> <span class="dv">100</span></span>
-<span id="cb18-16"><a href="#cb18-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-17"><a href="#cb18-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Grafik çiz</span></span>
-<span id="cb18-18"><a href="#cb18-18" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(monthly_data, <span class="fu">aes</span>(<span class="at">x =</span> Ay)) <span class="sc">+</span></span>
-<span id="cb18-19"><a href="#cb18-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="fu">aes</span>(<span class="at">y =</span> Toplam), <span class="at">fill =</span> <span class="st">"blue"</span>, <span class="at">alpha =</span> <span class="fl">0.7</span>) <span class="sc">+</span></span>
-<span id="cb18-20"><a href="#cb18-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="fu">aes</span>(<span class="at">y =</span> Yenilenebilir), <span class="at">fill =</span> <span class="st">"green"</span>, <span class="at">alpha =</span> <span class="fl">0.7</span>) <span class="sc">+</span></span>
-<span id="cb18-21"><a href="#cb18-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Aylık Toplam ve Yenilenebilir Enerji Üretimi"</span>, <span class="at">x =</span> <span class="st">"Ay"</span>, <span class="at">y =</span> <span class="st">"Enerji Üretimi (MWh)"</span>) <span class="sc">+</span></span>
-<span id="cb18-22"><a href="#cb18-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Artık 'Tarih' ve 'Saat' sütunlarına ihtiyacımız yok, bu yüzden silebiliriz</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span> <span class="fu">select</span>(<span class="sc">-</span>Tarih, <span class="sc">-</span>Saat)</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Aylık toplamları hesapla</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>monthly_data <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Ay =</span> <span class="fu">floor_date</span>(DateTime, <span class="st">"month"</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Ay) <span class="sc">%&gt;%</span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">Toplam =</span> <span class="fu">sum</span>(Toplam),</span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">Yenilenebilir =</span> <span class="fu">sum</span>(Barajli <span class="sc">+</span> Akarsu <span class="sc">+</span> Ruzgar <span class="sc">+</span> Gunes <span class="sc">+</span> Jeotermal <span class="sc">+</span> Biyokutle),</span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">'drop'</span></span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Yüzdesel dağılımı hesapla</span></span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a>monthly_data<span class="sc">$</span>YenilenebilirYuzde <span class="ot">=</span> (monthly_data<span class="sc">$</span>Yenilenebilir <span class="sc">/</span> monthly_data<span class="sc">$</span>Toplam) <span class="sc">*</span> <span class="dv">100</span></span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Grafik çiz</span></span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(monthly_data, <span class="fu">aes</span>(<span class="at">x =</span> Ay)) <span class="sc">+</span></span>
+<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="fu">aes</span>(<span class="at">y =</span> Toplam), <span class="at">fill =</span> <span class="st">"blue"</span>, <span class="at">alpha =</span> <span class="fl">0.7</span>) <span class="sc">+</span></span>
+<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="fu">aes</span>(<span class="at">y =</span> Yenilenebilir), <span class="at">fill =</span> <span class="st">"green"</span>, <span class="at">alpha =</span> <span class="fl">0.7</span>) <span class="sc">+</span></span>
+<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Aylık Toplam ve Yenilenebilir Enerji Üretimi"</span>, <span class="at">x =</span> <span class="st">"Ay"</span>, <span class="at">y =</span> <span class="st">"Enerji Üretimi (MWh)"</span>) <span class="sc">+</span></span>
+<span id="cb15-22"><a href="#cb15-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: Removed 1 row containing missing values or values outside the scale range
 (`geom_col()`).</code></pre>
@@ -726,18 +672,14 @@ Removed 1 row containing missing values or values outside the scale range
 (`geom_col()`).</code></pre>
 </div>
 <div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="proje_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
+<p><img src="proje_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid" width="672"></p>
 </div>
-</div>
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Yüzdelik dağılım grafiği</span></span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(monthly_data, <span class="fu">aes</span>(<span class="at">x =</span> Ay, <span class="at">y =</span> YenilenebilirYuzde, <span class="at">group =</span> <span class="dv">1</span>)) <span class="sc">+</span></span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">color =</span> <span class="st">"red"</span>, <span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
-<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"red"</span>, <span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
-<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Yenilenebilir Enerji Üretiminin Yüzdesel Dağılımı"</span>, <span class="at">x =</span> <span class="st">"Ay"</span>, <span class="at">y =</span> <span class="st">"Yüzde (%)"</span>) <span class="sc">+</span></span>
-<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Yüzdelik dağılım grafiği</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(monthly_data, <span class="fu">aes</span>(<span class="at">x =</span> Ay, <span class="at">y =</span> YenilenebilirYuzde, <span class="at">group =</span> <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">color =</span> <span class="st">"red"</span>, <span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"red"</span>, <span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Yenilenebilir Enerji Üretiminin Yüzdesel Dağılımı"</span>, <span class="at">x =</span> <span class="st">"Ay"</span>, <span class="at">y =</span> <span class="st">"Yüzde (%)"</span>) <span class="sc">+</span></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: Removed 1 row containing missing values or values outside the scale range
 (`geom_line()`).</code></pre>
@@ -747,76 +689,68 @@ Removed 1 row containing missing values or values outside the scale range
 (`geom_point()`).</code></pre>
 </div>
 <div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="proje_files/figure-html/unnamed-chunk-9-2.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
+<p><img src="proje_files/figure-html/unnamed-chunk-7-2.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 </section>
-<section id="yenilenebilir-kaynaklarla-üretilen-enerjinin-dağılımı" class="level2" data-number="3.10">
-<h2 data-number="3.10" class="anchored" data-anchor-id="yenilenebilir-kaynaklarla-üretilen-enerjinin-dağılımı"><span class="header-section-number">3.10</span> Yenilenebilir Kaynaklarla Üretilen Enerjinin Dağılımı</h2>
+<section id="yenilenebilir-kaynaklarla-üretilen-enerjinin-dağılımı" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="yenilenebilir-kaynaklarla-üretilen-enerjinin-dağılımı"><span class="header-section-number">3.8</span> Yenilenebilir Kaynaklarla Üretilen Enerjinin Dağılımı</h2>
 <p>Açıklama gelecek…</p>
 <p><strong>R kodu:</strong></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span>
-<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Aylık toplamları hesapla ve yenilenebilir enerji kaynaklarına göre ayır</span></span>
-<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>monthly_renewables <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span></span>
-<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Ay =</span> <span class="fu">floor_date</span>(DateTime, <span class="st">"month"</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Ay) <span class="sc">%&gt;%</span></span>
-<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
-<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">Barajli =</span> <span class="fu">sum</span>(Barajli),</span>
-<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">Akarsu =</span> <span class="fu">sum</span>(Akarsu),</span>
-<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">Ruzgar =</span> <span class="fu">sum</span>(Ruzgar),</span>
-<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">Gunes =</span> <span class="fu">sum</span>(Gunes),</span>
-<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">Jeotermal =</span> <span class="fu">sum</span>(Jeotermal),</span>
-<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">Biyokutle =</span> <span class="fu">sum</span>(Biyokutle),</span>
-<span id="cb24-15"><a href="#cb24-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">'drop'</span></span>
-<span id="cb24-16"><a href="#cb24-16" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb24-17"><a href="#cb24-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-18"><a href="#cb24-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Erişilebilir format için veriyi uzun formata çevir</span></span>
-<span id="cb24-19"><a href="#cb24-19" aria-hidden="true" tabindex="-1"></a>monthly_long <span class="ot">&lt;-</span> <span class="fu">pivot_longer</span>(monthly_renewables, <span class="at">cols =</span> <span class="fu">c</span>(Barajli, Akarsu, Ruzgar, Gunes, Jeotermal, Biyokutle),</span>
-<span id="cb24-20"><a href="#cb24-20" aria-hidden="true" tabindex="-1"></a>                             <span class="at">names_to =</span> <span class="st">"Enerji_Kaynagi"</span>, <span class="at">values_to =</span> <span class="st">"Uretim"</span>)</span>
-<span id="cb24-21"><a href="#cb24-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-22"><a href="#cb24-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Grafik çiz</span></span>
-<span id="cb24-23"><a href="#cb24-23" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(monthly_long, <span class="fu">aes</span>(<span class="at">x =</span> Ay, <span class="at">y =</span> Uretim, <span class="at">fill =</span> Enerji_Kaynagi)) <span class="sc">+</span></span>
-<span id="cb24-24"><a href="#cb24-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">position =</span> <span class="fu">position_dodge</span>()) <span class="sc">+</span></span>
-<span id="cb24-25"><a href="#cb24-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_brewer</span>(<span class="at">palette =</span> <span class="st">"Set3"</span>) <span class="sc">+</span></span>
-<span id="cb24-26"><a href="#cb24-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Aylık Yenilenebilir Enerji Kaynaklarının Dağılımı"</span>,</span>
-<span id="cb24-27"><a href="#cb24-27" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Ay"</span>,</span>
-<span id="cb24-28"><a href="#cb24-28" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Toplam Üretim (MWh)"</span>,</span>
-<span id="cb24-29"><a href="#cb24-29" aria-hidden="true" tabindex="-1"></a>       <span class="at">fill =</span> <span class="st">"Enerji Kaynağı"</span>) <span class="sc">+</span></span>
-<span id="cb24-30"><a href="#cb24-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Aylık toplamları hesapla ve yenilenebilir enerji kaynaklarına göre ayır</span></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>monthly_renewables <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span></span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Ay =</span> <span class="fu">floor_date</span>(DateTime, <span class="st">"month"</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Ay) <span class="sc">%&gt;%</span></span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">Barajli =</span> <span class="fu">sum</span>(Barajli),</span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">Akarsu =</span> <span class="fu">sum</span>(Akarsu),</span>
+<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">Ruzgar =</span> <span class="fu">sum</span>(Ruzgar),</span>
+<span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">Gunes =</span> <span class="fu">sum</span>(Gunes),</span>
+<span id="cb21-13"><a href="#cb21-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">Jeotermal =</span> <span class="fu">sum</span>(Jeotermal),</span>
+<span id="cb21-14"><a href="#cb21-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">Biyokutle =</span> <span class="fu">sum</span>(Biyokutle),</span>
+<span id="cb21-15"><a href="#cb21-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">'drop'</span></span>
+<span id="cb21-16"><a href="#cb21-16" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb21-17"><a href="#cb21-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-18"><a href="#cb21-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Erişilebilir format için veriyi uzun formata çevir</span></span>
+<span id="cb21-19"><a href="#cb21-19" aria-hidden="true" tabindex="-1"></a>monthly_long <span class="ot">&lt;-</span> <span class="fu">pivot_longer</span>(monthly_renewables, <span class="at">cols =</span> <span class="fu">c</span>(Barajli, Akarsu, Ruzgar, Gunes, Jeotermal, Biyokutle),</span>
+<span id="cb21-20"><a href="#cb21-20" aria-hidden="true" tabindex="-1"></a>                             <span class="at">names_to =</span> <span class="st">"Enerji_Kaynagi"</span>, <span class="at">values_to =</span> <span class="st">"Uretim"</span>)</span>
+<span id="cb21-21"><a href="#cb21-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-22"><a href="#cb21-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Grafik çiz</span></span>
+<span id="cb21-23"><a href="#cb21-23" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(monthly_long, <span class="fu">aes</span>(<span class="at">x =</span> Ay, <span class="at">y =</span> Uretim, <span class="at">fill =</span> Enerji_Kaynagi)) <span class="sc">+</span></span>
+<span id="cb21-24"><a href="#cb21-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">position =</span> <span class="fu">position_dodge</span>()) <span class="sc">+</span></span>
+<span id="cb21-25"><a href="#cb21-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_brewer</span>(<span class="at">palette =</span> <span class="st">"Set3"</span>) <span class="sc">+</span></span>
+<span id="cb21-26"><a href="#cb21-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Aylık Yenilenebilir Enerji Kaynaklarının Dağılımı"</span>,</span>
+<span id="cb21-27"><a href="#cb21-27" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Ay"</span>,</span>
+<span id="cb21-28"><a href="#cb21-28" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Toplam Üretim (MWh)"</span>,</span>
+<span id="cb21-29"><a href="#cb21-29" aria-hidden="true" tabindex="-1"></a>       <span class="at">fill =</span> <span class="st">"Enerji Kaynağı"</span>) <span class="sc">+</span></span>
+<span id="cb21-30"><a href="#cb21-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: Removed 6 rows containing missing values or values outside the scale range
 (`geom_bar()`).</code></pre>
 </div>
 <div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="proje_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
+<p><img src="proje_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 </section>
-<section id="keşifsel-veri-analizi" class="level2" data-number="3.11">
-<h2 data-number="3.11" class="anchored" data-anchor-id="keşifsel-veri-analizi"><span class="header-section-number">3.11</span> Keşifsel Veri Analizi</h2>
+<section id="keşifsel-veri-analizi" class="level2" data-number="3.9">
+<h2 data-number="3.9" class="anchored" data-anchor-id="keşifsel-veri-analizi"><span class="header-section-number">3.9</span> Keşifsel Veri Analizi</h2>
 <p>xxxxxx</p>
 </section>
-<section id="trend-analizi" class="level2" data-number="3.12">
-<h2 data-number="3.12" class="anchored" data-anchor-id="trend-analizi"><span class="header-section-number">3.12</span> Trend Analizi</h2>
+<section id="trend-analizi" class="level2" data-number="3.10">
+<h2 data-number="3.10" class="anchored" data-anchor-id="trend-analizi"><span class="header-section-number">3.10</span> Trend Analizi</h2>
 <p>xxxxxx</p>
 </section>
-<section id="model-uydurma" class="level2" data-number="3.13">
-<h2 data-number="3.13" class="anchored" data-anchor-id="model-uydurma"><span class="header-section-number">3.13</span> Model Uydurma</h2>
+<section id="model-uydurma" class="level2" data-number="3.11">
+<h2 data-number="3.11" class="anchored" data-anchor-id="model-uydurma"><span class="header-section-number">3.11</span> Model Uydurma</h2>
 <p>xxxxxx</p>
 </section>
-<section id="sonuçlar" class="level2" data-number="3.14">
-<h2 data-number="3.14" class="anchored" data-anchor-id="sonuçlar"><span class="header-section-number">3.14</span> Sonuçlar</h2>
+<section id="sonuçlar" class="level2" data-number="3.12">
+<h2 data-number="3.12" class="anchored" data-anchor-id="sonuçlar"><span class="header-section-number">3.12</span> Sonuçlar</h2>
 <p>xxxxxx</p>
 </section>
 </section>
@@ -869,33 +803,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
-    }
-  }
-  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-    let newTheme = '';
-    if(darkModeDefault) {
-      newTheme = isAlternate ? baseTheme : alternateTheme;
-    } else {
-      newTheme = isAlternate ? alternateTheme : baseTheme;
-    }
-    const changeGiscusTheme = () => {
-      // From: https://github.com/giscus/giscus/issues/336
-      const sendMessage = (message) => {
-        const iframe = document.querySelector('iframe.giscus-frame');
-        if (!iframe) return;
-        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-      }
-      sendMessage({
-        setConfig: {
-          theme: newTheme
-        }
-      });
-    }
-    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-    if (isGiscussLoaded) {
-      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -964,15 +871,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  const darkModeDefault = false;
-  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  let localAlternateSentinel = 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
-    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -1051,27 +956,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-      }
-    }
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+  function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
+      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -1081,17 +969,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start',
+      placement: 'bottom-start'
     };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -1103,130 +982,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
-    }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
-          }
-        }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
-        }
-        return container.innerHTML
-      } else {
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(note);
-        }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      // TODO in 1.5, we should make sure this works without a callout special case
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
-      }
-    }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
-          }
-        } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
-            if (note !== null) {
-              const html = processXRef(id, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
-        }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
+      return note.innerHTML;
     });
   }
       let selectedAnnoteEl;
@@ -1270,7 +1026,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
-            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1296,32 +1051,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1387,15 +1116,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">
       &nbsp;
     </div>   
-    <div class="nav-footer-center">
-<p>EMU Hacettepe MUY665 - 2023-2024 Bahar</p>
-</div>
+    <div class="nav-footer-center">EMU Hacettepe MUY665 - 2023-2024 Bahar</div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
   </div>
 </footer>
-
 
 
 
