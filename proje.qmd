@@ -101,7 +101,7 @@ Grafiklerimiz, toplam elektrik üretimi içindeki karbon bazlı ve yenilenebilir
 
 **R kodu:**
 
-```{r, message=FALSE}
+```{r, message=FALSE, warning=FALSE}
 
 # Gerekli kütüphaneyi yüklemeniz gerekmektedir
 library(readr)
@@ -144,7 +144,7 @@ Yıl sonuna doğru, özellikle Aralık ayında, hafta içi ve hafta sonu elektri
 
 **R kodu:**
 
-```{r, message=FALSE}
+```{r, message=FALSE, warning=FALSE}
 
 # Gerekli kütüphaneleri yüklemeniz gerekmektedir
 library(ggplot2)
@@ -194,7 +194,7 @@ Grafiğimiz, her iki enerji türünün aylık üretim miktarlarını yan yana g�
 
 **R kodu:**
 
-```{r, message=FALSE}
+```{r, message=FALSE, warning=FALSE}
 
 # Gerekli kütüphaneleri yükleyin
 library(ggplot2)
@@ -216,7 +216,7 @@ data$Mevsim <- ifelse(data$Ay %in% c(12, 1, 2), "Kış",
                       ifelse(data$Ay %in% c(3, 4, 5), "İlkbahar",
                              ifelse(data$Ay %in% c(6, 7, 8), "Yaz", "Sonbahar")))
 
-# Veriyi uzun formatına çeviriyoruz
+# Veriyi long formatına çeviriyoruz
 long_data <- data %>%
   select(Mevsim, DogalGaz, Barajli, Linyit, Akarsu, IthalKomur, Ruzgar, Gunes, FuelOil, Jeotermal, TasKomur, Biyokutle, Uluslararasi, AtikIsi) %>%
   pivot_longer(cols = -Mevsim, names_to = "UretimTuru", values_to = "Miktar")
@@ -271,7 +271,7 @@ Bu iki kategori, toplam üretimde çok küçük paylara sahip. Uluslararası ene
 
 **R kodu:**
 
-```{r, message=FALSE}
+```{r, message=FALSE, warning=FALSE}
 library(tidyverse)
 
 # Enerji kaynaklarına göre toplamları hesapla
@@ -303,19 +303,17 @@ legend("topright", legend = energy_df$Enerji_Kaynagi, fill = rainbow(length(ener
 
 Grafikte 2023 yılı boyunca dört farklı enerji kaynağının aylık üretim miktarlarını görüyoruz. Doğalgaz (kırmızı), Fuel Oil (mavi), İthal Kömür (yeşil) ve Taş Kömür (mor) renkleriyle temsil ediliyor. İşte dikkat çeken noktalar:
 
-Ocak Ayı:
+**Ocak Ayı:** Doğalgaz ve ithal kömür, Ocak ayında en çok kullanılan enerji kaynakları. Kışın soğuk havalarıyla birlikte enerji talebi artıyor, bu yüzden bu iki kaynak yoğun bir şekilde kullanılmış. Fuel Oil ve taş kömür kullanımının düşük seviyelerde olduğunu görüyoruz. Belki de bu dönemde daha maliyetli veya daha az verimli oldukları için tercih edilmemişler.
 
-Doğalgaz ve ithal kömür, Ocak ayında en çok kullanılan enerji kaynakları. Kışın soğuk havalarıyla birlikte enerji talebi artıyor, bu yüzden bu iki kaynak yoğun bir şekilde kullanılmış. Fuel Oil ve taş kömür kullanımının düşük seviyelerde olduğunu görüyoruz. Belki de bu dönemde daha maliyetli veya daha az verimli oldukları için tercih edilmemişler. Nisan Ayı:
+**Nisan Ayı:** Bahar aylarına gelindiğinde doğalgaz kullanımı düşüş göstermiş. Muhtemelen hava ısındığı için ısıtma ihtiyacı azalmış ve doğalgaz talebi de buna bağlı olarak azalmış. İthal kömür yine en yüksek seviyede kullanılmış. Görünüşe göre, bu dönemlerde kömür, enerji üretiminde önemli bir rol oynamış. Fuel Oil ve taş kömür yine düşük seviyelerde kalmış. Bu kaynaklar genellikle yedek enerji kaynakları olarak kullanılıyor olabilir.
 
-Bahar aylarına gelindiğinde doğalgaz kullanımı düşüş göstermiş. Muhtemelen hava ısındığı için ısıtma ihtiyacı azalmış ve doğalgaz talebi de buna bağlı olarak azalmış. İthal kömür yine en yüksek seviyede kullanılmış. Görünüşe göre, bu dönemlerde kömür, enerji üretiminde önemli bir rol oynamış. Fuel Oil ve taş kömür yine düşük seviyelerde kalmış. Bu kaynaklar genellikle yedek enerji kaynakları olarak kullanılıyor olabilir. Temmuz Ayı:
+**Temmuz Ayı:** Yaz aylarında doğalgaz ve ithal kömür kullanımı zirve yapmış. Yazın enerji talebi artar çünkü insanlar klimalarını daha fazla kullanır. Bu dönemde ithal kömür kullanımı rekor seviyelere ulaşmış. Belki de enerji talebinin karşılanmasında kömür santralleri önemli bir rol oynamış. Fuel Oil ve taş kömür yine düşük seviyelerde ama sabit kalmış. Bu kaynaklar, daha çok ani ihtiyaçlar için yedek tutuluyor olabilir.
 
-Yaz aylarında doğalgaz ve ithal kömür kullanımı zirve yapmış. Yazın enerji talebi artar çünkü insanlar klimalarını daha fazla kullanır. Bu dönemde ithal kömür kullanımı rekor seviyelere ulaşmış. Belki de enerji talebinin karşılanmasında kömür santralleri önemli bir rol oynamış. Fuel Oil ve taş kömür yine düşük seviyelerde ama sabit kalmış. Bu kaynaklar, daha çok ani ihtiyaçlar için yedek tutuluyor olabilir. Ekim Ayı:
-
-Sonbaharda, doğalgaz kullanımı tekrar artmış. Havanın soğumaya başlamasıyla birlikte ısınma ihtiyacı da artmış olabilir. İthal kömür kullanımı biraz düşmüş ama yine de yüksek seviyelerde kalmış. Fuel Oil ve taş kömür ise yıl boyunca olduğu gibi düşük seviyelerde kalmaya devam etmiş. Genel olarak, yıl boyunca enerji kaynaklarının kullanımı mevsimsel değişikliklere bağlı olarak dalgalanma göstermiş. Kış aylarında doğalgaz, yaz aylarında ise ithal kömür en çok kullanılan kaynaklar olmuş. Fuel Oil ve taş kömür ise yıl boyunca daha az kullanılmış, belki de yedek enerji kaynağı olarak rol oynamışlar. Bu veriler, enerji talebi ve üretim stratejileri hakkında bize önemli ipuçları veriyor.
+**Ekim Ayı:** Sonbaharda, doğalgaz kullanımı tekrar artmış. Havanın soğumaya başlamasıyla birlikte ısınma ihtiyacı da artmış olabilir. İthal kömür kullanımı biraz düşmüş ama yine de yüksek seviyelerde kalmış. Fuel Oil ve taş kömür ise yıl boyunca olduğu gibi düşük seviyelerde kalmaya devam etmiş. Genel olarak, yıl boyunca enerji kaynaklarının kullanımı mevsimsel değişikliklere bağlı olarak dalgalanma göstermiş. Kış aylarında doğalgaz, yaz aylarında ise ithal kömür en çok kullanılan kaynaklar olmuş. Fuel Oil ve taş kömür ise yıl boyunca daha az kullanılmış, belki de yedek enerji kaynağı olarak rol oynamışlar. Bu veriler, enerji talebi ve üretim stratejileri hakkında bize önemli ipuçları veriyor.
 
 **R kodu:**
 
-```{r, message=FALSE}
+```{r, message=FALSE, warning=FALSE}
 library(tidyverse)
 library(lubridate)
 
@@ -387,7 +385,7 @@ Bu grafikten, Türkiye'nin enerji üretiminde fosil yakıtların önemli bir yer
 
 **R kodu:**
 
-```{r, message=FALSE}
+```{r, message=FALSE, warning=FALSE}
 library(tidyverse)
 library(lubridate)
 
@@ -413,7 +411,7 @@ monthly_data$HidrokarbonYuzde = (monthly_data$Hidrokarbon / monthly_data$Toplam)
 # Grafik çiz
 ggplot(monthly_data, aes(x = Ay)) +
   geom_col(aes(y = Toplam), fill = "blue", alpha = 0.7) +
-  geom_col(aes(y = Hidrokarbon), fill = "red", alpha = 0.7) +
+  geom_col(aes(y = Hidrokarbon), fill = "yellow", alpha = 0.7) +
   labs(title = "Aylık Toplam ve Hidrokarbon Enerji Üretimi", x = "Ay", y = "Enerji Üretimi (MWh)") +
   theme_minimal()
 
@@ -422,7 +420,8 @@ ggplot(monthly_data, aes(x = Ay, y = HidrokarbonYuzde, group = 1)) +
   geom_line(color = "darkred", size = 1) +
   geom_point(color = "darkred", size = 2) +
   labs(title = "Hidrokarbon Enerji Üretiminin Yüzdesel Dağılımı", x = "Ay", y = "Yüzde (%)") +
-  theme_minimal()
+  theme_minimal() +
+coord_cartesian(ylim = c(33, 55)) # y eksenini sınırlandırıyoruz
 ```
 
 ## Toplam Üretimin Yenilenebilir Enerji Üretimi İle Karşılaştırılması
@@ -461,7 +460,7 @@ Grafik, Türkiye'nin enerji üretiminde yenilenebilir kaynakların önemli bir y
 
 **R kodu:**
 
-```{r, message=FALSE}
+```{r, message=FALSE, warning=FALSE}
 library(tidyverse)
 library(lubridate)
 
@@ -489,27 +488,40 @@ monthly_data$YenilenebilirYuzde = (monthly_data$Yenilenebilir / monthly_data$Top
 
 # Grafik çiz
 ggplot(monthly_data, aes(x = Ay)) +
-  geom_col(aes(y = Toplam), fill = "blue", alpha = 0.7) +
-  geom_col(aes(y = Yenilenebilir), fill = "green", alpha = 0.7) +
+  geom_col(aes(y = Toplam), fill = "blue", alpha = 0.7, show.legend = TRUE) +
+  geom_col(aes(y = Yenilenebilir), fill = "yellow", alpha = 0.7, show.legend = TRUE) +
   labs(title = "Aylık Toplam ve Yenilenebilir Enerji Üretimi", x = "Ay", y = "Enerji Üretimi (MWh)") +
-  theme_minimal()
+  theme_minimal() 
 
 # Yüzdelik dağılım grafiği
 ggplot(monthly_data, aes(x = Ay, y = YenilenebilirYuzde, group = 1)) +
   geom_line(color = "red", size = 1) +
   geom_point(color = "red", size = 2) +
   labs(title = "Yenilenebilir Enerji Üretiminin Yüzdesel Dağılımı", x = "Ay", y = "Yüzde (%)") +
-  theme_minimal()
+  theme_minimal() +
+coord_cartesian(ylim = c(35, 42)) # y eksenini sınırlandırıyoruz
 
 ```
 
 ## Yenilenebilir Kaynaklarla Üretilen Enerjinin Dağılımı
 
-Açıklama gelecek...
+Bu grafiğimiz, 2023 yılı boyunca her ay yenilenebilir enerji kaynaklarının toplam üretim miktarlarını göstermektedir. Renklere göre ayrılmış çubuklar, farklı enerji kaynaklarının her ay üretilen toplam enerji miktarını temsil ediyor. İşte grafiğin öne çıkan yönleri:
+
+**Enerji Kaynakları:** Grafiğinizde altı farklı yenilenebilir enerji kaynağı gösterilmiştir: Akarsu, Barajlı, Biyokütle, Güneş, Jeotermal ve Rüzgar. Her bir enerji kaynağı, grafiğin sağ üst köşesinde yer alan renkli efsane ile eşleştirilen bir renkle temsil edilmiştir.
+
+**Ay Bazında Değişim:** Grafik, Ocak 2023'ten Ekim 2023'e kadar olan ayları gösteriyor. Her ay için, farklı enerji kaynaklarından elde edilen enerji miktarları, çubuk grafik formatında sunulmuş.
+
+**En Yüksek ve En Düşük Üretimler:** Grafiğe göre, özellikle Barajlı ve Rüzgar enerjisi kaynaklarının üretimi diğerlerine göre daha yüksek gözüküyor. Özellikle bahar ve yaz aylarında bu kaynaklardan üretimlerin arttığı görülmekte.
+
+**Sezonluk Etkiler:** Güneş enerjisinin yaz aylarında, Jeotermal ve Biyokütle enerjisinin ise daha düzenli bir dağılım gösterdiği anlaşılıyor. Rüzgar enerjisi de, özellikle ilkbahar ve sonbahar aylarında yüksek üretim göstermiş.
+
+**Genel Trendler:** Enerji üretimi, aylara göre değişkenlik gösteriyor, bu da muhtemelen mevsimsel şartların ve hava koşullarının enerji üretimi üzerindeki etkilerini yansıtıyor.
+
+Bu grafiği inceleyerek, yenilenebilir enerji kaynaklarının toplam içindeki paylarını ve aylık performanslarını değerlendirerek, enerji planlaması ve tahminlerinde bulunabilirsiniz. Grafiğin detayları, enerji kaynaklarının etkinliği ve mevsimsel değişiklikler hakkında fikir vermesi açısından oldukça yararlı olabilir.
 
 **R kodu:**
 
-```{r, message=FALSE}
+```{r, message=FALSE, warning=FALSE}
 library(tidyverse)
 library(lubridate)
 
@@ -527,7 +539,7 @@ monthly_renewables <- data %>%
     .groups = 'drop'
   )
 
-# Erişilebilir format için veriyi uzun formata çevir
+# Erişilebilir format için veriyi long formata çevir
 monthly_long <- pivot_longer(monthly_renewables, cols = c(Barajli, Akarsu, Ruzgar, Gunes, Jeotermal, Biyokutle),
                              names_to = "Enerji_Kaynagi", values_to = "Uretim")
 
@@ -539,20 +551,179 @@ ggplot(monthly_long, aes(x = Ay, y = Uretim, fill = Enerji_Kaynagi)) +
        x = "Ay",
        y = "Toplam Üretim (MWh)",
        fill = "Enerji Kaynağı") +
-  theme_minimal()
+  theme_minimal() +
+coord_cartesian(ylim = c(0, 1600000)) # y eksenini sınırlandırıyoruz
 ```
 
 ## Keşifsel Veri Analizi
 
-xxxxxx
+**1. Veri Setinin Yüklenmesi ve Genel İnceleme:**
+
+```{r, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(lubridate)
+
+data <- read.csv("ElkUrtm23.csv") # Veri seti
+
+# İlk 6 satır
+head(data)
+
+# Veri setinin özeti
+summary(data)
+
+# Veri setinin yapısı
+str(data)
+```
+
+**2. Veri Temizliği ve Ön İşleme:** **Eksik Verileri Görelim**
+
+```{r, message=FALSE, warning=FALSE}
+# Eksik verilerin sütunları
+colSums(is.na(data))
+
+# Eksik verilerin oranı
+colMeans(is.na(data)) * 100
+```
+
+**Aykırı Değer Analizi**
+
+```{r, message=FALSE, warning=FALSE}
+# Boxplot gösteriki
+numeric_columns <- sapply(data, is.numeric)
+data_numeric <- data[, numeric_columns]
+boxplot(data_numeric)
+```
+
+**Veri Dönüşümleri**
+
+```{r, message=FALSE, warning=FALSE}
+
+data$Tarih <- as.Date(data$Tarih, format="%d.%m.%Y")
+# Ay sütunu ekleme
+data$Ay <- format(data$Tarih, "%Y-%m")
+
+```
+
+**3. Tek Değişkenli Analiz**
+
+```{r, message=FALSE, warning=FALSE}
+numeric_data <- data[, sapply(data, is.numeric)]
+
+# Enerji türüne göre toplam
+total_production_numeric <- colSums(numeric_data, na.rm = TRUE)
+
+
+# Barplot
+barplot(total_production_numeric, main="Toplam Enerji Üretimi Enerji Türlerine Göre", col=rainbow(length(total_production_numeric)))
+```
+
+**4. İki ve Çok Değişkenli Analiz**
+
+```{r, message=FALSE, warning=FALSE}
+
+monthly_production <- data %>% 
+  group_by(Ay) %>% 
+  summarise(across(c(DogalGaz, "Barajli", "Ruzgar", "Gunes", "Jeotermal", "Biyokutle"), sum, na.rm = TRUE))
+
+# Veriyi long formata çevirim
+monthly_long <- pivot_longer(monthly_production, cols = c(DogalGaz, "Barajli", "Ruzgar", "Gunes", "Jeotermal", "Biyokutle"), names_to = "Enerji_Turu", values_to = "Toplam")
+
+
+# Aylık enerji üretimi barplot
+ggplot(monthly_long, aes(x = Ay, y = Toplam, fill = Enerji_Turu)) +
+  geom_bar(stat = "identity", position = position_dodge()) +
+  labs(title = "Aylık Enerji Üretimi", x = "Ay", y = "Toplam Üretim (MWh)") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+```
 
 ## Trend Analizi
 
-xxxxxx
+**1. Zaman Serisi Grafikleri**
+
+```{r, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(lubridate)
+library(ggplot2)
+
+# Veri setini yükleyin
+data <- read.csv("ElkUrtm23.csv")
+
+# `Ay` sütununu kontrol ederek uygun tarih formatına çevirme
+# Örneğin, Ay sütunu '2023-01' formatında ise
+data$Ay <- as.Date(paste0(data$Ay, "-01"), format="%Y-%m-%d")
+
+# Veriyi kontrol edin
+print(head(data))
+str(data)
+
+# Aylık enerji üretimi için zaman serisi grafiği çizin
+ggplot(monthly_long, aes(x = Ay, y = Toplam, fill = Enerji_Turu)) +
+  geom_bar(stat = "identity", position = position_dodge()) +
+  labs(title = "Aylık Enerji Üretimi", x = "Ay", y = "Toplam Üretim (MWh)") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+# Her enerji türü için mevsimsel dekompozisyonu yapın ve grafiği çizin
+for(enerji in unique(monthly_long$Enerji_Turu)) {
+  cat("Analiz Enerji Türü: ", enerji, "\n")
+  subset_data <- filter(monthly_long, Enerji_Turu == enerji)
+  
+  if(nrow(subset_data) > 12 ) {  
+    ts_data <- ts(subset_data$Toplam, start = c(2023, 1), frequency = 4)
+    decomposed <- stl(ts_data, s.window = "periodic")
+    plot(decomposed) 
+  } else {
+    cat("Yetersiz veri: ", enerji, "\n")
+  }
+}
+
+```
 
 ## Model Uydurma
 
-xxxxxx
+**Toplam Enerji Üstünden ARIMA Modeli uygulama**
+
+```{r, message=FALSE, warning=FALSE}
+# Gerekli kütüphaneleri yükleyin
+library(tidyverse)
+library(lubridate)
+library(forecast)
+library(tseries)
+
+# Veri setini yükleyin
+data <- read.csv("ElkUrtm23.csv")
+
+# 'Tarih' sütununu doğru formatına çevirin
+data$Tarih <- dmy(data$Tarih)
+
+# Günlük toplam üretim için veriyi gruplandırma ve özetleme
+daily_data <- data %>%
+  group_by(Tarih) %>%
+  summarise(Total_Production = sum(Toplam, na.rm = TRUE))
+
+# Zaman serisi nesnesini oluşturun
+daily_ts <- ts(daily_data$Total_Production, frequency = 365, start = c(2023, 1))
+
+# Veriyi görselleştirin
+plot(daily_ts, main = "Günlük Toplam Enerji Üretimi", xlab = "Gün", ylab = "Toplam Üretim")
+
+# ARIMA modeli uydurma
+fit_arima <- auto.arima(daily_ts)
+summary(fit_arima)
+
+# Model diagnostiği
+checkresiduals(fit_arima)
+
+# Gelecekteki 30 gün için tahmin
+future_forecast <- forecast(fit_arima, h = 30)
+plot(future_forecast)
+
+# Tahminlerin değerlendirilmesi
+print(future_forecast)
+
+```
 
 ## Sonuçlar
 
