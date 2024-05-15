@@ -651,7 +651,6 @@ library(ggplot2)
 data <- read.csv("ElkUrtm23.csv")
 
 # `Ay` sütununu kontrol ederek uygun tarih formatına çevirme
-# Örneğin, Ay sütunu '2023-01' formatında ise
 data$Ay <- as.Date(paste0(data$Ay, "-01"), format="%Y-%m-%d")
 
 # Veriyi kontrol edin
