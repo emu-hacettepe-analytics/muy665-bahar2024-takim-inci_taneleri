@@ -694,15 +694,15 @@ library(tseries)
 # Veri setini yükleyin
 data <- read.csv("ElkUrtm23.csv")
 
-# 'Tarih' sütununu doğru formatına çevirin
+# 'Tarih' sütununu formatına çevirisi
 data$Tarih <- dmy(data$Tarih)
 
-# Günlük toplam üretim için veriyi gruplandırma ve özetleme
+# Günlük toplam üretim 
 daily_data <- data %>%
   group_by(Tarih) %>%
   summarise(Total_Production = sum(Toplam, na.rm = TRUE))
 
-# Zaman serisi nesnesini oluşturun
+# Zaman serisi 
 daily_ts <- ts(daily_data$Total_Production, frequency = 365, start = c(2023, 1))
 
 # Veriyi görselleştirin
@@ -712,14 +712,14 @@ plot(daily_ts, main = "Günlük Toplam Enerji Üretimi", xlab = "Gün", ylab = "
 fit_arima <- auto.arima(daily_ts)
 summary(fit_arima)
 
-# Model diagnostiği
+# Model Residual Bulma
 checkresiduals(fit_arima)
 
 # Gelecekteki 30 gün için tahmin
 future_forecast <- forecast(fit_arima, h = 30)
 plot(future_forecast)
 
-# Tahminlerin değerlendirilmesi
+# Tahminler
 print(future_forecast)
 
 ```

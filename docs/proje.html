@@ -929,11 +929,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"ElkUrtm23.csv"</span>)</span>
 <span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a><span class="co"># `Ay` sütununu kontrol ederek uygun tarih formatına çevirme</span></span>
-<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Örneğin, Ay sütunu '2023-01' formatında ise</span></span>
-<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a>data<span class="sc">$</span>Ay <span class="ot">&lt;-</span> <span class="fu">as.Date</span>(<span class="fu">paste0</span>(data<span class="sc">$</span>Ay, <span class="st">"-01"</span>), <span class="at">format=</span><span class="st">"%Y-%m-%d"</span>)</span>
-<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Veriyi kontrol edin</span></span>
-<span id="cb25-13"><a href="#cb25-13" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">head</span>(data))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a>data<span class="sc">$</span>Ay <span class="ot">&lt;-</span> <span class="fu">as.Date</span>(<span class="fu">paste0</span>(data<span class="sc">$</span>Ay, <span class="st">"-01"</span>), <span class="at">format=</span><span class="st">"%Y-%m-%d"</span>)</span>
+<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Veriyi kontrol edin</span></span>
+<span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">head</span>(data))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>       Tarih  Saat   Toplam DogalGaz Barajli  Linyit Akarsu IthalKomur  Ruzgar
 1 01.01.2023 00:00 28816.55  3949.91 4606.97 5453.69 970.45    9175.70 1092.41
